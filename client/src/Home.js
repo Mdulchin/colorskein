@@ -1,11 +1,11 @@
 import Floss from "./Floss";
 
-function Home(){
+function Home({currentUser}){
 
 return (
     <div className="home">
     <h1>HOME</h1>
-    <Floss />
+    <Floss currentUser={currentUser}/>
     </div>
 )
 

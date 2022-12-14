@@ -1,7 +1,8 @@
 import FlossContainer from "./FlossContainer";
 import { useEffect, useState } from "react";
 
-function Floss() {
+function Floss({currentUser}) {
+  console.log(currentUser)
   const [flossArray, setFlossArray] = useState([])
   useEffect(() => {
     fetch('/flosses')
@@ -13,7 +14,7 @@ function Floss() {
   }, [])
 
 return (
-  <FlossContainer flossArray={flossArray}/>
+  <FlossContainer flossArray={flossArray} currentUser={currentUser}/>
 
 )
 
