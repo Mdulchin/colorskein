@@ -7,7 +7,6 @@ class UserFlossesController < ApplicationController
 
 
     private
-
     def user_flosses_params
         params.permit(:user_id, :floss_id)
     end

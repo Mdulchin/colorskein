@@ -1,10 +1,9 @@
 import {useEffect, useState } from 'react';
 function FlossCard({floss, currentUser}) {
-    const [myThreadArray, setMyThreadArray] = useState([])
+const [myThreadArray, setMyThreadArray] = useState(currentUser.flosses)
 
   function addToThreads(){
-    console.log(currentUser.id)
-    console.log(floss.id)
+    
     fetch('/user_flosses', {
         method: "POST",
         headers: {
@@ -16,7 +15,7 @@ function FlossCard({floss, currentUser}) {
         })
     })
     .then(res => res.json())
-    .then(data => setMyThreadArray(data))
+    .then(data => setMyThreadArray(...myThreadArray, data))
         }
 
 
