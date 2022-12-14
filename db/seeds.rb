@@ -10,7 +10,7 @@ user3 = User.create(username: "ale", email: "ale@gmail.com", password: "12345")
 svl = Floss.create(dmc_number: 3713, dmc_name: "Salmon Very Light", red: 255, green: 226, blue: 226, hex: "ffe2e2")
 sl = Floss.create(dmc_number: 761, dmc_name: "Salmon Light", red: 255, green: 201, blue: 201, hex: "ffc9c9")
 salmon = Floss.create(dmc_number: 760, dmc_name: "Salmon", red: 245, green: 173, blue: 173, hex: "f5adad")
-sm = Floss.create(dmc_number: 3712, dmc_name: "Salmon", red: 241, green: 135, blue: 135, hex: "ffe2e2")
+sm = Floss.create(dmc_number: 3712, dmc_name: "Salmon Medium", red: 241, green: 135, blue: 135, hex: "ffe2e2")
 
 
 
