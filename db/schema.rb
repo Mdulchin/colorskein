@@ -10,10 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_13_213805) do
+ActiveRecord::Schema.define(version: 2022_12_14_012756) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "flosses", force: :cascade do |t|
+    t.integer "dmc_number"
+    t.string "dmc_name"
+    t.integer "red"
+    t.integer "green"
+    t.integer "blue"
+    t.string "hex"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "user_flosses", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "floss_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["floss_id"], name: "index_user_flosses_on_floss_id"
+    t.index ["user_id"], name: "index_user_flosses_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -23,4 +43,6 @@ ActiveRecord::Schema.define(version: 2022_12_13_213805) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "user_flosses", "flosses"
+  add_foreign_key "user_flosses", "users"
 end

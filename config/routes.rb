@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :user_flosses
+  resources :flosses
   resources :users, only: [:create]
 
   post '/signup', to: "users#create"

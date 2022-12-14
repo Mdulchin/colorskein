@@ -1,0 +1,2 @@
+class FlossesController < ApplicationController
+end
