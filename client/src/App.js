@@ -1,6 +1,12 @@
 import Home from './Home';
 import Login from './Login';
 import {useEffect, useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
 
 function App() {
@@ -30,10 +36,25 @@ function App() {
   }
 
   return (
-    <div>
-    <Home />
-    <Login onLogin={onLogin} currentUser={currentUser} handleLogOut={handleLogOut}/>
-    </div>
+    <Router>
+      <Link to='/'>
+        <button className='home'>Home</button>
+      </Link>
+      {currentUser ? 
+      <Link to='/'>
+        <button className='button' onClick={handleLogOut}>Log out</button>
+      </Link>
+      :
+      <Link to='/login'>
+      <button className='signup'>login or signup</button>
+    </Link>
+      }
+   
+    <Routes>
+      <Route path='/' element={<Home />}/>
+      <Route path='/login' element={<Login onLogin={onLogin} currentUser={currentUser} handleLogOut={handleLogOut}/>}/>
+    </Routes>
+    </Router>
   );
 }
 
