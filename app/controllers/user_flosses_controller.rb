@@ -1,0 +1,2 @@
+class UserFlossesController < ApplicationController
+end
