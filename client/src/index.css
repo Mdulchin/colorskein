@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
-.flossColor {
+.flossContainer {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+}
 
+.flossCard {
+  padding: 3px;
 }

@@ -1,5 +1,6 @@
 import Home from './Home';
 import Login from './Login';
+import Profile from './Profile';
 import {useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
@@ -40,6 +41,7 @@ function App() {
       <Link to='/'>
         <button className='home'>Home</button>
       </Link>
+
       {currentUser ? 
       <Link to='/'>
         <button className='button' onClick={handleLogOut}>Log out</button>
@@ -47,12 +49,21 @@ function App() {
       :
       <Link to='/login'>
       <button className='signup'>login or signup</button>
-    </Link>
+      </Link>
       }
+      {currentUser ? 
+      <Link to='/me'>
+        <button className='userprofile'>My Profile</button>
+      </Link>
+      :
+        null
+      }
+      {currentUser ? <p className='username'>Welcome, {currentUser.username}!</p> : null}
    
     <Routes>
-      <Route path='/' element={<Home />}/>
+      <Route path='/' element={<Home currentUser={currentUser}/>}/>
       <Route path='/login' element={<Login onLogin={onLogin} currentUser={currentUser} handleLogOut={handleLogOut}/>}/>
+      <Route path='/me' element={<Profile currentUser={currentUser} />}/>
     </Routes>
     </Router>
   );
