@@ -1,0 +1,2 @@
+class ProjectColorsController < ApplicationController
+end

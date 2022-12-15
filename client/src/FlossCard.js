@@ -1,9 +1,9 @@
-import {useEffect, useState } from 'react';
+import { useState } from 'react';
 function FlossCard({floss, currentUser}) {
-const [myThreadArray, setMyThreadArray] = useState(currentUser.flosses)
+const [myThreadArray, setMyThreadArray] = useState([])
 
   function addToThreads(){
-    
+
     fetch('/user_flosses', {
         method: "POST",
         headers: {

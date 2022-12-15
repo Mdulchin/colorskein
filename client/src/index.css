@@ -19,5 +19,7 @@ justify-content: space-evenly;
 }
 
 .flossCard {
-  padding: 3px;
+  margin: 3px;
+  border-color: green;
+  border-style: dashed;
 }
