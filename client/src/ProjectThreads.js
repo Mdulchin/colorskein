@@ -1,6 +1,7 @@
 import { useState, useEffect} from "react"
 function ProjectThreads({colors, currentUser}){
     const [projectFloss, setProjectFloss] = useState([])
+    const [dmc, setDmc] = useState([])
 
 
 
@@ -20,25 +21,46 @@ useEffect(() => {
 //   }
 const dmcFloss = projectFloss.map(pf => pf.hex)
 // const myThreads = projectFloss.filter(pf => pf.hex === colors[i])
-const dmc = []
+
 function showMe(){
     for (let i = 0; i < colors.length; i++) {
         const col = colors[i];
         if (dmcFloss.includes(col)) {
-        dmc.push(projectFloss)
-        console.log(dmc)
+          // dmc.push(projectFloss.filter(pf => pf.hex === col))
+        setDmc(...dmc, projectFloss.filter(pf => pf.hex === col))
         }
       }
 }
-// function showDmc(){
-//     setDmc(...dmc, myThreads)
-//     console.log(myThreads)
-// }
+//render thread card for each thread in dmc array
+// const myThreadCard = dmc.map((dmc, i) => {
+//   dmc[i].map(d => {  return (
+//     <div className="threadCard">
+//         <p>{d.hex}</p>
+//     </div>
+// )})
+  
+// })
+const myThreadCard = dmc.map(d => {
+  return (
+    <div className='colorSwatch'
+    style={{
+      backgroundColor: `${d.hex}`,
+      height: 150,
+      width: 150,
+      margin: 3
+  }}
+    >
+      {d.hex}
+    </div>
+  )
+})
+
+
 
 return (
     <div>
-<hi> hey </hi>
 <button onClick={showMe}>click</button>
+{myThreadCard}
 </div>
 )
 
