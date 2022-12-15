@@ -1,9 +1,25 @@
+import { useState} from "react"
 
-function ProjectColors({color, colors, i}){
+function ProjectColors({color, colors, i, currentUser}){
+
+// const [dmc, setDmc] = useState([])
 
 
-    
+// useEffect(() => {
+//     fetch('/flosses')
+//       .then(r => {
+//         if (r.ok) {
+//           r.json().then(data => setProjectFloss(data))
+//         }
+//       })
+//   }, [])
+
+// const myThreads = projectFloss.filter(pf => pf.hex === colors[i])
+// setDmc(...dmc, myThreads)
+
+
     return (
+    <div className="allSwatches">
         <div className='colorSwatch'
         key={i}
         style={{
@@ -15,6 +31,7 @@ function ProjectColors({color, colors, i}){
         >
             {color}
         </div>
+    </div>
         )
 
 }

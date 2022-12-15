@@ -1,4 +1,5 @@
 import Home from './Home';
+import NewProject from './NewProject';
 import Login from './Login';
 import Profile from './Profile';
 import {useEffect, useState } from 'react';
@@ -41,6 +42,9 @@ function App() {
       <Link to='/'>
         <button className='home'>Home</button>
       </Link>
+      {/* <Link to='/projects'>
+        <button className="project">Create a New Project</button>
+    </Link> */}
 
       {currentUser ? 
       <Link to='/'>
@@ -64,6 +68,7 @@ function App() {
       <Route path='/' element={<Home currentUser={currentUser}/>}/>
       <Route path='/login' element={<Login onLogin={onLogin} currentUser={currentUser} handleLogOut={handleLogOut}/>}/>
       <Route path='/me' element={<Profile currentUser={currentUser} />}/>
+      <Route path='/projects' element={<NewProject currentUser={currentUser}/>}/>
     </Routes>
     </Router>
   );

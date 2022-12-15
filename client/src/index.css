@@ -23,3 +23,18 @@ justify-content: space-evenly;
   border-color: green;
   border-style: dashed;
 }
+.projectCreator {
+  display: grid;
+  grid-template-areas: 
+  "image"
+  "card card card card"
+  ;
+}
+.newProjectImage{
+grid-area: "image";
+}
+.colorSwatch {
+grid-area: "card";
+display: flex;
+flex-direction: row;
+}
