@@ -1,8 +1,8 @@
 import FlossCard from "./FlossCard";
 
-function FlossContainer({flossArray, currentUser}) {
+function FlossContainer({flossSearch, currentUser}) {
     // console.log(currentUser)
-    const allFloss = flossArray.map(fl => {
+    const allFloss = flossSearch.map(fl => {
       return <FlossCard floss={fl} key={fl.id} currentUser={currentUser}/>
     })
     

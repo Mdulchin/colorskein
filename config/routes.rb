@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :project_colors
+  resources :projects
   resources :user_flosses
   resources :flosses, only: [:index, :show]
   resources :users, only: [:create]
