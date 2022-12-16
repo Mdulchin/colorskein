@@ -12,10 +12,11 @@ function Floss({currentUser}) {
       .then(r => {
         if (r.ok) {
           r.json().then(data => setFlossArray(data))
+          
         }
       })
   }, [])
-  console.log(flossArray)
+  console.log(flossArray[0])
   const flossSearch = flossArray.filter(floss => {
     if (floss.dmc_name.toLowerCase().includes(search.toLowerCase()))
     return floss

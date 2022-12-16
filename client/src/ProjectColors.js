@@ -1,7 +1,9 @@
 import { useState} from "react"
 
-function ProjectColors({color, colors, i, currentUser}){
+function ProjectColors({redVal, greenVal, blueVal, colors, i, currentUser}){
 
+// console.log(`rgb${redVal}, ${greenVal}, ${blueVal}`)
+    
 // const [dmc, setDmc] = useState([])
 
 
@@ -16,20 +18,21 @@ function ProjectColors({color, colors, i, currentUser}){
 
 // const myThreads = projectFloss.filter(pf => pf.hex === colors[i])
 // setDmc(...dmc, myThreads)
-
+// console.log(`rgb(${redVal}, ${greenVal}, ${blueVal})`)
 
     return (
     <div className="allSwatches">
         <div className='colorSwatch'
         key={i}
         style={{
-            backgroundColor: `${colors[i]}`,
+            // backgroundColor: `rgb${(colors[i].map(c => c))}`,
+            backgroundColor: `rgb(${redVal}, ${greenVal}, ${blueVal})`,
             height: 150,
             width: 150,
             margin: 3
         }}
         >
-            {color}
+            {`rgb(${redVal}, ${greenVal}, ${blueVal})`}
         </div>
     </div>
         )
