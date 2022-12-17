@@ -16,66 +16,14 @@ const [dmc, setDMC] = useState([])
 
 function getColors(colorSwatch) {
     setColors(colorSwatch)
-
 }
 
-// const dmc = projectFloss.map(floss => floss.hex)
-//  for (let i = 0; i < colors.length; i++) {
-//     const col = colors[i]
-//    if (dmc.filter(h => h === (col))) {
-//     return h
-//    }
-
-//  }
-
-
-// const sameThread = [];
-//   for (let i = 0; i < colors.length; i++) {
-//     const col = colors[i];
-//     if (dmc.includes(col)) {
-//       return dmc;
-//     } else {
-//       // add element to numbersSeen
-//       sameThread.push(col);
-//     }
-//   }
-
-// const projArray = projectFloss.filter(proj => {proj.hex  === projColor})
-
-// const projArray = projectFloss.filter(proj => proj.hex === "#424242")
-// const myColors = projArray.map((proj, i) => {
-//     return (
-//         <div style={{
-//             backgroundColor: `${proj[i]}`,
-//             height: 150,
-//             width: 150,
-//             margin: 3
-//         }}> {proj} </div>
-//     )
-// }  
-// )    
 
 function handleSubmit(e){
 e.preventDefault()
 setSrc(image)
 }
 
-// function getFloss(){
-// fetch('/flosses')
-//       .then(r => {
-//         if (r.ok) {
-//           r.json().then(data => setProjectFloss(data))
-//         }
-//       })
-// const colorThread = colors.map((color, i) => {
-//      return (projectFloss.filter(pf => pf.hex === colors[i]))
-//       })
-//       setDMC(...dmc, colorThread)
-//       console.log(dmc)
-    
-// const dmcThreads = dmc.map(dmc => {
-//     return <h1>{dmc.hex}</h1>
-// })
 
 function saveProject(){
 fetch("/projects", {
@@ -92,6 +40,9 @@ fetch("/projects", {
 .then(res => res.json())
 .then(data => setProject(data))
 }
+
+
+
 // fetch("/project_colors", {
 //     method: "POST", 
 //     headers: {
@@ -107,7 +58,7 @@ fetch("/projects", {
 
 const colorSwatches = colors.map((color, i) => {
   return (
-  <ProjectColors key={i} color={color} i={i} colors={colors} currentUser={currentUser}/>
+  <ProjectColors key={i} redVal={parseInt(color[0])} greenVal={parseInt(color[1])} blueVal={parseInt(color[2])} i={i} colors={colors} currentUser={currentUser}/>
   )
 })
 
@@ -116,16 +67,21 @@ const colorSwatches = colors.map((color, i) => {
 //     <ProjectThreads key={i} color={color} i={i} colors={colors} currentUser={currentUser}/>
 //     )
 //   })
+const colorVals = colors.map((color) => {
+    return (
+        `${parseInt(color[0])}, ${parseInt(color[1])}, ${parseInt(color[2])}`
+    )
+})
 
 
 return (
     <div className='projectCreator'>
-    <ColorExtractor getColors={getColors} maxColors={64}>
+    <ColorExtractor rgb getColors={getColors}>
         <img src={src} className="newProjectImg" style={{maxHeight: 600, maxWidth: 700}}/>
     </ColorExtractor>
         {colorSwatches}
     <div>
-    <ProjectThreads colors={colors}/>
+    <ProjectThreads colors={colors} colorVals={colorVals}/>
     </div>
     <form className='newProjectImage' onSubmit={handleSubmit} >
         <input 

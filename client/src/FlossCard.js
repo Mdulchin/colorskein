@@ -24,6 +24,7 @@ return (
         <h2>{floss.dmc_name}</h2>
         <span className="flossColor" style ={{backgroundColor: `${floss.hex}`, color: `${floss.hex}`}}>#{floss.hex}</span>
         <p># {floss.dmc_number}</p>
+        <img src={floss.image}></img>
         <p>Red: {floss.red}, Blue: {floss.blue}, Green: {floss.green}</p>
         <button onClick={addToThreads}>Add to my threads</button>
     </div>

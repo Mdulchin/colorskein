@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 
+
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
 
@@ -36,6 +37,8 @@ function App() {
   function onLogin(currentUser) {
     setCurrentUser(currentUser)
   }
+
+
 
   return (
     <Router>
