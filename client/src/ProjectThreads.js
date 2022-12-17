@@ -1,9 +1,31 @@
 import { useState, useEffect} from "react"
+var DeltaE = require('delta-e');
+
+
+
+
 function ProjectThreads({colors, colorVals, currentUser}){
     const [projectFloss, setProjectFloss] = useState([])
     const [dmc, setDmc] = useState([])
 
+    let color1 = {L: 92.19, A: 9.94, B: 3.63};
+    let color2 = {L: 85.63, A: 19.14, B: 7.33};
+    let color3 = {L: 77.47, A: 26.37, B: 10.58};
 
+    
+    // // 1976 formula
+
+    
+    // console.log(DeltaE.getDeltaE76(color1, color2));
+    
+    // // 1994 formula
+    // console.log(DeltaE.getDeltaE94(color1, color2));
+    
+    // // 2000 formula
+     console.log(DeltaE.getDeltaE00(color1, color2));
+     console.log(DeltaE.getDeltaE00(color2, color3))
+
+   
 
 useEffect(() => {
     fetch('/flosses')
@@ -55,8 +77,13 @@ const dmcBlue = projectFloss.map(pf => pf.blue)
 
 const dmcColors = projectFloss.map(pf => `${pf.red}, ${pf.green}, ${pf.blue}`)
 
+// let color1 = new Color("slategray");
+// let color2 = new Color('deepskyblue');
 
-console.log(dmcRed[0] - colorRed[1])
+// let colorDistance = color1.deltaE2000(color2);
+// console.log(colorDistance)
+// console.log(dmcRed[0] - colorRed[1])
+// console.log(DeltaE.getDeltaE00(, color2))
 
 function showMe(){
       for (let i = 0; i < colorVals.length; i++) {
@@ -65,12 +92,12 @@ function showMe(){
           if (dmcColors.includes(col)) {
           setDmc(projectFloss.filter(pf => `${pf.red}, ${pf.green}, ${pf.blue}` === col))
           }
-          else {
-            console.log((dmcRed))
-          }
+          // else {
+          //   console.log((dmcRed))
+          // }
         
           }
-        console.log(dmc)
+        
   }
 
 

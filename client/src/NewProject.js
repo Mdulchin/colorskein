@@ -57,7 +57,6 @@ fetch("/projects", {
 // .then(data => console.log(data))
 
 const colorSwatches = colors.map((color, i) => {
-    // console.log(color)
   return (
   <ProjectColors key={i} redVal={parseInt(color[0])} greenVal={parseInt(color[1])} blueVal={parseInt(color[2])} i={i} colors={colors} currentUser={currentUser}/>
   )

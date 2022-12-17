@@ -2,23 +2,7 @@ import { useState} from "react"
 
 function ProjectColors({redVal, greenVal, blueVal, colors, i, currentUser}){
 
-// console.log(`rgb${redVal}, ${greenVal}, ${blueVal}`)
-    
-// const [dmc, setDmc] = useState([])
 
-
-// useEffect(() => {
-//     fetch('/flosses')
-//       .then(r => {
-//         if (r.ok) {
-//           r.json().then(data => setProjectFloss(data))
-//         }
-//       })
-//   }, [])
-
-// const myThreads = projectFloss.filter(pf => pf.hex === colors[i])
-// setDmc(...dmc, myThreads)
-// console.log(`rgb(${redVal}, ${greenVal}, ${blueVal})`)
 
     return (
     <div className="allSwatches">
