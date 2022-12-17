@@ -38,9 +38,7 @@ function App() {
     setCurrentUser(currentUser)
   }
 
-let color1 = new Color('red')
-let color2 = color1.lch.l = 80
-console.log(color2)
+
 
   return (
     <Router>
