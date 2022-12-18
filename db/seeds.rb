@@ -51,6 +51,28 @@ drmvl = Floss.create(dmc_number: 3716, dmc_name: "Dusty Rose Medium Very Light",
 drm = Floss.create(dmc_number: 962, dmc_name: "Dusty Rose Medium", red: 230, green: 138, blue: 138, hex: "#e68a8a", image: "https://static1.dmc.com/cache/1/1/117mc_e_962_swatch_150x150.jpg")
 drd = Floss.create(dmc_number: 961, dmc_name: "Dusty Rose Dark", red: 207, green: 115, blue: 115, hex: "#cf7373", image: "https://static1.dmc.com/cache/1/1/117mc_e_961_swatch_150x150.jpg")
 
+raspl = Floss.create(dmc_number: 3833, dmc_name: "Raspberry Light", red: 234, green: 134, blue: 153, hex: "#ea8699", image: "https://static1.dmc.com/cache/1/1/117mc_e_3833_swatch_150x150.jpg")
+raspm = Floss.create(dmc_number: 3832, dmc_name: "Raspberry Medium", red: 219, green: 85, blue: 110, hex: "#db556e", image: "https://static1.dmc.com/cache/1/1/117mc_e_3832_swatch_150x150.jpg")
+raspd = Floss.create(dmc_number: 3831, dmc_name: "Raspberry Dark", red: 179, green: 47, blue: 72, hex: "#b32f48", image: "https://static1.dmc.com/cache/1/1/117mc_e_3831_swatch_150x150.jpg")
+raspvd = Floss.create(dmc_number: 777, dmc_name: "Raspberry Very Dark", red: 145, green: 53, blue: 70, hex: "#913546", image: "https://static1.dmc.com/cache/1/1/117mc_e_777_swatch_150x150.jpg")
+
+bpl = Floss.create(dmc_number: 819, dmc_name: "Baby Pink Light", red: 255, green: 238, blue: 235, hex: "#ffeeeb", image: "https://static1.dmc.com/cache/1/1/117mc_e_819_swatch_150x150.jpg")
+
+rosel = Floss.create(dmc_number: 3326, dmc_name: "Rose Light", red: 251, green: 173, blue: 180, hex: "#fbadb4", image: "https://static1.dmc.com/cache/1/1/117mc_e_3326_swatch_150x150.jpg")
+pinkm = Floss.create(dmc_number: 776, dmc_name: "Pink Medium", red: 252, green: 176, blue: 185, hex: "#fcb0b9", image: "https://static1.dmc.com/cache/1/1/117mc_e_776_swatch_150x150.jpg")
+rosem = Floss.create(dmc_number: 899, dmc_name: "Rose Medium", red: 242, green: 118, blue: 136, hex: "#f27688", image: "https://static1.dmc.com/cache/1/1/117mc_e_899_swatch_150x150.jpg")
+rose = Floss.create(dmc_number: 335, dmc_name: "Rose", red: 238, green: 84, blue: 110, hex: "#ee546e", image: "https://static1.dmc.com/cache/1/1/117mc_e_335_swatch_150x150.jpg")
+rosevd = Floss.create(dmc_number: 326, dmc_name: "Rose Very Dark", red: 179, green: 59, blue: 75, hex: "#ea8699", image: "https://static1.dmc.com/cache/1/1/117mc_e_326_swatch_150x150.jpg")
+drvl = Floss.create(dmc_number: 151, dmc_name: "Dusty Rose Very Light", red: 240, green: 206, blue: 212, hex: "#F0ced4", image: "https://static1.dmc.com/cache/1/1/117mc_e_151_swatch_150x150.jpg")
+drl = Floss.create(dmc_number: 3354, dmc_name: "Dusty Rose Light", red: 228, green: 166, blue: 172, hex: "#e4a6ac", image: "https://static1.dmc.com/cache/1/1/117mc_e_3354_swatch_150x150.jpg")
+dr = Floss.create(dmc_number: 3733, dmc_name: "Dusty Rose", red: 232, green: 135, blue: 155, hex: "#e8879b", image: "https://static1.dmc.com/cache/1/1/117mc_e_3733_swatch_150x150.jpg")
+drvd = Floss.create(dmc_number: 3833, dmc_name: "Dusty Rose Very Dark", red: 218, green: 103, blue: 131, hex: "#da6783", image: "https://static1.dmc.com/cache/1/1/117mc_e_3731_swatch_150x150.jpg")
+drud = Floss.create(dmc_number: 3350, dmc_name: "Dusty Rose Ultra Dark", red: 188, green: 67, blue: 101, hex: "#bc4365", image: "https://static1.dmc.com/cache/1/1/117mc_e_3350_swatch_150x150.jpg")
+
+
+
+
+
 
 
 
