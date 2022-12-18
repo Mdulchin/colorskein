@@ -169,7 +169,7 @@ bluem = Floss.create(dmc_number: 826, dmc_name: "Blue Medium", red: 107, green: 
 blued = Floss.create(dmc_number: 825, dmc_name: "Blue Dark", red: 71, green: 129, blue: 165, hex: "#4781a5", image: "https://static1.dmc.com/cache/1/1/117mc_e_825_swatch_150x150.jpg")
 bluevd = Floss.create(dmc_number: 824, dmc_name: "Blue Very Dark", red: 57, green: 105, blue: 135, hex: "#396987", image: "https://static1.dmc.com/cache/1/1/117mc_e_824_swatch_150x150.jpg")
 
-electricbm = Floss.create(dmc_number: 996, dmc_name: "Electric Blue Medium", red: 48, green: 194, blue: 236, hex: "30c2ec", image: "https://static1.dmc.com/cache/1/1/117mc_e_996_swatch_150x150.jpg")
+electricbm = Floss.create(dmc_number: 996, dmc_name: "Electric Blue Medium", red: 48, green: 194, blue: 236, hex: "#30c2ec", image: "https://static1.dmc.com/cache/1/1/117mc_e_996_swatch_150x150.jpg")
 electricb = Floss.create(dmc_number: 3843, dmc_name: "Electric Blue", red: 20, green: 170, blue: 208, hex: "#14aad0", image: "https://static1.dmc.com/cache/1/1/117mc_e_3843_swatch_150x150.jpg")
 electricbd = Floss.create(dmc_number: 995, dmc_name: "Electric Blue Dark", red: 38, green: 150, blue: 182, hex: "#2696b6", image: "https://static1.dmc.com/cache/1/1/117mc_e_995_swatch_150x150.jpg")
 
