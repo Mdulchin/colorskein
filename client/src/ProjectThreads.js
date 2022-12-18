@@ -83,10 +83,8 @@ function getColorConvert(){
       r: color[0],
        g: color[1],
        b: color[2]
-    })
-  }
-    )
- 
+        })
+     })
 
   const convColor = conv.map(pf => chromatism.convert(pf).cielab)
 
@@ -98,51 +96,19 @@ function getColorConvert(){
   }
 })
 console.log(labColors)
-
-  // console.log(convColor)
-
-// const convertColors = colorVals.map(pf => chromatism.convert(pf.hex).cielab)
-// console.log(convertColors)
-// const labColors = compareThreads.map(col => {
-//   return {
-//     L: col.L,
-//     A: col.a, 
-//     B: col.b
-//   }
-// })
-// console.log(labColors)
+for (let i = 0; i < labThreadColors.length; i++){
+  const col = labThreadColors[i]
+  const deltaNum = [(DeltaE.getDeltaE00(labColors[0], labThreadColors[i]))]
+  // console.log(labThreadColors)
+  const closeEnough = (deltaNum.filter(e => e <= 10))
+  console.log(closeEnough)
+  
 }
-// // const myThreads = projectFloss.filter(pf => pf.hex === colors[i])
-
-// function showMe(){
-//     for (let i = 0; i < colors.length; i++) {
-//         const col = colors[i];
-//         if (dmcFloss.includes(col)) {
-//         setDmc(...dmc, projectFloss.filter(pf => pf.hex === col))
-//         } 
-//         // else {
-//         // setDmc([])
-//         // console.log("why")
-//         // }
-//       }
-// } 
-
-//non dynamic version
-// const colorRed = colors.map(c => parseInt(c[0]))
-// const colorGreen = colors.map(c => parseInt(c[1]))
-// const colorBlue = colors.map(c => parseInt(c[2]))
 
 
-// const firstColor = (`rgb(${colorRed[0]}, ${colorGreen[0]}, ${colorBlue[0]})`)
-// const secondColor = (`rgb(${colorRed[1]}, ${colorGreen[1]}, ${colorBlue[1]})`)
-// const thirdColor = (`rgb(${colorRed[2]}, ${colorGreen[2]}, ${colorBlue[2]})`)
-// const fourthColor = (`rgb(${colorRed[3]}, ${colorGreen[3]}, ${colorBlue[3]})`)
-// const fifthColor = (`rgb(${colorRed[4]}, ${colorGreen[4]}, ${colorBlue[4]})`)
+// console.log(DeltaE.getDeltaE00(labColors[1], labThreadColors[0]))
 
-
-// const dmcRed = projectFloss.map(pf => pf.red)
-// const dmcGreen = projectFloss.map(pf => pf.green)
-// const dmcBlue = projectFloss.map(pf => pf.blue)
+}
 
 
 const dmcColors = projectFloss.map(pf => `${pf.red}, ${pf.green}, ${pf.blue}`)
@@ -164,13 +130,13 @@ function showMe(){
 
 
 
-  function compareColors(){
-    for (let i = 0; i < colorVals.length; i++){
-      const col = colorVals[i];
-      console.log(col)
-      console.log(labThreadColors)
-    }
-  }
+  // function compareColors(){
+  //   for (let i = 0; i < colorVals.length; i++){
+  //     const col = colorVals[i];
+  //     console.log(col)
+  //     console.log(labThreadColors)
+  //   }
+  // }
 // need to convert dmc colors to LAB, then turn those into the syntactically correct LAB object
 // for each color from image, compare all threads to it and return the closest
 // if deltaE val === 0, "perfect match!"
