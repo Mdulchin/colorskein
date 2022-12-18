@@ -8,7 +8,7 @@ function ProjectThreads({colors, colorVals, currentUser}){
     const [projectFloss, setProjectFloss] = useState([])
     const [dmc, setDmc] = useState([])
 
- 
+//  console.log(colors)
  
   
     // let color1 = {L: 92.19, A: 9.94, B: 3.63};
@@ -77,8 +77,41 @@ const labThreadColors = compareThreads.map(col => {
   }
 })
 
+function getColorConvert(){
+  const conv = colors.map(color => {
+     return ({
+      r: color[0],
+       g: color[1],
+       b: color[2]
+    })
+  }
+    )
+ 
 
+  const convColor = conv.map(pf => chromatism.convert(pf).cielab)
 
+  const labColors = convColor.map(col => {
+  return {
+    L: col.L,
+    A: col.a, 
+    B: col.b
+  }
+})
+console.log(labColors)
+
+  // console.log(convColor)
+
+// const convertColors = colorVals.map(pf => chromatism.convert(pf.hex).cielab)
+// console.log(convertColors)
+// const labColors = compareThreads.map(col => {
+//   return {
+//     L: col.L,
+//     A: col.a, 
+//     B: col.b
+//   }
+// })
+// console.log(labColors)
+}
 // // const myThreads = projectFloss.filter(pf => pf.hex === colors[i])
 
 // function showMe(){
@@ -116,9 +149,9 @@ const dmcColors = projectFloss.map(pf => `${pf.red}, ${pf.green}, ${pf.blue}`)
 
 
 function showMe(){
+  getColorConvert()
       for (let i = 0; i < colorVals.length; i++) {
           const col = colorVals[i];
-          console.log(colorVals[i])
           if (dmcColors.includes(col)) {
           setDmc(projectFloss.filter(pf => `${pf.red}, ${pf.green}, ${pf.blue}` === col))
           }
@@ -127,7 +160,16 @@ function showMe(){
           // }
         
           }
-        
+  }
+
+
+
+  function compareColors(){
+    for (let i = 0; i < colorVals.length; i++){
+      const col = colorVals[i];
+      console.log(col)
+      console.log(labThreadColors)
+    }
   }
 // need to convert dmc colors to LAB, then turn those into the syntactically correct LAB object
 // for each color from image, compare all threads to it and return the closest
