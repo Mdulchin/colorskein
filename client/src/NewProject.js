@@ -69,7 +69,7 @@ const colorSwatches = colors.map((color, i) => {
 //   })
 const colorVals = colors.map((color) => {
     return (
-        `${parse(color[0])}, ${parseInt(color[1])}, ${parseInt(color[2])}`
+        `${parseInt(color[0])}, ${parseInt(color[1])}, ${parseInt(color[2])}`
     )
 })
 
