@@ -16,7 +16,7 @@ function Floss({currentUser}) {
         }
       })
   }, [])
-  console.log(flossArray[0])
+ 
   const flossSearch = flossArray.filter(floss => {
     if (floss.dmc_name.toLowerCase().includes(search.toLowerCase()))
     return floss
