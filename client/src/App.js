@@ -15,14 +15,17 @@ import './App.css';
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
 
-  useEffect(() => {
+  useEffect(() => logMeIn(), [])
+
+  function logMeIn(){
     fetch('/me')
       .then(r => {
         if (r.ok) {
-          r.json().then(user=> setCurrentUser(user))
+          r.json().then(user => setCurrentUser(user))
         }
       })
-  }, [])
+    }
+ 
 
   function handleLogOut() {
     fetch('/logout', {
@@ -70,7 +73,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home currentUser={currentUser}/>}/>
       <Route path='/login' element={<Login onLogin={onLogin} currentUser={currentUser} handleLogOut={handleLogOut}/>}/>
-      <Route path='/me' element={<Profile currentUser={currentUser} />}/>
+      <Route path='/me' element={<Profile currentUser={currentUser} logMeIn={logMeIn}/>}/>
       <Route path='/projects' element={<NewProject currentUser={currentUser}/>}/>
     </Routes>
     </Router>

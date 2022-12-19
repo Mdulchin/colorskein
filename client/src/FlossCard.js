@@ -14,7 +14,7 @@ const [myThreadArray, setMyThreadArray] = useState([])
         })
     })
     .then(res => res.json())
-    .then(data => setMyThreadArray(...myThreadArray, data))
+    .then(data => setMyThreadArray([...myThreadArray, data]))
         }
 
 

@@ -9,9 +9,8 @@ const [image, setImage] = useState('')
 const [src, setSrc] = useState('')
 const [title, setTitle] = useState('')
 const [project, setProject] = useState([])
-const [projectFloss, setProjectFloss] = useState([])
+const [projectThread, setProjectThread] = useState([])
 const [dmc, setDMC] = useState([])
-
 
 
 function getColors(colorSwatch) {
@@ -34,7 +33,8 @@ fetch("/projects", {
     body: JSON.stringify({
         user_id: currentUser.id,
         title: title,
-        image: src
+        image: src,
+        threads: projectThread
     })
 })
 .then(res => res.json())
@@ -81,7 +81,7 @@ return (
     </ColorExtractor>
         {colorSwatches}
     <div>
-    <ProjectThreads colors={colors} colorVals={colorVals}/>
+    <ProjectThreads colors={colors} colorVals={colorVals} setProjectThread={setProjectThread} projectThread={projectThread}/>
     </div>
     <form className='newProjectImage' onSubmit={handleSubmit} >
         <input 

@@ -1,22 +1,30 @@
-import { ColorExtractor } from 'react-color-extractor'
-import {useEffect, useState } from 'react';
-import ProfileThreads from './ProfileThreads';
-function Profile({currentUser}){
-//  const [colors, setColors] = useState([])
 
-//  function getColors(colorSwatch) {
-//     setColors(colorSwatch)
-// }
-  const myThreads = currentUser.flosses.map(floss => {
+import {useEffect, useState } from 'react';
+import MyProjects from './MyProjects';
+import ProfileThreads from './ProfileThreads';
+function Profile({currentUser, logMeIn}){
+
+
+  useEffect(() => {
+
+    logMeIn()
+  }, [])
+
+let myThreads
+if (!currentUser)  {
+  myThreads = <p>Loading...</p>
+} else {
+   myThreads = currentUser.flosses.map(floss => {
     return <ProfileThreads floss={floss} key={floss.id} />
   })
+}
 
 return (
 <div>
-   <h1>Hello, {currentUser.username}!</h1>
-   <p>My projects:</p>
-   <p>My Threads</p>
+    {!currentUser ?  <h1>nope</h1> : <h1>Hello, {currentUser.username}!</h1>}
+    <p>My Threads</p>
    <div className='flossContainer'>{myThreads}</div>
+    <MyProjects currentUser={currentUser}/>
 </div>
 )
 }
