@@ -7,6 +7,7 @@ var chromatism = require('chromatism');
 function ProjectThreads({colors, colorVals, currentUser}){
     const [projectFloss, setProjectFloss] = useState([])
     const [dmc, setDmc] = useState([])
+    // const [closestThread, setClosesThread] = useState([])
 
 //  console.log(colors)
  
@@ -95,20 +96,42 @@ function getColorConvert(){
     B: col.b
   }
 })
-console.log(labColors)
+//for every color in the image, compare it to every thread color and then push the closest match to the closestThread array
+//figure out how to make this dynamic lol
+
+const colorArray1 = []
+const colorArray2 = []
+const colorArray3 = []
+const colorArray4 = []
+const colorArray5 = []
+const colorArray6 = []
+const closestThread = []
+
 for (let i = 0; i < labThreadColors.length; i++){
-  const col = labThreadColors[i]
-  const deltaNum = [(DeltaE.getDeltaE00(labColors[0], labThreadColors[i]))]
-  // console.log(labThreadColors)
-  const closeEnough = (deltaNum.filter(e => e <= 10))
-  console.log(closeEnough)
-  
+  let deltaNum1 = (DeltaE.getDeltaE00(labColors[0], labThreadColors[i]))
+  let deltaNum2 = (DeltaE.getDeltaE00(labColors[1], labThreadColors[i]))
+  let deltaNum3 = (DeltaE.getDeltaE00(labColors[2], labThreadColors[i]))
+  let deltaNum4 = (DeltaE.getDeltaE00(labColors[3], labThreadColors[i]))
+  let deltaNum5 = (DeltaE.getDeltaE00(labColors[4], labThreadColors[i]))
+  let deltaNum6 = (DeltaE.getDeltaE00(labColors[5], labThreadColors[i]))
+  colorArray1.push(deltaNum1)
+  colorArray2.push(deltaNum2)
+  colorArray3.push(deltaNum3)
+  colorArray4.push(deltaNum4)
+  colorArray5.push(deltaNum5)
+  colorArray6.push(deltaNum6)
 }
 
 
-// console.log(DeltaE.getDeltaE00(labColors[1], labThreadColors[0]))
-
+closestThread.push(projectFloss[colorArray1.indexOf(Math.min(...colorArray1))])
+closestThread.push(projectFloss[colorArray2.indexOf(Math.min(...colorArray2))])
+closestThread.push(projectFloss[colorArray3.indexOf(Math.min(...colorArray3))])
+closestThread.push(projectFloss[colorArray4.indexOf(Math.min(...colorArray4))])
+closestThread.push(projectFloss[colorArray5.indexOf(Math.min(...colorArray5))])
+closestThread.push(projectFloss[colorArray6.indexOf(Math.min(...colorArray6))])
+console.log(closestThread)
 }
+
 
 
 const dmcColors = projectFloss.map(pf => `${pf.red}, ${pf.green}, ${pf.blue}`)
@@ -116,16 +139,12 @@ const dmcColors = projectFloss.map(pf => `${pf.red}, ${pf.green}, ${pf.blue}`)
 
 function showMe(){
   getColorConvert()
-      for (let i = 0; i < colorVals.length; i++) {
-          const col = colorVals[i];
-          if (dmcColors.includes(col)) {
-          setDmc(projectFloss.filter(pf => `${pf.red}, ${pf.green}, ${pf.blue}` === col))
-          }
-          // else {
-          //   console.log((dmcRed))
-          // }
-        
-          }
+      // for (let i = 0; i < colorVals.length; i++) {
+      //     const col = colorVals[i];
+      //     if (dmcColors.includes(col)) {
+      //     setDmc(projectFloss.filter(pf => `${pf.red}, ${pf.green}, ${pf.blue}` === col))
+      //     }
+      //     }
   }
 
 
