@@ -18,6 +18,7 @@ function ProjectColors({redVal, greenVal, blueVal, colors, i, currentUser}){
         >
             {`rgb(${redVal}, ${greenVal}, ${blueVal})`}
         </div>
+        {/* <button onClick={}>Edit Color</button> */}
     </div>
         )
 

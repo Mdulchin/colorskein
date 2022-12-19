@@ -250,7 +250,7 @@ aquamarine = Floss.create(dmc_number: 3814, dmc_name: "Aquamarine", red: 80, gre
 aquamarined = Floss.create(dmc_number: 991, dmc_name: "Aquamarine Dark", red: 71, green: 123, blue: 110, hex: "#42756a", image: "https://static1.dmc.com/cache/1/1/117mc_e_991_swatch_150x150.jpg")
 
 
-pgvd = Floss.create(dmc_number: 3799, dmc_name: "Pewter Gray Very Dark", red: 66, green: 66, blue: 66, hex: "#424242", image: "https://static1.dmc.com/cache/1/1/117mc_e_939_swatch_150x150.jpg")
+pgvd = Floss.create(dmc_number: 3799, dmc_name: "Pewter Gray Very Dark", red: 66, green: 66, blue: 66, hex: "#424242", image: "https://static1.dmc.com/cache/1/1/117mc_e_3799_swatch_150x150.jpg")
 
 
 #userfloss

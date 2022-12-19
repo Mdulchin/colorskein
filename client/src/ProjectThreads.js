@@ -130,6 +130,7 @@ closestThread.push(projectFloss[colorArray4.indexOf(Math.min(...colorArray4))])
 closestThread.push(projectFloss[colorArray5.indexOf(Math.min(...colorArray5))])
 closestThread.push(projectFloss[colorArray6.indexOf(Math.min(...colorArray6))])
 console.log(closestThread)
+setDmc(closestThread)
 }
 
 
@@ -139,26 +140,8 @@ const dmcColors = projectFloss.map(pf => `${pf.red}, ${pf.green}, ${pf.blue}`)
 
 function showMe(){
   getColorConvert()
-      // for (let i = 0; i < colorVals.length; i++) {
-      //     const col = colorVals[i];
-      //     if (dmcColors.includes(col)) {
-      //     setDmc(projectFloss.filter(pf => `${pf.red}, ${pf.green}, ${pf.blue}` === col))
-      //     }
-      //     }
   }
 
-
-
-  // function compareColors(){
-  //   for (let i = 0; i < colorVals.length; i++){
-  //     const col = colorVals[i];
-  //     console.log(col)
-  //     console.log(labThreadColors)
-  //   }
-  // }
-// need to convert dmc colors to LAB, then turn those into the syntactically correct LAB object
-// for each color from image, compare all threads to it and return the closest
-// if deltaE val === 0, "perfect match!"
 
 const myThreadCard = dmc.map(d => {
   return (
