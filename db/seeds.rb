@@ -182,7 +182,7 @@ bluegraym = Floss.create(dmc_number: 160, dmc_name: "Blue Gray Medium", red: 153
 bluegray = Floss.create(dmc_number: 161, dmc_name: "Blue Gray", red: 120, green: 128, blue: 164, hex: "#7880a4", image: "https://static1.dmc.com/cache/1/1/117mc_e_161_swatch_150x150.jpg")
 
 babyblueuvl = Floss.create(dmc_number: 3756, dmc_name: "Baby Blue Ultra Very Light", red: 238, green: 252, blue: 252, hex: "#eefcfc", image: "https://static1.dmc.com/cache/1/1/117mc_e_3756_swatch_150x150.jpg")
-babybluevl = Floss.create(dmc_number: 775, dmc_name: "Baby Blue Very Light", red: 214=7, green: 235, blue: 241, hex: "#d9ebf1", image: "https://static1.dmc.com/cache/1/1/117mc_e_775_swatch_150x150.jpg")
+babybluevl = Floss.create(dmc_number: 775, dmc_name: "Baby Blue Very Light", red: 217, green: 235, blue: 241, hex: "#d9ebf1", image: "https://static1.dmc.com/cache/1/1/117mc_e_775_swatch_150x150.jpg")
 babybluep = Floss.create(dmc_number: 3841, dmc_name: "Baby Blue Pale", red: 205, green: 223, blue: 237, hex: "#cddfed", image: "https://static1.dmc.com/cache/1/1/117mc_e_3841_swatch_150x150.jpg")
 babybluel = Floss.create(dmc_number: 3325, dmc_name: "Baby Blue Light", red: 184, green: 210, blue: 230, hex: "#b8d2e6", image: "https://static1.dmc.com/cache/1/1/117mc_e_3325_swatch_150x150.jpg")
 babyblue = Floss.create(dmc_number: 3755, dmc_name: "Baby Blue", red: 147, green: 180, blue: 206, hex: "#92b4ce", image: "https://static1.dmc.com/cache/1/1/117mc_e_3755_swatch_150x150.jpg")
@@ -248,6 +248,7 @@ aquamarinevl = Floss.create(dmc_number: 993, dmc_name: "Aquamarine Very Light", 
 aquamarinel = Floss.create(dmc_number: 992, dmc_name: "Aquamarine Light", red: 111, green: 174, blue: 159, hex: "#6fae9f", image: "https://static1.dmc.com/cache/1/1/117mc_e_992_swatch_150x150.jpg")
 aquamarine = Floss.create(dmc_number: 3814, dmc_name: "Aquamarine", red: 80, green: 139, blue: 125, hex: "#508b7d", image: "https://static1.dmc.com/cache/1/1/117mc_e_3814_swatch_150x150.jpg")
 aquamarined = Floss.create(dmc_number: 991, dmc_name: "Aquamarine Dark", red: 71, green: 123, blue: 110, hex: "#42756a", image: "https://static1.dmc.com/cache/1/1/117mc_e_991_swatch_150x150.jpg")
+
 
 pgvd = Floss.create(dmc_number: 3799, dmc_name: "Pewter Gray Very Dark", red: 66, green: 66, blue: 66, hex: "#424242", image: "https://static1.dmc.com/cache/1/1/117mc_e_939_swatch_150x150.jpg")
 
