@@ -173,23 +173,83 @@ electricbm = Floss.create(dmc_number: 996, dmc_name: "Electric Blue Medium", red
 electricb = Floss.create(dmc_number: 3843, dmc_name: "Electric Blue", red: 20, green: 170, blue: 208, hex: "#14aad0", image: "https://static1.dmc.com/cache/1/1/117mc_e_3843_swatch_150x150.jpg")
 electricbd = Floss.create(dmc_number: 995, dmc_name: "Electric Blue Dark", red: 38, green: 150, blue: 182, hex: "#2696b6", image: "https://static1.dmc.com/cache/1/1/117mc_e_995_swatch_150x150.jpg")
 
+turquoisebl = Floss.create(dmc_number: 3846, dmc_name: "Turquoise Bright Light", red: 6, green: 227, blue: 230, hex: "#06e3e6", image: "https://static1.dmc.com/cache/1/1/117mc_e_3846_swatch_150x150.jpg")
+turquoisebm = Floss.create(dmc_number: 3845, dmc_name: "Turquoise Bright Medium", red: 4, green: 196, blue: 202, hex: "#04c4ca", image: "https://static1.dmc.com/cache/1/1/117mc_e_3845_swatch_150x150.jpg")
+turquoisebd = Floss.create(dmc_number: 3844, dmc_name: "Turquoise Bright Dark", red: 18, green: 174, blue: 186, hex: "#12aeba", image: "https://static1.dmc.com/cache/1/1/117mc_e_3844_swatch_150x150.jpg")
 
+bluegrayl = Floss.create(dmc_number: 159, dmc_name: "Blue Gray Light", red: 199, green: 202, blue: 215, hex: "#c7cad7", image: "https://static1.dmc.com/cache/1/1/117mc_e_159_swatch_150x150.jpg")
+bluegraym = Floss.create(dmc_number: 160, dmc_name: "Blue Gray Medium", red: 153, green: 159, blue: 183, hex: "#999fb7", image: "https://static1.dmc.com/cache/1/1/117mc_e_160_swatch_150x150.jpg")
+bluegray = Floss.create(dmc_number: 161, dmc_name: "Blue Gray", red: 120, green: 128, blue: 164, hex: "#7880a4", image: "https://static1.dmc.com/cache/1/1/117mc_e_161_swatch_150x150.jpg")
 
+babyblueuvl = Floss.create(dmc_number: 3756, dmc_name: "Baby Blue Ultra Very Light", red: 238, green: 252, blue: 252, hex: "#eefcfc", image: "https://static1.dmc.com/cache/1/1/117mc_e_3756_swatch_150x150.jpg")
+babybluevl = Floss.create(dmc_number: 775, dmc_name: "Baby Blue Very Light", red: 214=7, green: 235, blue: 241, hex: "#d9ebf1", image: "https://static1.dmc.com/cache/1/1/117mc_e_775_swatch_150x150.jpg")
+babybluep = Floss.create(dmc_number: 3841, dmc_name: "Baby Blue Pale", red: 205, green: 223, blue: 237, hex: "#cddfed", image: "https://static1.dmc.com/cache/1/1/117mc_e_3841_swatch_150x150.jpg")
+babybluel = Floss.create(dmc_number: 3325, dmc_name: "Baby Blue Light", red: 184, green: 210, blue: 230, hex: "#b8d2e6", image: "https://static1.dmc.com/cache/1/1/117mc_e_3325_swatch_150x150.jpg")
+babyblue = Floss.create(dmc_number: 3755, dmc_name: "Baby Blue", red: 147, green: 180, blue: 206, hex: "#92b4ce", image: "https://static1.dmc.com/cache/1/1/117mc_e_3755_swatch_150x150.jpg")
+babybluem = Floss.create(dmc_number: 334, dmc_name: "Baby Blue Medium", red: 115, green: 159, blue: 193, hex: "#739fc1", image: "https://static1.dmc.com/cache/1/1/117mc_e_334_swatch_150x150.jpg")
+babyblued = Floss.create(dmc_number: 322, dmc_name: "Baby Blue Dark", red: 90, green: 143, blue: 184, hex: "#5a8fb8", image: "https://static1.dmc.com/cache/1/1/117mc_e_322_swatch_150x150.jpg")
+babybluevd = Floss.create(dmc_number: 312, dmc_name: "Baby Blue Very Dark", red: 53, green: 102, blue: 139, hex: "#35668b", image: "https://static1.dmc.com/cache/1/1/117mc_e_312_swatch_150x150.jpg")
+babyblueuvd = Floss.create(dmc_number: 803, dmc_name: "Baby Blue Ultra Very Dark", red: 44, green: 89, blue: 124, hex: "#2c597c", image: "https://static1.dmc.com/cache/1/1/117mc_e_803_swatch_150x150.jpg")
 
+navyblue = Floss.create(dmc_number: 336, dmc_name: "Navy Blue", red: 37, green: 59, blue: 115, hex: "#253b73", image: "https://static1.dmc.com/cache/1/1/117mc_e_336_swatch_150x150.jpg")
+navyblued = Floss.create(dmc_number: 823, dmc_name: "Navy Blue Dark", red: 33, green: 48, blue: 99, hex: "#213063", image: "https://static1.dmc.com/cache/1/1/117mc_e_823_swatch_150x150.jpg")
+navybluevd = Floss.create(dmc_number: 939, dmc_name: "Navy Blue Very Dark", red: 27, green: 40, blue: 83, hex: "#1b2853", image: "https://static1.dmc.com/cache/1/1/117mc_e_824_swatch_150x150.jpg")
 
+anbuvl = Floss.create(dmc_number: 3753, dmc_name: "Antique Blue Ultra Very Light", red: 219, green: 226, blue: 233, hex: "#dbe2e9", image: "https://static1.dmc.com/cache/1/1/117mc_e_3753_swatch_150x150.jpg")
+anbvl = Floss.create(dmc_number: 3752, dmc_name: "Antique Blue Very Light", red: 199, green: 209, blue: 219, hex: "#c7d1db", image: "https://static1.dmc.com/cache/1/1/117mc_e_3752_swatch_150x150.jpg")
+anbl = Floss.create(dmc_number: 932, dmc_name: "Antique Blue Light", red: 162, green: 181, blue: 198, hex: "#a2b5c6", image: "https://static1.dmc.com/cache/1/1/117mc_e_932_swatch_150x150.jpg")
+anbm = Floss.create(dmc_number: 931, dmc_name: "Antique Blue Medium", red: 106, green: 133, blue: 158, hex: "#6a859e", image: "https://static1.dmc.com/cache/1/1/117mc_e_931_swatch_150x150.jpg")
+anbd = Floss.create(dmc_number: 930, dmc_name: "Antique Blue Dark", red: 69, green: 92, blue: 113, hex: "#455c71", image: "https://static1.dmc.com/cache/1/1/117mc_e_930_swatch_150x150.jpg")
+anbvd = Floss.create(dmc_number: 3750, dmc_name: "Antique Blue Very Dark", red: 56, green: 76, blue: 94, hex: "#384c5e", image: "https://static1.dmc.com/cache/1/1/117mc_e_3750_swatch_150x150.jpg")
 
+skybluevl = Floss.create(dmc_number: 828, dmc_name: "Sky Blue Very Light", red: 197, green: 232, blue: 237, hex: "#c5e8ed", image: "https://static1.dmc.com/cache/1/1/117mc_e_828_swatch_150x150.jpg")
+skybluel = Floss.create(dmc_number: 3761, dmc_name: "Sky Blue Light", red: 172, green: 216, blue: 226, hex: "#acd8e2", image: "https://static1.dmc.com/cache/1/1/117mc_e_3761_swatch_150x150.jpg")
+skyblue = Floss.create(dmc_number: 519, dmc_name: "Sky Blue", red: 126, green: 177, blue: 200, hex: "#7eb1c8", image: "https://static1.dmc.com/cache/1/1/117mc_e_519_swatch_150x150.jpg")
 
+wedgewoodl = Floss.create(dmc_number: 518, dmc_name: "Wedgewood Light", red: 79, green: 147, blue: 167, hex: "#4f93a7", image: "https://static1.dmc.com/cache/1/1/117mc_e_518_swatch_150x150.jpg")
+wedgewoodm = Floss.create(dmc_number: 3760, dmc_name: "Wedgewood Medium", red: 62, green: 133, blue: 162, hex: "#3e85a2", image: "https://static1.dmc.com/cache/1/1/117mc_e_3760_swatch_150x150.jpg")
+wedgewoodd = Floss.create(dmc_number: 517, dmc_name: "Wedgewood Dark", red: 59, green: 118, blue: 143, hex: "#3b768f", image: "https://static1.dmc.com/cache/1/1/117mc_e_517_swatch_150x150.jpg")
+wedgewoodvd = Floss.create(dmc_number: 3842, dmc_name: "Wedgewood Very Dark", red: 50, green: 102, blue: 124, hex: "#32667c", image: "https://static1.dmc.com/cache/1/1/117mc_e_3842_swatch_150x150.jpg")
+wedgewooduvd = Floss.create(dmc_number: 311, dmc_name: "Wedgewood Ultra Very Dark", red: 28, green: 80, blue: 102, hex: "#1c5066", image: "https://static1.dmc.com/cache/1/1/117mc_e_311_swatch_150x150.jpg")
 
+peacockbluevl = Floss.create(dmc_number: 747, dmc_name: "Peacock Blue Very Light", red: 229, green: 252, blue: 253, hex: "#e5fcfd", image: "https://static1.dmc.com/cache/1/1/117mc_e_747_swatch_150x150.jpg")
+peacockbluel = Floss.create(dmc_number: 3766, dmc_name: "Peacock Blue Light", red: 153, green: 207, blue: 217, hex: "#99cfd9", image: "https://static1.dmc.com/cache/1/1/117mc_e_3766_swatch_150x150.jpg")
+peacockblue = Floss.create(dmc_number: 807, dmc_name: "Peacock Blue", red: 100, green: 171, blue: 186, hex: "#64abba", image: "https://static1.dmc.com/cache/1/1/117mc_e_807_swatch_150x150.jpg")
+peacockblued = Floss.create(dmc_number: 806, dmc_name: "Peacock Blue Dark", red: 61, green: 149, blue: 165, hex: "#3d95a5", image: "https://static1.dmc.com/cache/1/1/117mc_e_806_swatch_150x150.jpg")
+peacockbluevd = Floss.create(dmc_number: 3765, dmc_name: "Peacock Blue Very Dark", red: 52, green: 127, blue: 140, hex: "#347f8c", image: "https://static1.dmc.com/cache/1/1/117mc_e_3765_swatch_150x150.jpg")
 
+turquoisevl = Floss.create(dmc_number: 3811, dmc_name: "Turquoise Very Light", red: 188, green: 227, blue: 230, hex: "#bce3e6", image: "https://static1.dmc.com/cache/1/1/117mc_e_3811_swatch_150x150.jpg")
+turquoisel = Floss.create(dmc_number: 598, dmc_name: "Turquoise Light", red: 144, green: 195, blue: 204, hex: "#90c3cc", image: "https://static1.dmc.com/cache/1/1/117mc_e_598_swatch_150x150.jpg")
+turquoise = Floss.create(dmc_number: 597, dmc_name: "Turquoise", red: 91, green: 163, blue: 179, hex: "#5ba3b3", image: "https://static1.dmc.com/cache/1/1/117mc_e_597_swatch_150x150.jpg")
+turquoised = Floss.create(dmc_number: 3810, dmc_name: "Turquoise Dark", red: 72, green: 142, blue: 154, hex: "#488e9a", image: "https://static1.dmc.com/cache/1/1/117mc_e_3810_swatch_150x150.jpg")
+turquoisevd = Floss.create(dmc_number: 3809, dmc_name: "Turquoise Very Dark", red: 63, green: 124, blue: 133, hex: "#3f7c85", image: "https://static1.dmc.com/cache/1/1/117mc_e_3809_swatch_150x150.jpg")
+turquoiseuvd = Floss.create(dmc_number: 3808, dmc_name: "Turquoise Ultra Very Dark", red: 54, green: 105, blue: 112, hex: "#366970", image: "https://static1.dmc.com/cache/1/1/117mc_e_3808_swatch_150x150.jpg")
 
+graygreenvl = Floss.create(dmc_number: 928, dmc_name: "Gray Green Very Light", red: 221, green: 227, blue: 227, hex: "#dde3e3", image: "https://static1.dmc.com/cache/1/1/117mc_e_928_swatch_150x150.jpg")
+graygreenl = Floss.create(dmc_number: 927, dmc_name: "Gray Green Light", red: 189, green: 203, blue: 203, hex: "#bdcbcb", image: "https://static1.dmc.com/cache/1/1/117mc_e_927_swatch_150x150.jpg")
+graygreenm = Floss.create(dmc_number: 926, dmc_name: "Gray Green Medium", red: 152, green: 174, blue: 174, hex: "#98aeae", image: "https://static1.dmc.com/cache/1/1/117mc_e_926_swatch_150x150.jpg")
+graygreend = Floss.create(dmc_number: 3768, dmc_name: "Gray Green Dark", red: 101, green: 127, blue: 127, hex: "#657f7f", image: "https://static1.dmc.com/cache/1/1/117mc_e_3768_swatch_150x150.jpg")
+graygreenvd = Floss.create(dmc_number: 924, dmc_name: "Gray Green Very Dark", red: 86, green: 106, blue: 106, hex: "#566a6a", image: "https://static1.dmc.com/cache/1/1/117mc_e_924_swatch_150x150.jpg")
 
+tealgreenl = Floss.create(dmc_number: 3849, dmc_name: "Teal Green Light", red: 82, green: 179, blue: 164, hex: "#52b3ae", image: "https://static1.dmc.com/cache/1/1/117mc_e_3849_swatch_150x150.jpg")
+tealgreenm = Floss.create(dmc_number: 3848, dmc_name: "Teal Green Medium", red: 85, green: 147, blue: 146, hex: "#419392", image: "https://static1.dmc.com/cache/1/1/117mc_e_3848_swatch_150x150.jpg")
+tealgreend = Floss.create(dmc_number: 3847, dmc_name: "Teal Green Dark", red: 52, green: 125, blue: 117, hex: "#347d75", image: "https://static1.dmc.com/cache/1/1/117mc_e_3847_swatch_150x150.jpg")
 
+seagreenl = Floss.create(dmc_number: 964, dmc_name: "Sea Green Light", red: 169, green: 226, blue: 216, hex: "#a9e2d8", image: "https://static1.dmc.com/cache/1/1/117mc_e_964_swatch_150x150.jpg")
+seagreenm = Floss.create(dmc_number: 959, dmc_name: "Sea Green Medium", red: 89, green: 199, blue: 180, hex: "#59c7b4", image: "https://static1.dmc.com/cache/1/1/117mc_e_959_swatch_150x150.jpg")
+seagreend = Floss.create(dmc_number: 958, dmc_name: "Sea Green Dark", red: 62, green: 182, blue: 161, hex: "#3eb6a1", image: "https://static1.dmc.com/cache/1/1/117mc_e_958_swatch_150x150.jpg")
+seagreenvd = Floss.create(dmc_number: 3812, dmc_name: "Sea Green Very Dark", red: 47, green: 140, blue: 132, hex: "#2f8c84", image: "https://static1.dmc.com/cache/1/1/117mc_e_3812_swatch_150x150.jpg")
 
+greenbl = Floss.create(dmc_number: 3851, dmc_name: "Green Bright Light", red: 73, green: 179, blue: 161, hex: "#49b3a1", image: "https://static1.dmc.com/cache/1/1/117mc_e_3851_swatch_150x150.jpg")
+greenbm = Floss.create(dmc_number: 943, dmc_name: "Green Bright Medium", red: 61, green: 147, blue: 132, hex: "#3d9384", image: "https://static1.dmc.com/cache/1/1/117mc_e_943_swatch_150x150.jpg")
+greenbd = Floss.create(dmc_number: 3850, dmc_name: "Green Bright Dark", red: 55, green: 132, blue: 119, hex: "#378477", image: "https://static1.dmc.com/cache/1/1/117mc_e_3850_swatch_150x150.jpg")
 
+aquamarinevl = Floss.create(dmc_number: 993, dmc_name: "Aquamarine Very Light", red: 144, green: 192, blue: 180, hex: "#90c0b4", image: "https://static1.dmc.com/cache/1/1/117mc_e_993_swatch_150x150.jpg")
+aquamarinel = Floss.create(dmc_number: 992, dmc_name: "Aquamarine Light", red: 111, green: 174, blue: 159, hex: "#6fae9f", image: "https://static1.dmc.com/cache/1/1/117mc_e_992_swatch_150x150.jpg")
+aquamarine = Floss.create(dmc_number: 3814, dmc_name: "Aquamarine", red: 80, green: 139, blue: 125, hex: "#508b7d", image: "https://static1.dmc.com/cache/1/1/117mc_e_3814_swatch_150x150.jpg")
+aquamarined = Floss.create(dmc_number: 991, dmc_name: "Aquamarine Dark", red: 71, green: 123, blue: 110, hex: "#42756a", image: "https://static1.dmc.com/cache/1/1/117mc_e_991_swatch_150x150.jpg")
 
-
-
-pgvd = Floss.create(dmc_number: 3799, dmc_name: "Pewter Gray Very Dark", red: 66, green: 66, blue: 66, hex: "#424242", image: "https://static1.dmc.com/cache/1/1/117mc_e_3799_swatch_150x150.jpg")
+pgvd = Floss.create(dmc_number: 3799, dmc_name: "Pewter Gray Very Dark", red: 66, green: 66, blue: 66, hex: "#424242", image: "https://static1.dmc.com/cache/1/1/117mc_e_939_swatch_150x150.jpg")
 
 
 #userfloss
