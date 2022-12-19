@@ -269,7 +269,5 @@ uf9 = UserFloss.create(user: user3, floss: salmon)
 
 #project
 p1 = Project.create(title: "test project", user_id: 1, image: "https://dza2a2ql7zktf.cloudfront.net/binaries-cdn/dqzqcuqf9/image/fetch/q_auto,h_920,w_920,dpr_auto,c_fit,f_auto/https://d2u3kfwd92fzu7.cloudfront.net/catalog/artwork/gallery/1140/EK12-1606_Color_Squares_4-2.jpg")
-
-
 pc1 = ProjectColor.create(hex: "ffe2e2", project: p1, floss: svl)
 
