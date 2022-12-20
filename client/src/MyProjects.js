@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
+
 function MyProjects({currentUser}){
 const [myProjects, setMyProjects] = useState([])
+const [hasProjects, setHasProjects] = useState(false)
 
 
     useEffect(() => {
@@ -10,45 +13,42 @@ const [myProjects, setMyProjects] = useState([])
                 setMyProjects(data)
                 console.log(data)
             });
+            if (myProjects.length <= 0) {
+                setHasProjects(true)
+            }
+            console.log(hasProjects)
     }, []);
 
-    // let myProjectsList
-    // if (!currentUser)  {
-    //     myProjectsList = <p>Loading...</p>
-    //   } else {
-    //     myProjectsList= myProjects.map((project) => {
-    //         return (
-    //             <div>
-    //                 <h1>{project.title}</h1>
-    //                 <img src={project.image} alt={project.title} />
-    //                 <div></div>
-    //             </div>
-    //         )
-    //     })
-    //   }
+  
 const myProjectsList = myProjects.map((project) => {
+    console.log(project.project_colors.map(color => color.floss_id))
         return (
             <div className="projectCard">
                 <h1>{project.title}</h1>
-                <img src={project.image} alt={project.title} />
-                {/* <div>{project.flosses.map}</div> */}
+                <img className="projectImage" src={project.image} alt={project.title} />
+                {/* <div>
+                    {project.project_colors.map((color) => {
+                        <h1>{color.dmc_name}</h1>
+                    })}
+                </div> */}
             </div>
         )
     })
 
-    // const myProjectColors = myProjects.map((project) => {
-    //    project.flosses.map((project_colors) => {
-    //           return (
-    //             <div>
-    //                  <p>{project_colors.hex}</p>
-    //             </div>
-    //           )
-    //    })
-    // })
+ 
     return (
         <div>
         <p>My Projects</p>
+        {hasProjects ? 
         <div className='projectContainer'>{myProjectsList}</div>
+        :
+        <p>You have no projects!
+            <br />
+            <Link to='/projects'>
+        <button className="project">Start A New One</button>
+            </Link>
+        </p> }
+        
         </div>
     )
 }

@@ -38,3 +38,11 @@ grid-area: "card";
 display: flex;
 flex-direction: row;
 }
+/* 
+.projectCard {
+  max-width: 300px;
+} */
+.projectImage {
+  max-width: 400px;
+  max-height: 400px;
+}
