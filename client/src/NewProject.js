@@ -10,7 +10,7 @@ const [src, setSrc] = useState('')
 const [title, setTitle] = useState('')
 const [project, setProject] = useState([])
 const [projectThread, setProjectThread] = useState([])
-const [dmc, setDMC] = useState([])
+const [renderThreads, setRenderThreads] = useState([])
 
 
 function getColors(colorSwatch) {
@@ -21,6 +21,7 @@ function getColors(colorSwatch) {
 function handleSubmit(e){
 e.preventDefault()
 setSrc(image)
+
 }
 
 
@@ -62,11 +63,6 @@ const colorSwatches = colors.map((color, i) => {
   )
 })
 
-// const colorThread = colors.map((color, i) => {
-//     return (
-//     <ProjectThreads key={i} color={color} i={i} colors={colors} currentUser={currentUser}/>
-//     )
-//   })
 const colorVals = colors.map((color) => {
     return (
         `${parseInt(color[0])}, ${parseInt(color[1])}, ${parseInt(color[2])}`
@@ -81,7 +77,7 @@ return (
     </ColorExtractor>
         {colorSwatches}
     <div>
-    <ProjectThreads colors={colors} colorVals={colorVals} setProjectThread={setProjectThread} projectThread={projectThread}/>
+    <ProjectThreads colors={colors} colorVals={colorVals} setProjectThread={setProjectThread} projectThread={projectThread} setRenderThreads={setRenderThreads}/>
     </div>
     <form className='newProjectImage' onSubmit={handleSubmit} >
         <input 

@@ -1,9 +1,11 @@
+import AdjustFloss from "./AdjustFloss";
 import { useState, useEffect} from "react"
+import ProjectThreadCard from "./ProjectThreadCard";
 var DeltaE = require('delta-e');
 var chromatism = require('chromatism');
 
 
-function ProjectThreads({colors, colorVals, currentUser, setProjectThread, projectThread}){
+function ProjectThreads({colors, colorVals, currentUser, setProjectThread, projectThread, setRenderThreads}){
     const [projectFloss, setProjectFloss] = useState([])
     const [dmc, setDmc] = useState([])
     const [savedThreads, setSavedThreads] = useState([])
@@ -82,6 +84,7 @@ closestThread.push(projectFloss[colorArray6.indexOf(Math.min(...colorArray6))])
 console.log(closestThread)
 setDmc(closestThread)
 setSavedThreads(closestThread)
+setRenderThreads(closestThread)
 }
 
 
@@ -110,15 +113,9 @@ function addRed(c){
   testColor.push(changeThread)
   }
   newColor.push(projectFloss[testColor.indexOf(Math.min(...testColor))])
-  moreRed.push(newColor)
+  setMoreRed([...moreRed, newColor])
   console.log(moreRed)
   }
-
-
-
-
-const dmcColors = projectFloss.map(pf => `${pf.red}, ${pf.green}, ${pf.blue}`)
-
 
 function showMe(){
   getColorConvert()
@@ -131,19 +128,17 @@ console.log(projectThread)
 
 
 const myThreadCard = dmc.map(d => {
-  return (
-    <div>
-      <h2>{d.dmc_name}</h2>
-      <img src={d.image}></img>
-      <button onClick={() => saveMyThreads(d)}>Save thread to my project</button>
-      <button onClick ={() => addRed(dmc.indexOf(d))}>more red</button>
-    </div>
-  )
+  return <ProjectThreadCard d={d} saveMyThreads={saveMyThreads} addRed={addRed} dmc={dmc} />
+})
+
+const newReds = moreRed.map(n => {
+  return <AdjustFloss n={n}/>
 })
 
 return (
     <div>
-{myThreadCard}
+    {myThreadCard}
+    {newReds}
     <button onClick={showMe}>Show my threads!</button>
 
 </div>
