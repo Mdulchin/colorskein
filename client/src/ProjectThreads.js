@@ -3,11 +3,11 @@ var DeltaE = require('delta-e');
 var chromatism = require('chromatism');
 
 
-
 function ProjectThreads({colors, colorVals, currentUser, setProjectThread, projectThread}){
     const [projectFloss, setProjectFloss] = useState([])
     const [dmc, setDmc] = useState([])
     const [savedThreads, setSavedThreads] = useState([])
+    const [moreRed, setMoreRed] = useState([])
 
 useEffect(() => {
     fetch('/flosses')
@@ -81,7 +81,39 @@ closestThread.push(projectFloss[colorArray5.indexOf(Math.min(...colorArray5))])
 closestThread.push(projectFloss[colorArray6.indexOf(Math.min(...colorArray6))])
 console.log(closestThread)
 setDmc(closestThread)
+setSavedThreads(closestThread)
 }
+
+
+function addRed(c){
+  const color1 = savedThreads[c].hex
+  console.log(color1)
+  const lab1 = chromatism.convert(color1).cielab
+  const color2 = (chromatism.hue(10, color1).hex)
+  const lab2 = chromatism.convert(color2).cielab
+
+  const col1 = {
+    L: lab1.L,
+    A: lab1.a, 
+    B: lab1.b
+  }
+
+  const col2 = {
+    L: lab2.L,
+    A: lab2.a, 
+    B: lab2.b
+  }
+  const testColor =[]
+   const newColor = []
+  for (let i = 0; i < labThreadColors.length; i++){
+  let changeThread = (DeltaE.getDeltaE00(col2, labThreadColors[i]))
+  testColor.push(changeThread)
+  }
+  newColor.push(projectFloss[testColor.indexOf(Math.min(...testColor))])
+  moreRed.push(newColor)
+  console.log(moreRed)
+  }
+
 
 
 
@@ -104,6 +136,7 @@ const myThreadCard = dmc.map(d => {
       <h2>{d.dmc_name}</h2>
       <img src={d.image}></img>
       <button onClick={() => saveMyThreads(d)}>Save thread to my project</button>
+      <button onClick ={() => addRed(dmc.indexOf(d))}>more red</button>
     </div>
   )
 })

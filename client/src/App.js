@@ -48,10 +48,13 @@ function App() {
       <Link to='/'>
         <button className='home'>Home</button>
       </Link>
+      {currentUser ?
       <Link to='/projects'>
         <button className="project">Create a New Project</button>
     </Link>
-
+    :
+    null 
+    }
       {currentUser ? 
       <Link to='/'>
         <button className='button' onClick={handleLogOut}>Log out</button>
