@@ -7,11 +7,11 @@ function Home({currentUser}){
 
 return (
   
-    <div className="home">    
+    <div className="home">  
     <h1>HOME</h1>
-     <Link to='/projects'>
+     {/* <Link to='/projects'>
         <button className="project">Create a New Project</button>
-    </Link>
+    </Link> */}
     <Floss currentUser={currentUser}/>
     </div>
  

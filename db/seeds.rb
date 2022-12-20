@@ -215,7 +215,7 @@ wedgewooduvd = Floss.create(dmc_number: 311, dmc_name: "Wedgewood Ultra Very Dar
 peacockbluevl = Floss.create(dmc_number: 747, dmc_name: "Peacock Blue Very Light", red: 229, green: 252, blue: 253, hex: "#e5fcfd", image: "https://static1.dmc.com/cache/1/1/117mc_e_747_swatch_150x150.jpg")
 peacockbluel = Floss.create(dmc_number: 3766, dmc_name: "Peacock Blue Light", red: 153, green: 207, blue: 217, hex: "#99cfd9", image: "https://static1.dmc.com/cache/1/1/117mc_e_3766_swatch_150x150.jpg")
 peacockblue = Floss.create(dmc_number: 807, dmc_name: "Peacock Blue", red: 100, green: 171, blue: 186, hex: "#64abba", image: "https://static1.dmc.com/cache/1/1/117mc_e_807_swatch_150x150.jpg")
-peacockblued = Floss.create(dmc_number: 806, dmc_name: "Peacock Blue Dark", red: 61, green: 149, blue: 165, hex: "#3d95a5", image: "https://static1.dmc.com/cache/1/1/117mc_e_806_swatch_150x150.jpg")
+# peacockblued = Floss.create(dmc_number: 806, dmc_name: "Peacock Blue Dark", red: 61, green: 149, blue: 165, hex: "#3d95a5", image: "https://static1.dmc.com/cache/1/1/117mc_e_806_swatch_150x150.jpg")
 peacockbluevd = Floss.create(dmc_number: 3765, dmc_name: "Peacock Blue Very Dark", red: 52, green: 127, blue: 140, hex: "#347f8c", image: "https://static1.dmc.com/cache/1/1/117mc_e_3765_swatch_150x150.jpg")
 
 turquoisevl = Floss.create(dmc_number: 3811, dmc_name: "Turquoise Very Light", red: 188, green: 227, blue: 230, hex: "#bce3e6", image: "https://static1.dmc.com/cache/1/1/117mc_e_3811_swatch_150x150.jpg")
@@ -249,6 +249,41 @@ aquamarinel = Floss.create(dmc_number: 992, dmc_name: "Aquamarine Light", red: 1
 aquamarine = Floss.create(dmc_number: 3814, dmc_name: "Aquamarine", red: 80, green: 139, blue: 125, hex: "#508b7d", image: "https://static1.dmc.com/cache/1/1/117mc_e_3814_swatch_150x150.jpg")
 aquamarined = Floss.create(dmc_number: 991, dmc_name: "Aquamarine Dark", red: 71, green: 123, blue: 110, hex: "#42756a", image: "https://static1.dmc.com/cache/1/1/117mc_e_991_swatch_150x150.jpg")
 
+jadeuvl = Floss.create(dmc_number: 966, dmc_name: "Jade Ultra Very Light", red: 185, green: 215, blue: 192, hex: "#b9d7c0", image: "https://static1.dmc.com/cache/1/1/117mc_e_966_swatch_150x150.jpg")
+jadevl = Floss.create(dmc_number: 564, dmc_name: "Jade Very Light", red: 167, green: 205, blue: 175, hex: "#a7cdaf", image: "https://static1.dmc.com/cache/1/1/117mc_e_564_swatch_150x150.jpg")
+jadel = Floss.create(dmc_number: 563, dmc_name: "Jade Light", red: 143, green: 192, blue: 152, hex: "#8fc098", image: "https://static1.dmc.com/cache/1/1/117mc_e_563_swatch_150x150.jpg")
+jadem = Floss.create(dmc_number: 562, dmc_name: "Jade Medium", red: 83, green: 151, blue: 106, hex: "#53976a", image: "https://static1.dmc.com/cache/1/1/117mc_e_562_swatch_150x150.jpg")
+jadegreen = Floss.create(dmc_number: 505, dmc_name: "Jade Green", red: 51, green: 131, blue: 98, hex: "#338362", image: "https://static1.dmc.com/cache/1/1/117mc_e_505_swatch_150x150.jpg")
+
+celadongreenl = Floss.create(dmc_number: 3817, dmc_name: "Celadon Green Light", red: 153, green: 195, blue: 170, hex: "#99c3aa", image: "https://static1.dmc.com/cache/1/1/117mc_e_3817_swatch_150x150.jpg")
+celadongreen = Floss.create(dmc_number: 3816, dmc_name: "Celadon Green", red: 101, green: 165, blue: 125, hex: "#65a57d", image: "https://static1.dmc.com/cache/1/1/117mc_e_3816_swatch_150x150.jpg")
+celadongreenm = Floss.create(dmc_number: 163, dmc_name: "Celadon Green Medium", red: 77, green: 131, blue: 97, hex: "#4d8361", image: "https://static1.dmc.com/cache/1/1/117mc_e_163_swatch_150x150.jpg")
+celadongreend = Floss.create(dmc_number: 3815, dmc_name: "Celadon Green Dark", red: 71, green: 119, blue: 89, hex: "#477759", image: "https://static1.dmc.com/cache/1/1/117mc_e_3815_swatch_150x150.jpg")
+celadongreenvd = Floss.create(dmc_number: 561, dmc_name: "Celadon Green Very Dark", red: 44, green: 106, blue: 69, hex: "#2c6a45", image: "https://static1.dmc.com/cache/1/1/117mc_e_561_swatch_150x150.jpg")
+
+bluegreenvl = Floss.create(dmc_number: 504, dmc_name: "Blue Green Very Light", red: 196, green: 222, blue: 204, hex: "#c4decc", image: "https://static1.dmc.com/cache/1/1/117mc_e_504_swatch_150x150.jpg")
+bluegreenl = Floss.create(dmc_number: 3813, dmc_name: "Blue Green Light", red: 178, green: 212, blue: 189, hex: "#ab2d4bd", image: "https://static1.dmc.com/cache/1/1/117mc_e_3813_swatch_150x150.jpg")
+bluegreenm = Floss.create(dmc_number: 503, dmc_name: "Blue Green Medium", red: 123, green: 172, blue: 148, hex: "#7bac94", image: "https://static1.dmc.com/cache/1/1/117mc_e_503_swatch_150x150.jpg")
+bluegreen = Floss.create(dmc_number: 502, dmc_name: "Blue Green", red: 91, green: 144, blue: 113, hex: "#5b9071", image: "https://static1.dmc.com/cache/1/1/117mc_e_502_swatch_150x150.jpg")
+bluegreend = Floss.create(dmc_number: 501, dmc_name: "Blue Green Dark", red: 57, green: 111, blue: 82, hex: "#396f52", image: "https://static1.dmc.com/cache/1/1/117mc_e_501_swatch_150x150.jpg")
+bluegreenvd = Floss.create(dmc_number: 500, dmc_name: "Blue Green Very Dark", red: 4, green: 77, blue: 51, hex: "#004d33", image: "https://static1.dmc.com/cache/1/1/117mc_e_500_swatch_150x150.jpg")
+
+nilegreenl = Floss.create(dmc_number: 955, dmc_name: "Nile Green Light", red: 162, green: 214, blue: 173, hex: "#a2d6ad", image: "https://static1.dmc.com/cache/1/1/117mc_e_955_swatch_150x150.jpg")
+nilegreen = Floss.create(dmc_number: 954, dmc_name: "Nile Green", red: 136, green: 186, blue: 145, hex: "#88ba91", image: "https://static1.dmc.com/cache/1/1/117mc_e_954_swatch_150x150.jpg")
+nilegreenm = Floss.create(dmc_number: 913, dmc_name: "Nile Green Medium", red: 109, green: 171, blue: 119, hex: "#6dab77", image: "https://static1.dmc.com/cache/1/1/117mc_e_913_swatch_150x150.jpg")
+
+emeraldgl = Floss.create(dmc_number: 912, dmc_name: "Emerald Green Light", red: 27, green: 157, blue: 107, hex: "#1b9d6b", image: "https://static1.dmc.com/cache/1/1/117mc_e_912_swatch_150x150.jpg")
+emeraldgm = Floss.create(dmc_number: 911, dmc_name: "Emerald Green Medium", red: 24, green: 144, blue: 101, hex: "#189065", image: "https://static1.dmc.com/cache/1/1/117mc_e_911_swatch_150x150.jpg")
+emeraldgd = Floss.create(dmc_number: 910, dmc_name: "Emerald Green Dark", red: 24, green: 126, blue: 86, hex: "#187e56", image: "https://static1.dmc.com/cache/1/1/117mc_e_910_swatch_150x150.jpg")
+emeraldgvd = Floss.create(dmc_number: 909, dmc_name: "Emerald Green Very Dark", red: 21, green: 111, blue: 73, hex: "#156f49", image: "https://static1.dmc.com/cache/1/1/117mc_e_909_swatch_150x150.jpg")
+emeraldgvd = Floss.create(dmc_number: 3818, dmc_name: "Emerald Green Ultra Very Dark", red: 17, green: 90, blue: 59, hex: "#115a3b", image: "https://static1.dmc.com/cache/1/1/117mc_e_3818_swatch_150x150.jpg")
+
+pistachiogvl = Floss.create(dmc_number: 369, dmc_name: "Pistachio Green Very Light", red: 215, green: 237, blue: 204, hex: "#d7edcc", image: "https://static1.dmc.com/cache/1/1/117mc_e_369_swatch_150x150.jpg")
+pistachiogl = Floss.create(dmc_number: 368, dmc_name: "Pistachio Green Light", red: 166, green: 194, blue: 152, hex: "#a6c298", image: "https://static1.dmc.com/cache/1/1/117mc_e_368_swatch_150x150.jpg")
+pistachiogm = Floss.create(dmc_number: 320, dmc_name: "Pistachio Green Medium", red: 105, green: 136, blue: 90, hex: "#69885a", image: "https://static1.dmc.com/cache/1/1/117mc_e_320_swatch_150x150.jpg")
+pistachiogd = Floss.create(dmc_number: 367, dmc_name: "Pistachio Green Dark", red: 97, green: 122, blue: 82, hex: "617a52", image: "https://static1.dmc.com/cache/1/1/117mc_e_367_swatch_150x150.jpg")
+pistachiogvd = Floss.create(dmc_number: 319, dmc_name: "Pistachio Green Very Dark", red: 32, green: 95, blue: 46, hex: "#205f2e", image: "https://static1.dmc.com/cache/1/1/117mc_e_319_swatch_150x150.jpg")
+pistachioguvd = Floss.create(dmc_number: 890, dmc_name: "Pistachio Green Ultra Very Dark", red: 23, green: 73, blue: 35, hex: "#184923", image: "https://static1.dmc.com/cache/1/1/117mc_e_890_swatch_150x150.jpg")
 
 pgvd = Floss.create(dmc_number: 3799, dmc_name: "Pewter Gray Very Dark", red: 66, green: 66, blue: 66, hex: "#424242", image: "https://static1.dmc.com/cache/1/1/117mc_e_3799_swatch_150x150.jpg")
 
