@@ -28,7 +28,7 @@ const [myProjects, setMyProjects] = useState([])
     //   }
 const myProjectsList = myProjects.map((project) => {
         return (
-            <div>
+            <div className="projectCard">
                 <h1>{project.title}</h1>
                 <img src={project.image} alt={project.title} />
                 {/* <div>{project.flosses.map}</div> */}

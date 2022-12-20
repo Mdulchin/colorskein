@@ -3,8 +3,6 @@ import {useEffect, useState } from 'react';
 import MyProjects from './MyProjects';
 import ProfileThreads from './ProfileThreads';
 function Profile({currentUser, logMeIn}){
-
-
   useEffect(() => {
 
     logMeIn()
@@ -15,7 +13,7 @@ if (!currentUser)  {
   myThreads = <p>Loading...</p>
 } else {
    myThreads = currentUser.flosses.map(floss => {
-    return <ProfileThreads floss={floss} key={floss.id} />
+    return <ProfileThreads floss={floss} key={floss.id}/>
   })
 }
 
