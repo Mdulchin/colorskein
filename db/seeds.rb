@@ -281,7 +281,7 @@ emeraldgvd = Floss.create(dmc_number: 3818, dmc_name: "Emerald Green Ultra Very 
 pistachiogvl = Floss.create(dmc_number: 369, dmc_name: "Pistachio Green Very Light", red: 215, green: 237, blue: 204, hex: "#d7edcc", image: "https://static1.dmc.com/cache/1/1/117mc_e_369_swatch_150x150.jpg")
 pistachiogl = Floss.create(dmc_number: 368, dmc_name: "Pistachio Green Light", red: 166, green: 194, blue: 152, hex: "#a6c298", image: "https://static1.dmc.com/cache/1/1/117mc_e_368_swatch_150x150.jpg")
 pistachiogm = Floss.create(dmc_number: 320, dmc_name: "Pistachio Green Medium", red: 105, green: 136, blue: 90, hex: "#69885a", image: "https://static1.dmc.com/cache/1/1/117mc_e_320_swatch_150x150.jpg")
-pistachiogd = Floss.create(dmc_number: 367, dmc_name: "Pistachio Green Dark", red: 97, green: 122, blue: 82, hex: "617a52", image: "https://static1.dmc.com/cache/1/1/117mc_e_367_swatch_150x150.jpg")
+pistachiogd = Floss.create(dmc_number: 367, dmc_name: "Pistachio Green Dark", red: 97, green: 122, blue: 82, hex: "#617a52", image: "https://static1.dmc.com/cache/1/1/117mc_e_367_swatch_150x150.jpg")
 pistachiogvd = Floss.create(dmc_number: 319, dmc_name: "Pistachio Green Very Dark", red: 32, green: 95, blue: 46, hex: "#205f2e", image: "https://static1.dmc.com/cache/1/1/117mc_e_319_swatch_150x150.jpg")
 pistachioguvd = Floss.create(dmc_number: 890, dmc_name: "Pistachio Green Ultra Very Dark", red: 23, green: 73, blue: 35, hex: "#184923", image: "https://static1.dmc.com/cache/1/1/117mc_e_890_swatch_150x150.jpg")
 

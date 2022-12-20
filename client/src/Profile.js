@@ -4,7 +4,6 @@ import MyProjects from './MyProjects';
 import ProfileThreads from './ProfileThreads';
 function Profile({currentUser, logMeIn}){
   useEffect(() => {
-
     logMeIn()
   }, [])
 

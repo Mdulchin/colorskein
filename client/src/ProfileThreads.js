@@ -1,5 +1,5 @@
 
-function ProfileThreads({floss, currentUser}){
+function ProfileThreads({floss}){
     function removeThread(e) {
         fetch(`/user_flosses/${floss.id}`, {
             method: 'DELETE',
