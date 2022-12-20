@@ -48,9 +48,9 @@ function App() {
       <Link to='/'>
         <button className='home'>Home</button>
       </Link>
-      {/* <Link to='/projects'>
+      <Link to='/projects'>
         <button className="project">Create a New Project</button>
-    </Link> */}
+    </Link>
 
       {currentUser ? 
       <Link to='/'>
