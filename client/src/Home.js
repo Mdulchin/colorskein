@@ -1,16 +1,25 @@
 import Floss from "./Floss";
-
+import {useState, useEffect } from "react";
 
 function Home({currentUser}){
+const [flossArray, setFlossArray] = useState([])
+
+  useEffect(() => {
+    fetch('/flosses')
+      .then(r => {
+        if (r.ok) {
+          r.json().then(data => setFlossArray(data))
+          
+        }
+      })
+  }, [])
+
 
 return (
   
     <div className="home">  
     <h1>HOME</h1>
-     {/* <Link to='/projects'>
-        <button className="project">Create a New Project</button>
-    </Link> */}
-    <Floss currentUser={currentUser}/>
+    <Floss currentUser={currentUser} flossArray={flossArray}/>
     </div>
  
 

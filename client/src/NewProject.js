@@ -44,19 +44,6 @@ fetch("/projects", {
 
 
 
-// fetch("/project_colors", {
-//     method: "POST", 
-//     headers: {
-//         "content-type": "application/json",
-//     },
-//     body: JSON.stringify({
-//         project_id: project.id,
-//         hex: colors,
-//     })
-// })
-// .then(res => res.json())
-// .then(data => console.log(data))
-
 const colorSwatches = colors.map((color, i) => {
   return (
   <ProjectColors key={i} redVal={parseInt(color[0])} greenVal={parseInt(color[1])} blueVal={parseInt(color[2])} i={i} colors={colors} currentUser={currentUser}/>
@@ -79,7 +66,7 @@ return (
     <div>
     <ProjectThreads colors={colors} colorVals={colorVals} setProjectThread={setProjectThread} projectThread={projectThread} setRenderThreads={setRenderThreads}/>
     </div>
-    <form className='newProjectImage' onSubmit={handleSubmit} >
+    <form className='newProjectForm' onSubmit={handleSubmit} >
         <input 
             name="image"
             placeholder= "image url"

@@ -24,25 +24,54 @@ justify-content: space-evenly;
   border-style: dashed;
 }
 .projectCreator {
-  display: grid;
-  grid-template-areas: 
-  "image"
-  "card card card card"
-  ;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.newProjectImage{
-grid-area: "image";
+
+.projectThreads{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
+/* .newProjectform {
+  grid-area: "card";
+  display: flex;
+  flex-direction: row;
+} */
+.pthreadContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .colorSwatch {
 grid-area: "card";
 display: flex;
 flex-direction: row;
 }
-/* 
-.projectCard {
-  max-width: 300px;
-} */
+
+
+.myProf{
+text-align: center;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .projectImage {
   max-width: 400px;
   max-height: 400px;
+}
+
+.pflossImage {
+  padding: 3px;
+  max-width: 100px;
 }
