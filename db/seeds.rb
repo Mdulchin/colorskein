@@ -304,7 +304,7 @@ chartreuse = Floss.create(dmc_number: 703, dmc_name: "Chartreuse", red: 123, gre
 
 kellygreen = Floss.create(dmc_number: 702, dmc_name: "Kelly Green", red: 71, green: 167, blue: 47, hex: "#47a72f", image: "https://static1.dmc.com/cache/1/1/117mc_e_702_swatch_150x150.jpg")
 
-greenl = Floss.create(dmc_number: 701, dmc_name: "Green Light", red: 63, green: 143, blue: 41, hex: "3f8f29", image: "https://static1.dmc.com/cache/1/1/117mc_e_701_swatch_150x150.jpg")
+greenl = Floss.create(dmc_number: 701, dmc_name: "Green Light", red: 63, green: 143, blue: 41, hex: "#3f8f29", image: "https://static1.dmc.com/cache/1/1/117mc_e_701_swatch_150x150.jpg")
 greenb = Floss.create(dmc_number: 700, dmc_name: "Green Bright", red: 7, green: 115, blue: 27, hex: "#07731b", image: "https://static1.dmc.com/cache/1/1/117mc_e_700_swatch_150x150.jpg")
 green = Floss.create(dmc_number: 699, dmc_name: "Green", red: 5, green: 101, blue: 23, hex: "#056517", image: "https://static1.dmc.com/cache/1/1/117mc_e_699_swatch_150x150.jpg")
 
