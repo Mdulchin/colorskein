@@ -1,21 +1,11 @@
 import FlossContainer from "./FlossContainer";
 import Search from "./Search";
-import { useEffect, useState } from "react";
+import {useState } from "react";
 
 
-function Floss({currentUser}) {
-  const [flossArray, setFlossArray] = useState([])
+function Floss({currentUser, flossArray}) {
   const [search, setSearch] = useState('')
 
-  useEffect(() => {
-    fetch('/flosses')
-      .then(r => {
-        if (r.ok) {
-          r.json().then(data => setFlossArray(data))
-          
-        }
-      })
-  }, [])
  
   const flossSearch = flossArray.filter(floss => {
     if (floss.dmc_name.toLowerCase().includes(search.toLowerCase()))

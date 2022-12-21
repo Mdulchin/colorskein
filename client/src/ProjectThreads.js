@@ -139,7 +139,7 @@ const newShade = darkerShade.map(n => {
 })
 
 return (
-    <div>
+    <div className="projectThreads">
     {myThreadCard}
     {newShade}
     <button onClick={showMe}>Show my threads!</button>

@@ -18,7 +18,7 @@ if (!currentUser)  {
 }
 
 return (
-<div>
+<div className='myProf'>
     {!currentUser ?  <h1>nope</h1> : <h1>Hello, {currentUser.username}!</h1>}
     <p>My Threads</p>
    <div className='flossContainer'>{myThreads}</div>

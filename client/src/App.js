@@ -4,15 +4,16 @@ import Login from './Login';
 import Profile from './Profile';
 import {useEffect, useState } from 'react';
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
+  useNavigate
 } from "react-router-dom";
 import './App.css';
 
 
 function App() {
+  let navigate = useNavigate()
   const [currentUser, setCurrentUser] = useState(null)
 
   useEffect(() => logMeIn(), [])
@@ -25,26 +26,28 @@ function App() {
         }
       })
     }
- 
-
-  function handleLogOut() {
-    fetch('/logout', {
-      method: "DELETE"
-    }).then(r => {
-      if (r.ok) {
-        setCurrentUser(null)
-      }
-    })
-  }
-
-  function onLogin(currentUser) {
-    setCurrentUser(currentUser)
-  }
+    
+    
+    function handleLogOut() {
+      fetch('/logout', {
+        method: "DELETE"
+      }).then(r => {
+        if (r.ok) {
+          setCurrentUser(null)
+        }
+      })
+    }
+    
+    function onLogin(currentUser) {
+      setCurrentUser(currentUser)
+      navigate('/')
+    }
 
 
 
   return (
-    <Router>
+    // <Router>
+    <div>
       <Link to='/'>
         <button className='home'>Home</button>
       </Link>
@@ -79,7 +82,8 @@ function App() {
       <Route path='/me' element={<Profile currentUser={currentUser} logMeIn={logMeIn}/>}/>
       <Route path='/projects' element={<NewProject currentUser={currentUser}/>}/>
     </Routes>
-    </Router>
+    </div>
+    // </Router>
   );
 }
 
