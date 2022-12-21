@@ -1,7 +1,5 @@
 import Floss from "./Floss";
-import {
-    Link
-  } from "react-router-dom";
+
 
 function Home({currentUser}){
 
