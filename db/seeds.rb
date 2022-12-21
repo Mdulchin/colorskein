@@ -285,6 +285,77 @@ pistachiogd = Floss.create(dmc_number: 367, dmc_name: "Pistachio Green Dark", re
 pistachiogvd = Floss.create(dmc_number: 319, dmc_name: "Pistachio Green Very Dark", red: 32, green: 95, blue: 46, hex: "#205f2e", image: "https://static1.dmc.com/cache/1/1/117mc_e_319_swatch_150x150.jpg")
 pistachioguvd = Floss.create(dmc_number: 890, dmc_name: "Pistachio Green Ultra Very Dark", red: 23, green: 73, blue: 35, hex: "#184923", image: "https://static1.dmc.com/cache/1/1/117mc_e_890_swatch_150x150.jpg")
 
+forestgreenl = Floss.create(dmc_number: 164, dmc_name: "Forest Green Light", red: 200, green: 216, blue: 184, hex: "#c8d8b8", image: "https://static1.dmc.com/cache/1/1/117mc_e_164_swatch_150x150.jpg")
+forestgreen = Floss.create(dmc_number: 989, dmc_name: "Forest Green", red: 141, green: 166, blue: 117, hex: "#8da675", image: "https://static1.dmc.com/cache/1/1/117mc_e_989_swatch_150x150.jpg")
+forestgreenm = Floss.create(dmc_number: 988, dmc_name: "Forest Green Medium", red: 115, green: 139, blue: 91, hex: "#738b5b", image: "https://static1.dmc.com/cache/1/1/117mc_e_988_swatch_150x150.jpg")
+forestgreend = Floss.create(dmc_number: 987, dmc_name: "Forest Green Dark", red: 88, green: 113, blue: 65, hex: "#587141", image: "https://static1.dmc.com/cache/1/1/117mc_e_987_swatch_150x150.jpg")
+forestgreenvd = Floss.create(dmc_number: 986, dmc_name: "Forest Green Very Dark", red: 64, green: 82, blue: 48, hex: "#405230", image: "https://static1.dmc.com/cache/1/1/117mc_e_986_swatch_150x150.jpg")
+
+yellowgvl = Floss.create(dmc_number: 772, dmc_name: "Yellow Green Very Light", red: 228, green: 236, blue: 212, hex: "#e4ecd4", image: "https://static1.dmc.com/cache/1/1/117mc_e_772_swatch_150x150.jpg")
+yellowgl = Floss.create(dmc_number: 3348, dmc_name: "Yellow Green Light", red: 204, green: 217, blue: 177, hex: "#ccd9b1", image: "https://static1.dmc.com/cache/1/1/117mc_e_3348_swatch_150x150.jpg")
+yellowgm = Floss.create(dmc_number: 3347, dmc_name: "Yellow Green Medium", red: 113, green: 147, blue: 92, hex: "#71935c", image: "https://static1.dmc.com/cache/1/1/117mc_e_3347_swatch_150x150.jpg")
+
+huntergreen = Floss.create(dmc_number: 3346, dmc_name: "Hunter Green", red: 64, green: 106, blue: 58, hex: "#406a3a", image: "https://static1.dmc.com/cache/1/1/117mc_e_3346_swatch_150x150.jpg")
+huntergreend = Floss.create(dmc_number: 3345, dmc_name: "Hunter Green Dark", red: 27, green: 89, blue: 21, hex: "#1b5915", image: "https://static1.dmc.com/cache/1/1/117mc_e_3345_swatch_150x150.jpg")
+huntergreenvd = Floss.create(dmc_number: 895, dmc_name: "Hunter Green Very Dark", red: 27, green: 83, blue: 0, hex: "#1b5300", image: "https://static1.dmc.com/cache/1/1/117mc_e_895_swatch_150x150.jpg")
+
+chartreuseb = Floss.create(dmc_number: 704, dmc_name: "Chartreuse Bright", red: 158, green: 207, blue: 52, hex: "#9ecf34", image: "https://static1.dmc.com/cache/1/1/117mc_e_704_swatch_150x150.jpg")
+chartreuse = Floss.create(dmc_number: 703, dmc_name: "Chartreuse", red: 123, green: 181, blue: 71, hex: "#7bb547", image: "https://static1.dmc.com/cache/1/1/117mc_e_703_swatch_150x150.jpg")
+
+kellygreen = Floss.create(dmc_number: 702, dmc_name: "Kelly Green", red: 71, green: 167, blue: 47, hex: "#47a72f", image: "https://static1.dmc.com/cache/1/1/117mc_e_702_swatch_150x150.jpg")
+
+greenl = Floss.create(dmc_number: 701, dmc_name: "Green Light", red: 63, green: 143, blue: 41, hex: "3f8f29", image: "https://static1.dmc.com/cache/1/1/117mc_e_701_swatch_150x150.jpg")
+greenb = Floss.create(dmc_number: 700, dmc_name: "Green Bright", red: 7, green: 115, blue: 27, hex: "#07731b", image: "https://static1.dmc.com/cache/1/1/117mc_e_700_swatch_150x150.jpg")
+green = Floss.create(dmc_number: 699, dmc_name: "Green", red: 5, green: 101, blue: 23, hex: "#056517", image: "https://static1.dmc.com/cache/1/1/117mc_e_699_swatch_150x150.jpg")
+
+parrotgreenl = Floss.create(dmc_number: 907, dmc_name: "Parrot Green Light", red: 199, green: 230, blue: 102, hex: "#c7e666", image: "https://static1.dmc.com/cache/1/1/117mc_e_907_swatch_150x150.jpg")
+parrotgreenm = Floss.create(dmc_number: 906, dmc_name: "Parrot Green Medium", red: 127, green: 179, blue: 53, hex: "#7fb335", image: "https://static1.dmc.com/cache/1/1/117mc_e_906_swatch_150x150.jpg")
+parrotgreend = Floss.create(dmc_number: 905, dmc_name: "Parrot Green Dark", red: 98, green: 138, blue: 40, hex: "#628a28", image: "https://static1.dmc.com/cache/1/1/117mc_e_905_swatch_150x150.jpg")
+parrotgreenvd = Floss.create(dmc_number: 904, dmc_name: "Parrot Green Very Dark", red: 85, green: 120, blue: 34, hex: "#557822", image: "https://static1.dmc.com/cache/1/1/117mc_e_904_swatch_150x150.jpg")
+
+avocadogul = Floss.create(dmc_number: 472, dmc_name: "Avocado Green Ultra Light", red: 216, green: 228, blue: 152, hex: "#d8e498", image: "https://static1.dmc.com/cache/1/1/117mc_e_472_swatch_150x150.jpg")
+avocadogvl = Floss.create(dmc_number: 471, dmc_name: "Avocado Green Very Light", red: 174, green: 191, blue: 121, hex: "#aebf79", image: "https://static1.dmc.com/cache/1/1/117mc_e_471_swatch_150x150.jpg")
+avocadogl = Floss.create(dmc_number: 470, dmc_name: "Avocado Green Light", red: 148, green: 171, blue: 79, hex: "#94ab4f", image: "https://static1.dmc.com/cache/1/1/117mc_e_470_swatch_150x150.jpg")
+avocadog = Floss.create(dmc_number: 469, dmc_name: "Avocado Green", red: 114, green: 132, blue: 60, hex: "#72843c", image: "https://static1.dmc.com/cache/1/1/117mc_e_469_swatch_150x150.jpg")
+avocadogm = Floss.create(dmc_number: 937, dmc_name: "Avocado Green Medium", red: 98, green: 113, blue: 51, hex: "#627133", image: "https://static1.dmc.com/cache/1/1/117mc_e_937_swatch_150x150.jpg")
+avocadogvd = Floss.create(dmc_number: 936, dmc_name: "Avocado Green Very Dark", red: 76, green: 88, blue: 38, hex: "#4c5826", image: "https://static1.dmc.com/cache/1/1/117mc_e_936_swatch_150x150.jpg")
+avocadogd = Floss.create(dmc_number: 935, dmc_name: "Avocado Green Dark", red: 66, green: 77, blue: 33, hex: "#424d21", image: "https://static1.dmc.com/cache/1/1/117mc_e_935_swatch_150x150.jpg")
+avocadogb = Floss.create(dmc_number: 934, dmc_name: "Avocado Green Black", red: 49, green: 57, blue: 25, hex: "#313919", image: "https://static1.dmc.com/cache/1/1/117mc_e_934_swatch_150x150.jpg")
+
+ferngreenl = Floss.create(dmc_number: 523, dmc_name: "Fern Green Light", red: 171, green: 177, blue: 151, hex: "#abb197", image: "https://static1.dmc.com/cache/1/1/117mc_e_523_swatch_150x150.jpg")
+
+greengray = Floss.create(dmc_number: 3053, dmc_name: "Green Gray", red: 156, green: 164, blue: 130, hex: "#9ca482", image: "https://static1.dmc.com/cache/1/1/117mc_e_3053_swatch_150x150.jpg")
+greengraym = Floss.create(dmc_number: 3052, dmc_name: "Green Gray Medium", red: 136, green: 146, blue: 104, hex: "#889268", image: "https://static1.dmc.com/cache/1/1/117mc_e_3052_swatch_150x150.jpg")
+greengrayd = Floss.create(dmc_number: 3051, dmc_name: "Green Gray Dark", red: 95, green: 102, blue: 72, hex: "#5f6648", image: "https://static1.dmc.com/cache/1/1/117mc_e_3051_swatch_150x150.jpg")
+
+ferngreenvl = Floss.create(dmc_number: 524, dmc_name: "Fern Green Very Light", red: 196, green: 205, blue: 172, hex: "#c4cdac", image: "https://static1.dmc.com/cache/1/1/117mc_e_524_swatch_150x150.jpg")
+ferngreen = Floss.create(dmc_number: 522, dmc_name: "Fern Green", red: 150, green: 158, blue: 126, hex: "#969e7e", image: "https://static1.dmc.com/cache/1/1/117mc_e_522_swatch_150x150.jpg")
+ferngreend = Floss.create(dmc_number: 520, dmc_name: "Fern Green Dark", red: 102, green: 109, blue: 79, hex: "#666d4f", image: "https://static1.dmc.com/cache/1/1/117mc_e_520_swatch_150x150.jpg")
+
+pinegreen = Floss.create(dmc_number: 3364, dmc_name: "Pine Green", red: 131, green: 151, blue: 95, hex: "#83975f", image: "https://static1.dmc.com/cache/1/1/117mc_e_3364_swatch_150x150.jpg")
+pinegreenm = Floss.create(dmc_number: 3363, dmc_name: "Pine Green Medium", red: 114, green: 130, blue: 86, hex: "#728256", image: "https://static1.dmc.com/cache/1/1/117mc_e_3363_swatch_150x150.jpg")
+pinegreend = Floss.create(dmc_number: 3362, dmc_name: "Pine Green Dark", red: 94, green: 107, blue: 71, hex: "#5e6b47", image: "https://static1.dmc.com/cache/1/1/117mc_e_3362_swatch_150x150.jpg")
+
+mossgreenvl = Floss.create(dmc_number: 165, dmc_name: "Moss Green Very Light", red: 239, green: 244, blue: 164, hex: "#eff4a4", image: "https://static1.dmc.com/cache/1/1/117mc_e_165_swatch_150x150.jpg")
+mossgreenl = Floss.create(dmc_number: 3819, dmc_name: "Moss Green Light", red: 224, green: 232, blue: 104, hex: "#e0e868", image: "https://static1.dmc.com/cache/1/1/117mc_e_3819_swatch_150x150.jpg")
+mossgreenml = Floss.create(dmc_number: 166, dmc_name: "Moss Green Medium Light", red: 192, green: 200, blue: 64, hex: "#c0c840", image: "https://static1.dmc.com/cache/1/1/117mc_e_166_swatch_150x150.jpg")
+mossgreen = Floss.create(dmc_number: 581, dmc_name: "Moss Green", red: 167, green: 174, blue: 56, hex: "#a7ae38", image: "https://static1.dmc.com/cache/1/1/117mc_e_581_swatch_150x150.jpg")
+mossgreend = Floss.create(dmc_number: 580, dmc_name: "Moss Green Dark", red: 136, green: 141, blue: 51, hex: "#888d33", image: "https://static1.dmc.com/cache/1/1/117mc_e_580_swatch_150x150.jpg")
+
+olivegreenl = Floss.create(dmc_number: 734, dmc_name: "Olive Green Light", red: 199, green: 192, blue: 119, hex: "#c7c077", image: "https://static1.dmc.com/cache/1/1/117mc_e_734_swatch_150x150.jpg")
+olivegreenm = Floss.create(dmc_number: 733, dmc_name: "Olive Green Medium", red: 188, green: 179, blue: 76, hex: "#bcb34c", image: "https://static1.dmc.com/cache/1/1/117mc_e_733_swatch_150x150.jpg")
+olivegreen = Floss.create(dmc_number: 732, dmc_name: "Olive Green", red: 148, green: 140, blue: 54, hex: "#948c36", image: "https://static1.dmc.com/cache/1/1/117mc_e_732_swatch_150x150.jpg")
+olivegreend = Floss.create(dmc_number: 731, dmc_name: "Olive Green Dark", red: 147, green: 139, blue: 55, hex: "#938b37", image: "https://static1.dmc.com/cache/1/1/117mc_e_731_swatch_150x150.jpg")
+olivegreenvd = Floss.create(dmc_number: 730, dmc_name: "Olive Green Very Dark", red: 130, green: 123, blue: 48, hex: "#827b30", image: "https://static1.dmc.com/cache/1/1/117mc_e_730_swatch_150x150.jpg")
+
+khakigreenl = Floss.create(dmc_number: 3013, dmc_name: "Khaki Green Light", red: 185, green: 185, blue: 130, hex: "#b9b982", image: "https://static1.dmc.com/cache/1/1/117mc_e_3013_swatch_150x150.jpg")
+khakigreenm = Floss.create(dmc_number: 3012, dmc_name: "Khaki Green Medium", red: 166, green: 167, blue: 93, hex: "#a6a75d", image: "https://static1.dmc.com/cache/1/1/117mc_e_3012_swatch_150x150.jpg")
+khakigreend = Floss.create(dmc_number: 3011, dmc_name: "Khaki Green Dark", red: 137, green: 138, blue: 88, hex: "#898a58", image: "https://static1.dmc.com/cache/1/1/117mc_e_3011_swatch_150x150.jpg")
+
+mustardl = Floss.create(dmc_number: 372, dmc_name: "Mustard Light", red: 204, green: 183, blue: 132, hex: "#ccb784", image: "https://static1.dmc.com/cache/1/1/117mc_e_372_swatch_150x150.jpg")
+mustard = Floss.create(dmc_number: 371, dmc_name: "Mustard", red: 191, green: 166, blue: 113, hex: "#bfa671", image: "https://static1.dmc.com/cache/1/1/117mc_e_371_swatch_150x150.jpg")
+mustardm = Floss.create(dmc_number: 370, dmc_name: "Mustard Medium", red: 184, green: 157, blue: 100, hex: "#b89d64", image: "https://static1.dmc.com/cache/1/1/117mc_e_370_swatch_150x150.jpg")
+
 pgvd = Floss.create(dmc_number: 3799, dmc_name: "Pewter Gray Very Dark", red: 66, green: 66, blue: 66, hex: "#424242", image: "https://static1.dmc.com/cache/1/1/117mc_e_3799_swatch_150x150.jpg")
 
 
