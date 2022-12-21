@@ -9,7 +9,7 @@ function ProjectThreads({colors, colorVals, currentUser, setProjectThread, proje
     const [projectFloss, setProjectFloss] = useState([])
     const [dmc, setDmc] = useState([])
     const [savedThreads, setSavedThreads] = useState([])
-    const [moreRed, setMoreRed] = useState([])
+    const [darkerShade, setDarkerShade] = useState([])
 
 useEffect(() => {
     fetch('/flosses')
@@ -88,11 +88,11 @@ setRenderThreads(closestThread)
 }
 
 
-function addRed(c){
-  const color1 = savedThreads[c].hex
-  console.log(color1)
+function darker(c){
+  console.log(c)
+  const color1 = dmc[c].hex
   const lab1 = chromatism.convert(color1).cielab
-  const color2 = (chromatism.hue(10, color1).hex)
+  const color2 = (chromatism.shade(-20, color1).csshsl)
   const lab2 = chromatism.convert(color2).cielab
 
   const col1 = {
@@ -107,14 +107,17 @@ function addRed(c){
     B: lab2.b
   }
   const testColor =[]
-   const newColor = []
+  const newColor = []
+  // const nonZero = []
   for (let i = 0; i < labThreadColors.length; i++){
   let changeThread = (DeltaE.getDeltaE00(col2, labThreadColors[i]))
   testColor.push(changeThread)
+  // nonZero.push(testColor.filter(n => n !== 0))
   }
-  newColor.push(projectFloss[testColor.indexOf(Math.min(...testColor))])
-  setMoreRed([...moreRed, newColor])
-  console.log(moreRed)
+  const nonZero = testColor.filter(n => n !== 0)
+  newColor.push(projectFloss[nonZero.indexOf(Math.min(...nonZero))])
+  console.log(newColor)
+  setDarkerShade([...darkerShade, newColor])
   }
 
 function showMe(){
@@ -128,17 +131,17 @@ console.log(projectThread)
 
 
 const myThreadCard = dmc.map(d => {
-  return <ProjectThreadCard d={d} saveMyThreads={saveMyThreads} addRed={addRed} dmc={dmc} />
+  return <ProjectThreadCard d={d} saveMyThreads={saveMyThreads} darker={darker} dmc={dmc} />
 })
 
-const newReds = moreRed.map(n => {
-  return <AdjustFloss n={n}/>
+const newShade = darkerShade.map(n => {
+  return <AdjustFloss n={n} saveMyThreads={saveMyThreads} darker={darker} dmc={dmc}/>
 })
 
 return (
     <div>
     {myThreadCard}
-    {newReds}
+    {newShade}
     <button onClick={showMe}>Show my threads!</button>
 
 </div>
