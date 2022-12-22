@@ -79,7 +79,7 @@ return (
     <div className="allSwatches">
         {colorSwatches}
         </div>
-    <ProjectThreads colors={colors} colorVals={colorVals} setProjectThread={setProjectThread} projectThread={projectThread} setRenderThreads={setRenderThreads}/>
+    <ProjectThreads colors={colors} colorVals={colorVals} setProjectThread={setProjectThread} projectThread={projectThread} title={title} setRenderThreads={setRenderThreads}/>
     <button className='btn' onClick={saveProject}>Save project</button>
     </div>
 </div>

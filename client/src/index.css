@@ -24,6 +24,7 @@ justify-content: space-evenly;
   border-style: dashed;
 }
 
+/* new project page */
 .swatchContainer {
   display: grid;
   grid-template-areas:
@@ -31,12 +32,20 @@ justify-content: space-evenly;
   "color" 
   "thread" "thread" "thread" "thread" "thread" "thread";
 }
-
+.newProjectForm {
+  margin-left: 39.5%;
+  padding: 3px;
+ }
+ .newProjectForm input {
+  margin: 3px;
+  padding: 1px;
+ }
 .newProjectImg {
   grid-area: "img";
   max-width: 400px;
   max-height: 400px;
   justify-self: center;
+  padding: 5px;
 }
 .allSwatches {
   grid-area: "color";
@@ -61,23 +70,24 @@ justify-content: space-evenly;
   justify-self: center;
 }
 .btn {
-max-width: 10px;
+max-width: 200px;
+justify-self: center;
+padding: 3px;
+margin: 4px;
 }
-
 
 .threadSwatch {
   display: grid;
 }
-.showThreads {
-  margin: auto;
-  justify-self: center;
 
+.showThreads {
+  margin-left: 47%;
 }
 .threadSwatch img, h5{
   justify-self: center;
 }
 
-
+/* profile page */
 .myProf{
 text-align: center;
 }
