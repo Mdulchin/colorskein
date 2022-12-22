@@ -5,7 +5,7 @@ var DeltaE = require('delta-e');
 var chromatism = require('chromatism');
 
 
-function ProjectThreads({colors, colorVals, currentUser, setProjectThread, projectThread, setRenderThreads}){
+function ProjectThreads({colors, setProjectThread, projectThread, setRenderThreads}){
     const [projectFloss, setProjectFloss] = useState([])
     const [dmc, setDmc] = useState([])
     const [savedThreads, setSavedThreads] = useState([])
@@ -139,12 +139,13 @@ const newShade = darkerShade.map(n => {
 })
 
 return (
-    <div className="projectThreads">
-    {myThreadCard}
-    {newShade}
-    <button onClick={showMe}>Show my threads!</button>
-
-</div>
+    <div>
+      <button className="showThreads" onClick={showMe}>Show my threads!</button>
+      <div className="projectThreads">
+      {myThreadCard}
+      {newShade}
+      </div>
+    </div>
 )
 
 }

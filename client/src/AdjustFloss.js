@@ -7,8 +7,8 @@ function AdjustFloss({n, saveMyThreads}){
 
 const reds = n.map(n => {
     return (
-        <div>
-        <h2>{n.dmc_name}</h2>
+        <div className="threadSwatch">
+        <h5>{n.dmc_name}</h5>
         <img src={n.image}></img>
         <button onClick={() => saveMyThreads(n)}>Save thread to my project</button>
         </div>

@@ -58,14 +58,7 @@ const colorVals = colors.map((color) => {
 
 
 return (
-    <div className='projectCreator'>
-    <ColorExtractor rgb getColors={getColors}>
-        <img src={src} className="newProjectImg" style={{maxHeight: 600, maxWidth: 700}}/>
-    </ColorExtractor>
-        {colorSwatches}
-    <div>
-    <ProjectThreads colors={colors} colorVals={colorVals} setProjectThread={setProjectThread} projectThread={projectThread} setRenderThreads={setRenderThreads}/>
-    </div>
+    <div className='projectCreatorPage'>
     <form className='newProjectForm' onSubmit={handleSubmit} >
         <input 
             name="image"
@@ -79,8 +72,16 @@ return (
          />
           <button type="submit">Use Image</button>
     </form>
-    {/* <button onClick={getFloss}>Show Threads</button> */}
-    <button onClick={saveProject}>Save project</button>
+    <div className='swatchContainer'>
+    <ColorExtractor rgb getColors={getColors}>
+        <img src={src} className="newProjectImg" style={{maxHeight: 600, maxWidth: 700}}/>
+    </ColorExtractor>
+    <div className="allSwatches">
+        {colorSwatches}
+        </div>
+    <ProjectThreads colors={colors} colorVals={colorVals} setProjectThread={setProjectThread} projectThread={projectThread} setRenderThreads={setRenderThreads}/>
+    <button className='btn' onClick={saveProject}>Save project</button>
+    </div>
 </div>
 
 )
