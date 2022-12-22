@@ -23,35 +23,58 @@ justify-content: space-evenly;
   border-color: green;
   border-style: dashed;
 }
-.projectCreator {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+
+.swatchContainer {
+  display: grid;
+  grid-template-areas:
+  "img"
+  "color" 
+  "thread" "thread" "thread" "thread" "thread" "thread";
 }
 
-.projectThreads{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.newProjectImg {
+  grid-area: "img";
+  max-width: 400px;
+  max-height: 400px;
+  justify-self: center;
 }
-/* .newProjectform {
-  grid-area: "card";
-  display: flex;
-  flex-direction: row;
-} */
-.pthreadContainer{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.allSwatches {
+  grid-area: "color";
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  justify-content: center;
 }
 
 .colorSwatch {
-grid-area: "card";
-display: flex;
-flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+.projectThreads {
+  grid-area: "thread";
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  justify-content: center;
+}
+
+.projectThreads button {
+  justify-self: center;
+}
+.btn {
+max-width: 10px;
+}
+
+
+.threadSwatch {
+  display: grid;
+}
+.showThreads {
+  margin: auto;
+  justify-self: center;
+
+}
+.threadSwatch img, h5{
+  justify-self: center;
 }
 
 

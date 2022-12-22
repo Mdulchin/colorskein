@@ -5,8 +5,8 @@ function ProjectColors({redVal, greenVal, blueVal, colors, i, currentUser}){
 
 
     return (
-    <div className="allSwatches">
-        <div className='colorSwatch'
+    <div>
+        <span className='colorSwatch'
         key={i}
         style={{
             // backgroundColor: `rgb${(colors[i].map(c => c))}`,
@@ -17,7 +17,7 @@ function ProjectColors({redVal, greenVal, blueVal, colors, i, currentUser}){
         }}
         >
             {`rgb(${redVal}, ${greenVal}, ${blueVal})`}
-        </div>
+        </span>
         {/* <button onClick={}>Edit Color</button> */}
     </div>
         )
