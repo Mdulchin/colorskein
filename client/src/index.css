@@ -19,11 +19,24 @@ justify-content: space-evenly;
 }
 
 .flossCard {
-  margin: 3px;
-  border-color: green;
-  border-style: dashed;
+  display: grid;
+  align-items: center;
+  width: 200px;
+  margin: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 8px;
 }
 
+.flossCard img, h4, p, button {
+  justify-self: center;
+  padding: 3px;
+  margin: 1px;
+  border-radius: 8px;
+}
+
+img {
+  border-radius: 8px;
+}
 /* new project page */
 .swatchContainer {
   display: grid;

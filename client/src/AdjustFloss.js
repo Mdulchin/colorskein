@@ -5,7 +5,7 @@ var chromatism = require('chromatism');
 
 function AdjustFloss({n, saveMyThreads, title}){
 
-const reds = n.map(n => {
+const darker = n.map(n => {
     return (
         <div className="threadSwatch">
         <h5>{n.dmc_name}</h5>
@@ -17,7 +17,7 @@ const reds = n.map(n => {
 
 return (
     <div>
-        {reds}
+        {darker}
     </div>
 )
 }

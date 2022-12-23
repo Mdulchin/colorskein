@@ -21,11 +21,15 @@ const [myThreadArray, setMyThreadArray] = useState([])
 
 return (
     <div className="flossCard">
-        <h2>{floss.dmc_name}</h2>
-        <span className="flossColor" style ={{backgroundColor: `${floss.hex}`, color: `${floss.hex}`}}>#{floss.hex}</span>
+        <h4>{floss.dmc_name}</h4>
         <p># {floss.dmc_number}</p>
-        <img src={floss.image}></img>
-        <p>Red: {floss.red}, Blue: {floss.blue}, Green: {floss.green}</p>
+        <span className="flossColor" style ={{backgroundColor: `${floss.hex}`, color: `${floss.hex}`}}>#{floss.hex}</span>
+        <img src={floss.image} alt={floss.dmc_name}></img>
+        <p>Red: {floss.red},
+        <br/>
+         Blue: {floss.blue}, 
+         <br/>
+         Green: {floss.green}</p>
         <button onClick={addToThreads}>Add to my threads</button>
     </div>
 )
