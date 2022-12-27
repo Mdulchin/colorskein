@@ -58,20 +58,8 @@ function App() {
   
   return (
     // <Router>
-    <div>
-      <Link to='/'>
-        <button className='nav'>Home</button>
-      </Link>
-      <Link to='/threads'>
-        <button className='nav'>All Threads</button>
-      </Link>
-      {currentUser ?
-      <Link to='/projects'>
-        <button className="nav">Create a New Project</button>
-    </Link>
-    :
-    null 
-    }
+    <div className='navBar'>
+  
       {currentUser ? 
       <Link to='/'>
         <button className='nav' onClick={handleLogOut}>Log out</button>
@@ -81,13 +69,28 @@ function App() {
       <button className='nav'>login or signup</button>
       </Link>
       }
-      {currentUser ? 
-      <Link to='/me'>
-        <button className='nav'>My Profile</button>
-      </Link>
-      :
+        {currentUser ? 
+        <Link to='/me'>
+          <button className='nav'>My Profile</button>
+        </Link>
+        :
         null
       }
+      {currentUser ?
+      <Link to='/projects'>
+        <button className="nav">Create a New Project</button>
+    </Link>
+    :
+    null 
+    }
+      <Link to='/threads'>
+        <button className='nav'>All Threads</button>
+      </Link>
+      <Link to='/' >
+        <button className= 'nav'>Home</button>
+      </Link>
+      <h1 className='logo'>ColorSkein</h1>
+      <br/>
       {currentUser ? <p className='username'>Welcome, {currentUser.username}!</p> : null}
    
     <Routes> 

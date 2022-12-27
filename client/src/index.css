@@ -1,21 +1,36 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  
+  font-family: "Canela Web";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
   code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: "Canela Web";
+    /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
   }
-  
+/* nav */
+  .username {
+    position: absolute;
+    margin-top: 5px;
+    right: 0%;
+  }
   .nav {
     float: right;
+    background: none;
+    border: none;
+    font-size: medium;
+    font-family: 'Canela Web';
   }
-  
+  .logo{
+  position: fixed;
+  top: -2.5%;
+ 
+  }
+
+  /* homepage */
   .home {
     z-index: 3;
     position: absolute;
@@ -31,19 +46,34 @@ body {
   .homeSwatches {
     padding: 3px;
   }
-
   .nextFloss{
-    /* position: relative; */
-    float: right;
+    position: absolute;
+    left: 101%;
+  /* position: relative;
+  float: right; */
+    /* float: right;
     margin-right: -1%;
-    margin-top: 19.7%;
+    margin-top: 19.7%; */
+    background: none;
+    border: none;
+    font-size: xx-large;
   }
   .prevFloss{
-    /* position: relative; */
-    float: left;
+    position: absolute;
+    left: -5%;
+    /* position: inherit; */
+    /* float: left;
     margin-left: 15%;
-    margin-top: 19.7%;
+    margin-top: 19.7%; */
+    background: none;
+    border: none;
+    font-size: xx-large;
   }
+
+  .allThreads {
+  text-align: center;
+  }
+/* flosscontainer and card */
 .flossContainer {
 display: flex;
 flex-flow: row wrap;
