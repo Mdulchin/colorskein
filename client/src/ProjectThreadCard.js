@@ -4,10 +4,10 @@ function ProjectThreadCard({d, saveMyThreads, darker, dmc, title}){
 const [currentValue, setCurrentValue] = useState(0)
 
 // function updateCurrentValue(){
-//   setHue(currentValue)
+//   setHue(currentValue
 // }
  function updateHue(d) {
-  darker(d)
+  darker(d, currentValue)
   // setHue(currentValue)
   
   // debugger
@@ -31,7 +31,7 @@ return (
         max={100}
         minDistance={1}
         value={currentValue}
-        onAfterChange={value => setCurrentValue(value)}
+        onChange={value => setCurrentValue(value)}
         // onAfterChange={currentValue => setHueValue(currentValue)}
         renderThumb={(props, state) => <div {...props}>{state.valueNow}
         </div>}

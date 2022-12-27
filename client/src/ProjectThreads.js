@@ -88,13 +88,19 @@ setRenderThreads(closestThread)
 }
 
 
-function darker(c){
-  console.log(c)
+
+function darker(c, currentValue){
+ const val = currentValue
+ console.log(val)
   const color1 = dmc[c].hex
   const lab1 = chromatism.convert(color1).cielab
-  const color2 = (chromatism.shade(-20, color1).csshsl)
-  const lab2 = chromatism.convert(color2).cielab
+  const color2 = (chromatism.shade(val, color1).csshsl)
+  let lab2 = chromatism.convert(color2).cielab
+ console.log(lab2)
 
+  if (isNaN(lab2.L) ) {
+    lab2 = {L: 0.6404577846, a: 2.9900549871, b: 0.0618923146}
+  }
   const col1 = {
     L: lab1.L,
     A: lab1.a, 
@@ -106,12 +112,14 @@ function darker(c){
     A: lab2.a, 
     B: lab2.b
   }
+
   const testColor =[]
   const newColor = []
-  // const nonZero = []
+
   for (let i = 0; i < labThreadColors.length; i++){
   let changeThread = (DeltaE.getDeltaE00(col2, labThreadColors[i]))
   testColor.push(changeThread)
+
   // nonZero.push(testColor.filter(n => n !== 0))
   }
   const nonZero = testColor.filter(n => n !== 0)
