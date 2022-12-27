@@ -37,7 +37,7 @@ return (
         </div>}
       />
       <br />
-      <button onClick ={() => updateHue(dmc.indexOf(d))}>Darker shade</button>
+      <button onClick ={() => updateHue(dmc.indexOf(d))}>Adjust Shade <br/> (darker-lighter)</button>
       <br />
     </div>
   )
