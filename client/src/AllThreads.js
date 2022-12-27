@@ -1,23 +1,14 @@
 import Floss from "./Floss";
 import {useState, useEffect } from "react";
 
-function AllThreads({currentUser}){
-const [flossArray, setFlossArray] = useState([])
+function AllThreads({currentUser, flossArray}){
 
-  useEffect(() => {
-    fetch('/flosses')
-      .then(r => {
-        if (r.ok) {
-          r.json().then(data => setFlossArray(data))
-          
-        }
-      })
-  }, [])
 
 
 return (
-  
-    <div className="home">  
+    
+    <div className="allThreads">  
+    <h1>All Threads</h1>
     <Floss currentUser={currentUser} flossArray={flossArray}/>
     </div>
  

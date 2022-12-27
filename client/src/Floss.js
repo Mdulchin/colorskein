@@ -14,7 +14,7 @@ function Floss({currentUser, flossArray}) {
 
 return (
   <div>
-    <Search setSearch={setSearch}/>
+   <Search setSearch={setSearch}/>
   <FlossContainer flossSearch={flossSearch} currentUser={currentUser}/>
   
   </div>
