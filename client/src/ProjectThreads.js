@@ -98,7 +98,7 @@ function darker(c, currentValue){
   let lab2 = chromatism.convert(color2).cielab
  console.log(lab2)
 
-  if (isNaN(lab2.L) ) {
+  if (isNaN(lab2.L)) {
     lab2 = {L: 0.6404577846, a: 2.9900549871, b: 0.0618923146}
   }
   const col1 = {
