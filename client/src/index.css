@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  
   font-family: "Canela Web";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  /* background-color: #d3a5b263; */
   }
   
   code {
@@ -49,11 +49,6 @@ body {
   .nextFloss{
     position: absolute;
     left: 101%;
-  /* position: relative;
-  float: right; */
-    /* float: right;
-    margin-right: -1%;
-    margin-top: 19.7%; */
     background: none;
     border: none;
     font-size: xx-large;
@@ -61,10 +56,6 @@ body {
   .prevFloss{
     position: absolute;
     left: -5%;
-    /* position: inherit; */
-    /* float: left;
-    margin-left: 15%;
-    margin-top: 19.7%; */
     background: none;
     border: none;
     font-size: xx-large;
@@ -213,3 +204,6 @@ text-align: center;
   height: 4px;
   background: rgb(43, 21, 122);
 }
+
+/* login/signup */
+
