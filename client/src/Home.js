@@ -15,17 +15,19 @@ const flossPhotos = flossArray
       <img src={floss.image}></img>
     </div>
   )
-})
-const flossHex = flossArray[flossIndex + 1].hex
+ })
+// const flossHex = flossArray[flossIndex + 2].hex
 
 return (
   
- 
-    <div className="home" style={{backgroundColor: flossHex}}>  
+
+    <span className="home"
+    //  style={{backgroundColor: flossHex}}
+     >  
     {flossIndex > 0 ? <button className="prevFloss" onClick={() => setFlossIndex(flossIndex - 12)}>⇦</button> : null}
     {flossPhotos} 
-    <button className="nextFloss" onClick={() => setFlossIndex(flossIndex + 12)}>⇨</button>
-    </div>
+    {flossIndex < flossArray.length ? <button className="nextFloss" onClick={() => setFlossIndex(flossIndex + 12)}>⇨</button> : null}
+    </span>
  
 
 )

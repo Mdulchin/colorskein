@@ -388,6 +388,158 @@ topazd = Floss.create(dmc_number: 782, dmc_name: "Topaz Dark", red: 174, green: 
 topazvd = Floss.create(dmc_number: 781, dmc_name: "Topaz Very Dark", red: 162, green: 109, blue: 32, hex: "#a26d20", image: "https://static1.dmc.com/cache/1/1/117mc_e_781_swatch_150x150.jpg")
 topazuvd = Floss.create(dmc_number: 780, dmc_name: "Topaz Ultra Very Dark", red: 148, green: 99, blue: 26, hex: "#94631a", image: "https://static1.dmc.com/cache/1/1/117mc_e_780_swatch_150x150.jpg")
 
+oldgoldl = Floss.create(dmc_number: 676, dmc_name: "Old Gold Light", red: 229, green: 206, blue: 151, hex: "#e5ce97", image: "https://static1.dmc.com/cache/1/1/117mc_e_676_swatch_150x150.jpg")
+oldgoldm = Floss.create(dmc_number: 729, dmc_name: "Old Gold Medium", red: 208, green: 165, blue: 62, hex: "#d0a53e", image: "https://static1.dmc.com/cache/1/1/117mc_e_729_swatch_150x150.jpg")
+oldgoldd = Floss.create(dmc_number: 680, dmc_name: "Old Gold Dark", red: 188, green: 141, blue: 14, hex: "#bc8d0e", image: "https://static1.dmc.com/cache/1/1/117mc_e_680_swatch_150x150.jpg")
+oldgoldvd = Floss.create(dmc_number: 3829, dmc_name: "Old Gold Very Dark", red: 169, green: 130, blue: 4, hex: "#a98204", image: "https://static1.dmc.com/cache/1/1/117mc_e_3829_swatch_150x150.jpg")
+
+strawl = Floss.create(dmc_number: 3822, dmc_name: "Straw Light", red: 246, green: 220, blue: 152, hex: "#f6dc98", image: "https://static1.dmc.com/cache/1/1/117mc_e_3822_swatch_150x150.jpg")
+straw = Floss.create(dmc_number: 3821, dmc_name: "Straw", red: 243, green: 206, blue: 117, hex: "#f3ce75", image: "https://static1.dmc.com/cache/1/1/117mc_e_3821_swatch_150x150.jpg")
+strawd = Floss.create(dmc_number: 3820, dmc_name: "Straw Dark", red: 223, green: 182, blue: 95, hex: "#dfb65f", image: "https://static1.dmc.com/cache/1/1/117mc_e_3820_swatch_150x150.jpg")
+strawvd = Floss.create(dmc_number: 3852, dmc_name: "Straw Very Dark", red: 205, green: 157, blue: 55, hex: "#cd9d37", image: "https://static1.dmc.com/cache/1/1/117mc_e_3852_swatch_150x150.jpg")
+
+lemonl = Floss.create(dmc_number: 445, dmc_name: "Lemon Light", red: 255, green: 251, blue: 139, hex: "#fffb8b", image: "https://static1.dmc.com/cache/1/1/117mc_e_445_swatch_150x150.jpg")
+lemon = Floss.create(dmc_number: 307, dmc_name: "Lemon", red: 253, green: 237, blue: 84, hex: "#fded54", image: "https://static1.dmc.com/cache/1/1/117mc_e_307_swatch_150x150.jpg")
+
+canaryb = Floss.create(dmc_number: 973, dmc_name: "Canary Bright", red: 255, green: 227, blue: 0, hex: "#ffe300", image: "https://static1.dmc.com/cache/1/1/117mc_e_973_swatch_150x150.jpg")
+
+lemond = Floss.create(dmc_number: 444, dmc_name: "Lemon Dark", red: 255, green: 214, blue: 0, hex: "#ffd600", image: "https://static1.dmc.com/cache/1/1/117mc_e_444_swatch_150x150.jpg")
+
+goldenyellowvl = Floss.create(dmc_number: 3078, dmc_name: "Golden Yellow Very Light", red: 253, green: 249, blue: 205, hex: "#fdf9cd", image: "https://static1.dmc.com/cache/1/1/117mc_e_3078_swatch_150x150.jpg")
+
+topazvl = Floss.create(dmc_number: 727, dmc_name: "Topaz Very Light", red: 255, green: 241, blue: 175, hex: "#fff1af", image: "https://static1.dmc.com/cache/1/1/117mc_e_727_swatch_150x150.jpg")
+topazl = Floss.create(dmc_number: 726, dmc_name: "Topaz Light", red: 253, green: 215, blue: 85, hex: "#fdd755", image: "https://static1.dmc.com/cache/1/1/117mc_e_726_swatch_150x150.jpg")
+topazml = Floss.create(dmc_number: 725, dmc_name: "Topaz Medium Light", red: 255, green: 200, blue: 64, hex: "#ffc840", image: "https://static1.dmc.com/cache/1/1/117mc_e_725_swatch_150x150.jpg")
+
+canaryd = Floss.create(dmc_number: 972, dmc_name: "Canary Deep", red: 255, green: 181, blue: 21, hex: "#ffb515", image: "https://static1.dmc.com/cache/1/1/117mc_e_972_swatch_150x150.jpg")
+
+yellowpl = Floss.create(dmc_number: 745, dmc_name: "Yellow Pale Light", red: 255, green: 233, blue: 173, hex: "#ffe9ad", image: "https://static1.dmc.com/cache/1/1/117mc_e_745_swatch_150x150.jpg")
+yellowp = Floss.create(dmc_number: 744, dmc_name: "Yellow Pale", red: 255, green: 231, blue: 147, hex: "#ffe793", image: "https://static1.dmc.com/cache/1/1/117mc_e_744_swatch_150x150.jpg")
+yellowm = Floss.create(dmc_number: 743, dmc_name: "Yellow Medium", red: 254, green: 211, blue: 118, hex: "#fed376", image: "https://static1.dmc.com/cache/1/1/117mc_e_743_swatch_150x150.jpg")
+
+tangerinel = Floss.create(dmc_number: 742, dmc_name: "Tangerine Light", red: 255, green: 191, blue: 87, hex: "#ffbf57", image: "https://static1.dmc.com/cache/1/1/117mc_e_742_swatch_150x150.jpg")
+tangerinem = Floss.create(dmc_number: 741, dmc_name: "Tangerine Medium", red: 255, green: 163, blue: 43, hex: "#ffa32b", image: "https://static1.dmc.com/cache/1/1/117mc_e_741_swatch_150x150.jpg")
+tangerine = Floss.create(dmc_number: 740, dmc_name: "Tangerine", red: 255, green: 139, blue: 0, hex: "#ff8b00", image: "https://static1.dmc.com/cache/1/1/117mc_e_740_swatch_150x150.jpg")
+
+pumpkinl = Floss.create(dmc_number: 970, dmc_name: "Pumpkin Light", red: 247, green: 139, blue: 19, hex: "#f78b13", image: "https://static1.dmc.com/cache/1/1/117mc_e_970_swatch_150x150.jpg")
+pumpkin = Floss.create(dmc_number: 971, dmc_name: "Pumpkin", red: 246, green: 127, blue: 0, hex: "#f67f00", image: "https://static1.dmc.com/cache/1/1/117mc_e_971_swatch_150x150.jpg")
+
+burntorange = Floss.create(dmc_number: 947, dmc_name: "Burnt Orange", red: 255, green: 123, blue: 77, hex: "#ff7b4d", image: "https://static1.dmc.com/cache/1/1/117mc_e_947_swatch_150x150.jpg")
+burntorangem = Floss.create(dmc_number: 946, dmc_name: "Burnt Orange Medium", red: 235, green: 99, blue: 7, hex: "#eb6307", image: "https://static1.dmc.com/cache/1/1/117mc_e_946_swatch_150x150.jpg")
+burntoranged = Floss.create(dmc_number: 900, dmc_name: "Burnt Orange Deep", red: 209, green: 88, blue: 7, hex: "#d15807", image: "https://static1.dmc.com/cache/1/1/117mc_e_900_swatch_150x150.jpg")
+
+apricotvl = Floss.create(dmc_number: 967, dmc_name: "Apricot Very Light", red: 255, green: 222, blue: 213, hex: "#ffded5", image: "https://static1.dmc.com/cache/1/1/117mc_e_967_swatch_150x150.jpg")
+apricotl = Floss.create(dmc_number: 3824, dmc_name: "Apricot Light", red: 254, green: 205, blue: 194, hex: "#fecdc2", image: "https://static1.dmc.com/cache/1/1/117mc_e_3824_swatch_150x150.jpg")
+apricot = Floss.create(dmc_number: 3341, dmc_name: "Apricot", red: 252, green: 171, blue: 152, hex: "#fcab98", image: "https://static1.dmc.com/cache/1/1/117mc_e_3341_swatch_150x150.jpg")
+apricotm = Floss.create(dmc_number: 3340, dmc_name: "Apricot Medium", red: 255, green: 131, blue: 111, hex: "#ff836f", image: "https://static1.dmc.com/cache/1/1/117mc_e_3340_swatch_150x150.jpg")
+
+burntorangeb = Floss.create(dmc_number: 608, dmc_name: "Burnt Orange Bright", red: 253, green: 93, blue: 53, hex: "#fd5d35", image: "https://static1.dmc.com/cache/1/1/117mc_e_608_swatch_150x150.jpg")
+
+orangeredb = Floss.create(dmc_number: 606, dmc_name: "Orange Red Bright", red: 250, green: 50, blue: 3, hex: "#fa3203", image: "https://static1.dmc.com/cache/1/1/117mc_e_606_swatch_150x150.jpg")
+
+tawnyl = Floss.create(dmc_number: 951, dmc_name: "Tawny Light", red: 255, green: 226, blue: 207, hex: "#ffe2cf", image: "https://static1.dmc.com/cache/1/1/117mc_e_951_swatch_150x150.jpg")
+
+mahoganyuvl = Floss.create(dmc_number: 3856, dmc_name: "Mahogany Ultra Very Light", red: 255, green: 211, blue: 181, hex: "#ffd3b5", image: "https://static1.dmc.com/cache/1/1/117mc_e_3856_swatch_150x150.jpg")
+
+orangespicel = Floss.create(dmc_number: 722, dmc_name: "Orange Spice Light", red: 247, green: 151, blue: 111, hex: "#f7976f", image: "https://static1.dmc.com/cache/1/1/117mc_e_722_swatch_150x150.jpg")
+orangespicem = Floss.create(dmc_number: 721, dmc_name: "Orange Spice Medium", red: 242, green: 120, blue: 66, hex: "#f27842", image: "https://static1.dmc.com/cache/1/1/117mc_e_721_swatch_150x150.jpg")
+orangespiced = Floss.create(dmc_number: 720, dmc_name: "Orange Spice Dark", red: 229, green: 92, blue: 31, hex: "#e55c1f", image: "https://static1.dmc.com/cache/1/1/117mc_e_720_swatch_150x150.jpg")
+
+pumpkinp = Floss.create(dmc_number: 3825, dmc_name: "Pumpkin Pale", red: 253, green: 189, blue: 150, hex: "#fdbd96", image: "https://static1.dmc.com/cache/1/1/117mc_e_3825_swatch_150x150.jpg")
+
+copperl = Floss.create(dmc_number: 922, dmc_name: "Copper Light", red: 226, green: 115, blue: 35, hex: "#e27323", image: "https://static1.dmc.com/cache/1/1/117mc_e_922_swatch_150x150.jpg")
+copper = Floss.create(dmc_number: 921, dmc_name: "Copper", red: 198, green: 98, blue: 24, hex: "#c66218", image: "https://static1.dmc.com/cache/1/1/117mc_e_921_swatch_150x150.jpg")
+copperm = Floss.create(dmc_number: 920, dmc_name: "Copper Medium", red: 172, green: 84, blue: 20, hex: "#ac5414", image: "https://static1.dmc.com/cache/1/1/117mc_e_920_swatch_150x150.jpg")
+
+redcopper = Floss.create(dmc_number: 919, dmc_name: "Red Copper", red: 166, green: 69, blue: 16, hex: "#a64510", image: "https://static1.dmc.com/cache/1/1/117mc_e_919_swatch_150x150.jpg")
+redcopperd = Floss.create(dmc_number: 918, dmc_name: "Red Copper Dark", red: 130, green: 52, blue: 10, hex: "#82340a", image: "https://static1.dmc.com/cache/1/1/117mc_e_918_swatch_150x150.jpg")
+
+tawnyvl = Floss.create(dmc_number: 3770, dmc_name: "Tawny Very Light", red: 255, green: 238, blue: 227, hex: "#ffeee3", image: "https://static1.dmc.com/cache/1/1/117mc_e_3770_swatch_150x150.jpg")
+tawny = Floss.create(dmc_number: 945, dmc_name: "Tawny", red: 251, green: 213, blue: 187, hex: "#fbd5bb", image: "https://static1.dmc.com/cache/1/1/117mc_e_945_swatch_150x150.jpg")
+
+mahoganyvl = Floss.create(dmc_number: 402, dmc_name: "Mahogany Very Light", red: 247, green: 167, blue: 119, hex: "#ffe2cf", image: "https://static1.dmc.com/cache/1/1/117mc_e_402_swatch_150x150.jpg")
+mahoganyl = Floss.create(dmc_number: 3776, dmc_name: "Mahogany Light", red: 207, green: 121, blue: 57, hex: "#cf7939", image: "https://static1.dmc.com/cache/1/1/117mc_e_3776_swatch_150x150.jpg")
+mahoganym = Floss.create(dmc_number: 301, dmc_name: "Mahogany Medium", red: 179, green: 95, blue: 43, hex: "#b35f2b", image: "https://static1.dmc.com/cache/1/1/117mc_e_301_swatch_150x150.jpg")
+mahoganyd = Floss.create(dmc_number: 400, dmc_name: "Mahogany Dark", red: 143, green: 67, blue: 15, hex: "#8f430f", image: "https://static1.dmc.com/cache/1/1/117mc_e_400_swatch_150x150.jpg")
+mahoganyvd = Floss.create(dmc_number: 300, dmc_name: "Mahogany Very Dark", red: 111, green: 47, blue: 0, hex: "#6f2f00", image: "https://static1.dmc.com/cache/1/1/117mc_e_300_swatch_150x150.jpg")
+
+yellowup = Floss.create(dmc_number: 3823, dmc_name: "Yellow Ultra Pale", red: 255, green: 253, blue: 227, hex: "#fffde3", image: "https://static1.dmc.com/cache/1/1/117mc_e_3823_swatch_150x150.jpg")
+
+autumngoldl = Floss.create(dmc_number: 3855, dmc_name: "Autumn Gold Light", red: 250, green: 211, blue: 150, hex: "#fad396", image: "https://static1.dmc.com/cache/1/1/117mc_e_3855_swatch_150x150.jpg")
+autumngoldm = Floss.create(dmc_number: 3854, dmc_name: "Autumn Gold Medium", red: 242, green: 175, blue: 104, hex: "#f2af68", image: "https://static1.dmc.com/cache/1/1/117mc_e_3854_swatch_150x150.jpg")
+autumngoldd = Floss.create(dmc_number: 3853, dmc_name: "Autumn Gold Dark", red: 242, green: 151, blue: 70, hex: "#f29746", image: "https://static1.dmc.com/cache/1/1/117mc_e_3853_swatch_150x150.jpg")
+
+goldenbrownp = Floss.create(dmc_number: 3827, dmc_name: "Golden Brown Pale", red: 247, green: 187, blue: 119, hex: "#f7bb77", image: "https://static1.dmc.com/cache/1/1/117mc_e_3827_swatch_150x150.jpg")
+goldenbrownl = Floss.create(dmc_number: 977, dmc_name: "Golden Brown Light", red: 220, green: 156, blue: 86, hex: "#dc9c56", image: "https://static1.dmc.com/cache/1/1/117mc_e_977_swatch_150x150.jpg")
+goldenbrownm = Floss.create(dmc_number: 976, dmc_name: "Golden Brown Medium", red: 194, green: 129, blue: 66, hex: "#c28142", image: "https://static1.dmc.com/cache/1/1/117mc_e_976_swatch_150x150.jpg")
+goldenbrown = Floss.create(dmc_number: 3826, dmc_name: "Golden Brown", red: 173, green: 114, blue: 57, hex: "#ad7239", image: "https://static1.dmc.com/cache/1/1/117mc_e_3826_swatch_150x150.jpg")
+goldenbrownd = Floss.create(dmc_number: 975, dmc_name: "Golden Brown Dark", red: 145, green: 79, blue: 18, hex: "#914f12", image: "https://static1.dmc.com/cache/1/1/117mc_e_975_swatch_150x150.jpg")
+
+peachvl = Floss.create(dmc_number: 948, dmc_name: "Peach Very Light", red: 254, green: 231, blue: 218, hex: "#fee7da", image: "https://static1.dmc.com/cache/1/1/117mc_e_948_swatch_150x150.jpg")
+peachl = Floss.create(dmc_number: 754, dmc_name: "Peach Light", red: 247, green: 203, blue: 191, hex: "#f7cbbf", image: "https://static1.dmc.com/cache/1/1/117mc_e_754_swatch_150x150.jpg")
+
+terracottauvl = Floss.create(dmc_number: 3771, dmc_name: "Terra Cotta Ultra Very Light", red: 244, green: 187, blue: 169, hex: "#f4bba9", image: "https://static1.dmc.com/cache/1/1/117mc_e_3771_swatch_150x150.jpg")
+terracottavl = Floss.create(dmc_number: 758, dmc_name: "Terra Cotta Very Light", red: 238, green: 170, blue: 155, hex: "#eeaa9b", image: "https://static1.dmc.com/cache/1/1/117mc_e_758_swatch_150x150.jpg")
+terracottal = Floss.create(dmc_number: 3778, dmc_name: "Terra Cotta Light", red: 217, green: 137, blue: 120, hex: "#d98978", image: "https://static1.dmc.com/cache/1/1/117mc_e_3778_swatch_150x150.jpg")
+terracottam = Floss.create(dmc_number: 356, dmc_name: "Terra Cotta Medium", red: 197, green: 106, blue: 91, hex: "#c56a5b", image: "https://static1.dmc.com/cache/1/1/117mc_e_356_swatch_150x150.jpg")
+terracotta = Floss.create(dmc_number: 3830, dmc_name: "Terra Cotta", red: 185, green: 85, blue: 68, hex: "#bc5544", image: "https://static1.dmc.com/cache/1/1/117mc_e_3830_swatch_150x150.jpg")
+terracottad = Floss.create(dmc_number: 355, dmc_name: "Terra Cotta Dark", red: 152, green: 68, blue: 54, hex: "#984436", image: "https://static1.dmc.com/cache/1/1/117mc_e_355_swatch_150x150.jpg")
+terracottavd = Floss.create(dmc_number: 3777, dmc_name: "Terra Cotta Very Dark", red: 134, green: 48, blue: 34, hex: "#863022", image: "https://static1.dmc.com/cache/1/1/117mc_e_3777_swatch_150x150.jpg")
+
+rosewooduvl = Floss.create(dmc_number: 3779, dmc_name: "Rosewood Ultra Very Light", red: 248, green: 202, blue: 200, hex: "#f8cac8", image: "https://static1.dmc.com/cache/1/1/117mc_e_3779_swatch_150x150.jpg")
+rosewoodl = Floss.create(dmc_number: 3859, dmc_name: "Rosewood Light", red: 186, green: 139, blue: 124, hex: "#ba8b7c", image: "https://static1.dmc.com/cache/1/1/117mc_e_3859_swatch_150x150.jpg")
+rosewoodm = Floss.create(dmc_number: 3858, dmc_name: "Rosewood Medium", red: 150, green: 74, blue: 63, hex: "#964a3f", image: "https://static1.dmc.com/cache/1/1/117mc_e_3858_swatch_150x150.jpg")
+rosewoodd = Floss.create(dmc_number: 3857, dmc_name: "Rosewood Dark", red: 104, green: 37, blue: 26, hex: "#68251a", image: "https://static1.dmc.com/cache/1/1/117mc_e_3857_swatch_150x150.jpg")
+
+desertsandvl = Floss.create(dmc_number: 3774, dmc_name: "Desert Sand Very Light", red: 243, green: 225, blue: 215, hex: "#f3e1d7", image: "https://static1.dmc.com/cache/1/1/117mc_e_3774_swatch_150x150.jpg")
+desertsandl = Floss.create(dmc_number: 950, dmc_name: "Desert Sand Light", red: 238, green: 211, blue: 196, hex: "#eed3c4", image: "https://static1.dmc.com/cache/1/1/117mc_e_950_swatch_150x150.jpg")
+desertsand = Floss.create(dmc_number: 3064, dmc_name: "Desert Sand", red: 196, green: 142, blue: 112, hex: "#c48e70", image: "https://static1.dmc.com/cache/1/1/117mc_e_3064_swatch_150x150.jpg")
+desertsandm = Floss.create(dmc_number: 407, dmc_name: "Desert Sand Medium", red: 187, green: 129, blue: 97, hex: "#af775f", image: "https://static1.dmc.com/cache/1/1/117mc_e_407_swatch_150x150.jpg")
+desertsandd = Floss.create(dmc_number: 3773, dmc_name: "Desert Sand Dark", red: 182, green: 117, blue: 82, hex: "#b67552", image: "https://static1.dmc.com/cache/1/1/117mc_e_3773_swatch_150x150.jpg")
+desertsandvd = Floss.create(dmc_number: 3772, dmc_name: "Desert Sand Very Dark", red: 160, green: 108, blue: 80, hex: "#996044", image: "https://static1.dmc.com/cache/1/1/117mc_e_3772_swatch_150x150.jpg")
+desertsanduvd = Floss.create(dmc_number: 632, dmc_name: "Desert Sand Ultra Very Dark", red: 135, green: 85, blue: 57, hex: "#875539", image: "https://static1.dmc.com/cache/1/1/117mc_e_632_swatch_150x150.jpg")
+
+shellgrayl = Floss.create(dmc_number: 453, dmc_name: "Shell Gray Light", red: 215, green: 206, blue: 203, hex: "#d7cecb", image: "https://static1.dmc.com/cache/1/1/117mc_e_453_swatch_150x150.jpg")
+shellgraym = Floss.create(dmc_number: 452, dmc_name: "Shell Gray Medium", red: 192, green: 179, blue: 174, hex: "#c0b3ae", image: "https://static1.dmc.com/cache/1/1/117mc_e_452_swatch_150x150.jpg")
+shellgrayd = Floss.create(dmc_number: 451, dmc_name: "Shell Gray Dark", red: 145, green: 123, blue: 115, hex: "#917b73", image: "https://static1.dmc.com/cache/1/1/117mc_e_451_swatch_150x150.jpg")
+
+cocoal = Floss.create(dmc_number: 3861, dmc_name: "Cocoa Light", red: 166, green: 136, blue: 129, hex: "#a68881", image: "https://static1.dmc.com/cache/1/1/117mc_e_3861_swatch_150x150.jpg")
+cocoa = Floss.create(dmc_number: 3860, dmc_name: "Cocoa", red: 125, green: 93, blue: 87, hex: "#7d5d57", image: "https://static1.dmc.com/cache/1/1/117mc_e_3860_swatch_150x150.jpg")
+cocoad = Floss.create(dmc_number: 779, dmc_name: "Cocoa Dark", red: 98, green: 75, blue: 69, hex: "#624b45", image: "https://static1.dmc.com/cache/1/1/117mc_e_779_swatch_150x150.jpg")
+
+cream = Floss.create(dmc_number: 712, dmc_name: "Cream", red: 255, green: 251, blue: 239, hex: "#fffbef", image: "https://static1.dmc.com/cache/1/1/117mc_e_712_swatch_150x150.jpg")
+
+tanuvl = Floss.create(dmc_number: 739, dmc_name: "Tan Ultra Very Light", red: 248, green: 228, blue: 200, hex: "#f8e4c8", image: "https://static1.dmc.com/cache/1/1/117mc_e_739_swatch_150x150.jpg")
+tanvl = Floss.create(dmc_number: 738, dmc_name: "Tan Very Light", red: 236, green: 204, blue: 158, hex: "#eccc9e", image: "https://static1.dmc.com/cache/1/1/117mc_e_738_swatch_150x150.jpg")
+tanl = Floss.create(dmc_number: 437, dmc_name: "Tan Light", red: 228, green: 187, blue: 142, hex: "#e4bb8e", image: "https://static1.dmc.com/cache/1/1/117mc_e_437_swatch_150x150.jpg")
+tan = Floss.create(dmc_number: 436, dmc_name: "Tan", red: 203, green: 144, blue: 81, hex: "#cb9051", image: "https://static1.dmc.com/cache/1/1/117mc_e_436_swatch_150x150.jpg")
+
+brownvl = Floss.create(dmc_number: 435, dmc_name: "Brown Very Light", red: 184, green: 119, blue: 72, hex: "#b87748", image: "https://static1.dmc.com/cache/1/1/117mc_e_435_swatch_150x150.jpg")
+brownl = Floss.create(dmc_number: 434, dmc_name: "Brown Light", red: 152, green: 94, blue: 51, hex: "#985e33", image: "https://static1.dmc.com/cache/1/1/117mc_e_434_swatch_150x150.jpg")
+brownm = Floss.create(dmc_number: 433, dmc_name: "Brown Medium", red: 122, green: 69, blue: 31, hex: "#7a451f", image: "https://static1.dmc.com/cache/1/1/117mc_e_433_swatch_150x150.jpg")
+
+coffeebrownd = Floss.create(dmc_number: 801, dmc_name: "Coffee Brown Dark", red: 101, green: 57, blue: 25, hex: "#653919", image: "https://static1.dmc.com/cache/1/1/117mc_e_801_swatch_150x150.jpg")
+coffeebrownvd = Floss.create(dmc_number: 898, dmc_name: "Coffee Brown Very Dark", red: 73, green: 42, blue: 19, hex: "#492a13", image: "https://static1.dmc.com/cache/1/1/117mc_e_898_swatch_150x150.jpg")
+coffeebrownud = Floss.create(dmc_number: 938, dmc_name: "Coffee Brown Ultra Dark", red: 54, green: 31, blue: 14, hex: "#361f0e", image: "https://static1.dmc.com/cache/1/1/117mc_e_938_swatch_150x150.jpg")
+
+blackbrown = Floss.create(dmc_number: 3371, dmc_name: "Black Brown", red: 30, green: 17, blue: 8, hex: "#1e1108", image: "https://static1.dmc.com/cache/1/1/117mc_e_3371_swatch_150x150.jpg")
+
+beigebrownuvl = Floss.create(dmc_number: 543, dmc_name: "Beige Brown Ultra Very Light", red: 242, green: 227, blue: 206, hex: "#f2e3ce", image: "https://static1.dmc.com/cache/1/1/117mc_e_543_swatch_150x150.jpg")
+
+mochabeigel = Floss.create(dmc_number: 3864, dmc_name: "Mocha Beige Light", red: 203, green: 182, blue: 156, hex: "#cbb69c", image: "https://static1.dmc.com/cache/1/1/117mc_e_3864_swatch_150x150.jpg")
+mochabeigem = Floss.create(dmc_number: 3863, dmc_name: "Mocha Beige Medium", red: 164, green: 131, blue: 92, hex: "#a4835c", image: "https://static1.dmc.com/cache/1/1/117mc_e_3863_swatch_150x150.jpg")
+mochabeiged = Floss.create(dmc_number: 3862, dmc_name: "Mocha Beige Dark", red: 138, green: 110, blue: 78, hex: "#8a6e4e", image: "https://static1.dmc.com/cache/1/1/117mc_e_3862_swatch_150x150.jpg")
+
+mochabrownvd = Floss.create(dmc_number: 3031, dmc_name: "Mocha Brown Very Dark", red: 75, green: 60, blue: 42, hex: "#4b3c2a", image: "https://static1.dmc.com/cache/1/1/117mc_e_3031_swatch_150x150.jpg")
+
+snowwhite = Floss.create(dmc_number: 5200, dmc_name: "Snow White", red: 255, green: 255, blue: 255, hex: "#ffffff", image: "https://static1.dmc.com/cache/1/1/117mc_e_b5200_swatch_150x150.jpg")
+
+white = Floss.create(dmc_number: 0000, dmc_name: "White", red: 252, green: 251, blue: 248, hex: "#fcfbf8", image: "https://static1.dmc.com/cache/1/1/117mc_e_blanc_swatch_150x150.jpg")
+
+winterwhite = Floss.create(dmc_number: 3865, dmc_name: "Winter White", red: 249, green: 247, blue: 241, hex: "#f9f7f1", image: "https://static1.dmc.com/cache/1/1/117mc_e_3865_swatch_150x150.jpg")
+
+ecru = Floss.create(dmc_number: 00, dmc_name: "Ecru", red: 240, green: 234, blue: 218, hex: "#f0eada", image: "https://static1.dmc.com/cache/1/1/117mc_e_ecru_swatch_150x150.jpg")
+
 pgvd = Floss.create(dmc_number: 3799, dmc_name: "Pewter Gray Very Dark", red: 66, green: 66, blue: 66, hex: "#424242", image: "https://static1.dmc.com/cache/1/1/117mc_e_3799_swatch_150x150.jpg")
 
 
