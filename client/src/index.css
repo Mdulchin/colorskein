@@ -208,19 +208,29 @@ text-align: center;
 /* login/signup */
 
 div.loginPage{
-  margin-top: 8%;
+  margin-top: 7%;
+  background-image: url("https://static1.dmc.com/cache/1/1/117mc_top_desktab.jpg");
+  background-position: 45% 60%;
+}
+.loginPage h5 {
+  font-size: x-large;
+  margin: 12px;
 }
 .loginPage {
   display: grid;
   grid-template-columns: 200px 40px 200px;
-  grid-template-rows: 175px auto 80px; 
+  grid-template-rows: 300px auto 200px; 
   justify-content: center;
+  
 }
 
 .loginForm {
-grid-area: "c";
+align-self: end;
 font-size: large;
 text-align: center;
+padding: 6px;
+margin: 7px;
+margin-bottom: 30px;
 }
 div.loginForm {
 margin-left: auto;
@@ -240,10 +250,12 @@ div.signUpForm {
   margin-right: auto;
 }
 .signUpForm {
-  grid-area: "b";
   align-self: end;
   text-align: center;
   font-size: large;
+  padding: 6px;
+  margin: 7px;
+  margin-bottom: 30px;
 }
 
 .signUpForm input {
