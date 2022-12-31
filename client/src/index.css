@@ -207,3 +207,51 @@ text-align: center;
 
 /* login/signup */
 
+div.loginPage{
+  margin-top: 8%;
+}
+.loginPage {
+  display: grid;
+  grid-template-columns: 200px 40px 200px;
+  grid-template-rows: 175px auto 80px; 
+  justify-content: center;
+}
+
+.loginForm {
+grid-area: "c";
+font-size: large;
+text-align: center;
+}
+div.loginForm {
+margin-left: auto;
+margin-right: auto;
+}
+.loginForm input {
+  margin: 3px;
+  padding: 1px;
+}
+
+.loginForm button {
+  margin: 3px;
+  padding: 1px;
+}
+div.signUpForm {
+  margin-left: auto;
+  margin-right: auto;
+}
+.signUpForm {
+  grid-area: "b";
+  align-self: end;
+  text-align: center;
+  font-size: large;
+}
+
+.signUpForm input {
+  margin: 3px;
+  padding: 1px;
+}
+
+.signUpForm button {
+  margin: 3px;
+  padding: 1px;
+}

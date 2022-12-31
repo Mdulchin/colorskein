@@ -62,7 +62,7 @@ function App() {
   
       {currentUser ? 
       <Link to='/'>
-        <button className='nav' onClick={handleLogOut}>Log out</button>
+        <button className='nav' onClick={handleLogOut}>Logout</button>
       </Link>
       :
       <Link to='/login'>

@@ -3,6 +3,10 @@ function Login({onLogin, handleLogOut}){
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [createAccError, setCreateAccError] = useState(false)
+  const [loginError, setLoginError] = useState(false)
+  const errorResponse = <p style={{ color: "red" }}> Incorrect Username or Password </p>
+  const errorResponseCreate = <p style={{ color: "red" }}> Username Taken </p>
   const [login, setLogin] = useState({
     username: "",
     password: "",
@@ -14,6 +18,7 @@ function Login({onLogin, handleLogOut}){
       ...login, [name]: value
     })
 }
+
 
  function handleSubmit(e) {  
    e.preventDefault()
@@ -35,8 +40,9 @@ function Login({onLogin, handleLogOut}){
                 onLogin(data)
             })
         }
-        else {
-            console.log('oh no!')
+        else if (r.status === 422) {
+            setCreateAccError(true)
+          console.log(r.json())
         }
     })
  }
@@ -57,17 +63,18 @@ function Login({onLogin, handleLogOut}){
             res.json()
             .then(data => onLogin(data))
         }
-        else {
-            console.log("yikes")
-        }
+        else if (res.status === 401) {
+            setLoginError(true)
+            console.log(res.json())
+          }
     })
 }
 
     return (
         <div className = "loginPage">
             <div className="signUpForm">
-            <h1>Create Account</h1>
-            <form onSubmit={handleSubmit}>
+            <h5>Create Account</h5>
+            <form onSubmit={handleSubmit} autoComplete="off">
                 <input 
                 name="username"
                 placeholder= "username"
@@ -85,24 +92,36 @@ function Login({onLogin, handleLogOut}){
                 onChange={(e) => setEmail(e.target.value)}
                 />
                 <button type="submit">Create Account</button>
+                {
+                createAccError ?
+                  errorResponseCreate :
+                  null
+                }
             </form>
             </div>
             <br />
             <div className = "loginForm">
-                <form onSubmit={handleLogin}>
+                <h5>Login</h5>
+            <form onSubmit={handleLogin}>
                 <input
               name='username'
               placeholder='username'
               onChange={handleChange}
-                />
+              />
             <input
               name='password'
               type="password"
               placeholder='Password'
               onChange={handleChange}
-                />
+              />
+              <br />
                 <button type="submit">login</button>
                 </form>
+              {
+          loginError ?
+           errorResponse :
+          null
+              }
                 <button onClick={handleLogOut}>logout</button>
             </div>
         </div>
