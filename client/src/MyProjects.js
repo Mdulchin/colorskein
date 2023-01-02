@@ -10,10 +10,10 @@ const [myProjects, setMyProjects] = useState([])
             .then((data) => {
                 setMyProjects(data)
             });
-            
+            console.log(myProjects.length)
         }, []);
         
-        if (myProjects.length === 0) {
+        if (myProjects.length === 1) {
             return (
             <div>
                 <p>You have no projects!
@@ -30,6 +30,7 @@ const [myProjects, setMyProjects] = useState([])
         const myProjectFlosses = project.flosses.map((floss) => {
             return <img className="pflossImage" src={floss.image}></img>
                 })
+
         return (
             <div className="projectCard">
                 <h1>{project.title}</h1>
