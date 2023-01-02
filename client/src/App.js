@@ -58,40 +58,44 @@ function App() {
   
   return (
     // <Router>
-    <div className='navBar'>
-  
+    <div className='app'>
+      {currentUser ? <p className='username'>Welcome, {currentUser.username}!</p> : null}
+      <div className='navBar'> 
+      <h1 className='logo'>ColorSkein</h1>
       {currentUser ? 
       <Link to='/'>
-        <button className='nav' onClick={handleLogOut}>Logout</button>
+        <button className='nav' id="logoutb" onClick={handleLogOut}>Logout</button>
       </Link>
       :
       <Link to='/login'>
-      <button className='nav'>login or signup</button>
+      <button className='nav' id='loginb'>login or signup</button>
       </Link>
       }
-        {currentUser ? 
-        <Link to='/me'>
-          <button className='nav'>My Profile</button>
-        </Link>
-        :
-        null
-      }
+      <br />
       {currentUser ?
       <Link to='/projects'>
-        <button className="nav">Create a New Project</button>
+        <button className="nav" id="projectb">Create a New Project</button>
     </Link>
     :
     null 
-    }
-      <Link to='/threads'>
-        <button className='nav'>All Threads</button>
-      </Link>
+  }
+   <br />
+  {currentUser ? 
+  <Link to='/me'>
+    <button className='nav' id="myprofb">My Profile</button>
+  </Link>
+  :
+  null
+}
+     <br />
       <Link to='/' >
-        <button className= 'nav'>Home</button>
+        <button className= 'nav' id="homeb">Home</button>
       </Link>
-      <h1 className='logo'>ColorSkein</h1>
+      <br />
+      <Link to='/threads'>
+        <button className='nav' id="allthreadsb">All Threads</button>
+      </Link>
       <br/>
-      {currentUser ? <p className='username'>Welcome, {currentUser.username}!</p> : null}
    
     <Routes> 
       <Route path='/' element={<Home flossArray={flossArray}/>}/>
@@ -100,6 +104,7 @@ function App() {
       <Route path='/me' element={<Profile currentUser={currentUser} logMeIn={logMeIn}/>}/>
       <Route path='/projects' element={<NewProject currentUser={currentUser}/>}/>
     </Routes>
+    </div>
     </div>
     // </Router>
   );

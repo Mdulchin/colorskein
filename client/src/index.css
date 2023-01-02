@@ -1,34 +1,67 @@
 body {
   margin: 0;
-  font-family: "Canela Web";
+  font-family: "Arial";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  /* background-color: #d3a5b263; */
+    letter-spacing: 1px;
+    /* background-color: #F5F5EB; */
   }
   
   code {
-    font-family: "Canela Web";
+    font-family: "Arial";
     /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace; */
   }
+  input {
+  font-size: 16px;
+  font-weight: 200;
+  height: 23px;
+  width: 200px;
+  letter-spacing: 1px;
+  margin: 3px;
+  outline: 0;
+  border: 1px solid black;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  }
+  /* button {
+    background-color: #3774ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 9px;
+    margin: 3px;
+  } */
 /* nav */
+
   .username {
     position: absolute;
-    margin-top: 5px;
     right: 0%;
+    top: 5.5%;
   }
+  .navBar {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
   .nav {
-    float: right;
-    background: none;
-    border: none;
-    font-size: medium;
-    font-family: 'Canela Web';
+
   }
+  /* #logoutb {
+    position: sticky;
+  } */
+
   .logo{
-  position: fixed;
-  top: -2.5%;
- 
+
+    z-index: 3;
   }
+
+ 
 
   /* homepage */
   .home {
@@ -53,6 +86,10 @@ body {
     border: none;
     font-size: xx-large;
   }
+  button.nextFloss::after{
+    background-color: white;
+  }
+
   .prevFloss{
     position: absolute;
     left: -5%;
@@ -61,9 +98,40 @@ body {
     font-size: xx-large;
   }
 
+  button.prevFloss::after{
+    background-color: white;
+  }
+
   .allThreads {
   text-align: center;
   }
+  .allThreadsHeader {
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    margin: auto;
+    font-size: 60px;
+  }
+  .allThreadsp {
+    position: fixed;
+    top: 30%;
+    left: 40%; 
+    width: 20%;
+    font-size: 20px;
+  }
+  .searchBar {
+    padding: 0.25rem;
+    border: none;
+    font-family: inherit;
+    font-size: 1.2em;
+    border-bottom: 2px solid #f5b0dd;
+    transition: all 0.2s;
+    width: 100%;
+    text-align: left;
+  }
+  input#search {
+    border: none;
+    }
 /* flosscontainer and card */
 .flossContainer {
 display: flex;
@@ -76,15 +144,22 @@ justify-content: space-evenly;
   align-items: center;
   width: 200px;
   margin: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  border-radius: 8px;
+  border: 1px solid black;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 8px; */
 }
 
-.flossCard img, h4, p, button {
+.flossCard img, h4, p {
   justify-self: center;
   padding: 3px;
   margin: 1px;
   border-radius: 8px;
+}
+.flossCard button {
+  justify-self: center;
+  padding: 3px;
+  margin: 1px;
+  margin-bottom: 9px;
 }
 
 img {
@@ -98,8 +173,11 @@ img {
   "color" 
   "thread" "thread" "thread" "thread" "thread" "thread";
 }
+/* .threadandButton {
+  margin: auto;
+} */
 .newProjectForm {
-  margin-left: 36.5%;
+  margin-left: 35.5%;
   padding: 3px;
  }
  .newProjectForm input {
@@ -132,26 +210,72 @@ img {
   justify-content: center;
 }
 
-.projectThreads button {
-  justify-self: center;
-}
-.btn {
-max-width: 200px;
-justify-self: center;
-padding: 3px;
-margin: 4px;
-}
+/* .swatchContainer button {
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+
+} */
+
 
 .threadSwatch {
   display: grid;
   padding: 3px;
 }
 
+/* CSS */
+button {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:after {
+  content: "";
+  background-color: #f5b0dd;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+button {
+    padding: 3px 5px 3px;
+  }
+}
+button.btn{
+  width: 300px;
+  margin-left: 40%;
+  margin-top: 1%;
+}
+
 .showThreads {
-  margin-left: 47%;
+  margin-left: 45%;
 }
 .threadSwatch img, h5{
   justify-self: center;
+}
+
+.threadSwatch h5 {
+  margin: 5px;
 }
 
 /* profile page */

@@ -1,7 +1,7 @@
 function Search({setSearch}){
     return (
         <div className="searchBar">
-          <input
+          <input       
             type="text"
             id="search"
             placeholder="Search by DMC Name"

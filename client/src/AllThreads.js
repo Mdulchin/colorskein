@@ -8,7 +8,8 @@ function AllThreads({currentUser, flossArray}){
 return (
     
     <div className="allThreads">  
-    <h1>All Threads</h1>
+    <h1 className="allThreadsHeader">All Threads</h1>
+    <p className="allThreadsp">Browse all 506 DMC six-strand embroidery floss</p>
     <Floss currentUser={currentUser} flossArray={flossArray}/>
     </div>
  

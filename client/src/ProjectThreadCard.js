@@ -20,7 +20,6 @@ return (
     <div className="threadSwatch">
       <h5>{d.dmc_name}</h5>
       <img src={d.image}></img>
-      <button onClick={() => saveMyThreads(d)}>Save to "{title}"</button>
       {/* <button onClick ={() => darker(dmc.indexOf(d))}>Darker shade</button> */}
       <ReactSlider
         className="horizontal-slider"
@@ -39,6 +38,7 @@ return (
       <br />
       <button onClick ={() => updateHue(dmc.indexOf(d))}>Adjust Shade <br/> (darker-lighter)</button>
       <br />
+      <button onClick={() => saveMyThreads(d)}>Save to "{title}"</button>
     </div>
   )
 }
