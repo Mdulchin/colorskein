@@ -19,8 +19,8 @@ if (!currentUser)  {
 
 return (
 <div className='myProf'>
-    {!currentUser ?  <h1>nope</h1> : <h1>Hello, {currentUser.username}!</h1>}
-    <p>My Threads</p>
+    {!currentUser ?  <h1>Loading</h1> : <h1>Hello, {currentUser.username}!</h1>}
+    <h3 className='myProfh3'>My Threads</h3>
    <div className='flossContainer'>{myThreads}</div>
     <MyProjects currentUser={currentUser}/>
 </div>

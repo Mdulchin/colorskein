@@ -19,26 +19,30 @@ const [currentValue, setCurrentValue] = useState(0)
 return (
     <div className="threadSwatch">
       <h5>{d.dmc_name}</h5>
+      <p>#{d.dmc_number}</p>
       <img src={d.image}></img>
       {/* <button onClick ={() => darker(dmc.indexOf(d))}>Darker shade</button> */}
       <ReactSlider
         className="horizontal-slider"
         thumbClassName="example-thumb"
         trackClassName="example-track"
+        // markClassName="example-mark"
         defaultValue={0}
         min={-100}
+        marks={25}
         max={100}
         minDistance={1}
         value={currentValue}
         onChange={value => setCurrentValue(value)}
+        // renderMark={(props) => <span {...props} />}
         // onAfterChange={currentValue => setHueValue(currentValue)}
         renderThumb={(props, state) => <div {...props}>{state.valueNow}
         </div>}
       />
       <br />
-      <button onClick ={() => updateHue(dmc.indexOf(d))}>Adjust Shade <br/> (darker-lighter)</button>
+      <button className="tswatchbutton" onClick ={() => updateHue(dmc.indexOf(d))}>Adjust Shade <br/> (darker-lighter)</button>
       <br />
-      <button onClick={() => saveMyThreads(d)}>Save to "{title}"</button>
+      <button className="tswatchbutton" onClick={() => saveMyThreads(d)}>Save to "{title}"</button>
     </div>
   )
 }

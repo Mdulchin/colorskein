@@ -28,12 +28,17 @@ const [myProjects, setMyProjects] = useState([])
 
     const myProjectsList = myProjects.map((project) => {
         const myProjectFlosses = project.flosses.map((floss) => {
-            return <img className="pflossImage" src={floss.image}></img>
+            return (
+            <span className="pflossSpan">
+            <img className="pflossImage" src={floss.image} alt={floss.dmc_name}></img>
+            {/* <p className="pflossName">{floss.dmc_name}</p> */}
+            </span>
+            )
                 })
 
         return (
             <div className="projectCard">
-                <h1>{project.title}</h1>
+                <h2>{project.title}</h2>
                 <img className="projectImage" src={project.image} alt={project.title} />
                 <div className="projectFlossImage">
                 {myProjectFlosses}
@@ -47,7 +52,7 @@ const [myProjects, setMyProjects] = useState([])
  
     return (
         <div>
-        <p>My Projects</p>
+        <h3>My Projects</h3>
         <div className='projectContainer'>{myProjectsList}</div>
         </div>
     )
