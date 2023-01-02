@@ -4,7 +4,7 @@ function Search({setSearch}){
           <input       
             type="text"
             id="search"
-            placeholder="Search by DMC Name"
+            placeholder="Search By DMC Name"
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
