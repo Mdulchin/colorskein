@@ -68,6 +68,9 @@ body {
   a {
   width: fit-content;
   } 
+  #myprofb {
+    margin-bottom: 19px;
+  }
 
   .logo{
     z-index: 3;
@@ -226,6 +229,10 @@ justify-content: space-evenly;
   padding: 3px;
   margin: 1px;
   margin-bottom: 9px;
+  background-color: #f5b0dd54
+}
+.flossCard button::after {
+  background-color: white;
 }
 
 /* new project page */

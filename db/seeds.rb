@@ -76,7 +76,7 @@ mauve = Floss.create(dmc_number: 3687, dmc_name: "Mauve", red: 201, green: 107, 
 mauved = Floss.create(dmc_number: 3803, dmc_name: "Mauve Dark", red: 171, green: 51, blue: 87, hex: "#ab3357", image: "https://static1.dmc.com/cache/1/1/117mc_e_3803_swatch_150x150.jpg")
 mauvevd = Floss.create(dmc_number: 3685, dmc_name: "Mauve Very Dark", red: 136, green: 21, blue: 49, hex: "#881531", image: "https://static1.dmc.com/cache/1/1/117mc_e_3685_swatch_150x150.jpg")
 
-cranvl = Floss.create(dmc_number: 605, dmc_name: "Cranberry Very Light", red: 255, green: 192, blue: 205, hex: "#ffcocd", image: "https://static1.dmc.com/cache/1/1/117mc_e_605_swatch_150x150.jpg")
+cranvl = Floss.create(dmc_number: 605, dmc_name: "Cranberry Very Light", red: 255, green: 192, blue: 205, hex: "#ffc0cd", image: "https://static1.dmc.com/cache/1/1/117mc_e_605_swatch_150x150.jpg")
 cranl = Floss.create(dmc_number: 604, dmc_name: "Cranberry Light", red: 255, green: 176, blue: 190, hex: "#ffbobe", image: "https://static1.dmc.com/cache/1/1/117mc_e_604_swatch_150x150.jpg")
 cranberry = Floss.create(dmc_number: 603, dmc_name: "Cranberry", red: 255, green: 164, blue: 190, hex: "#ffa4be", image: "https://static1.dmc.com/cache/1/1/117mc_e_603_swatch_150x150.jpg")
 cranm = Floss.create(dmc_number: 602, dmc_name: "Cranberry Medium", red: 226, green: 72, blue: 116, hex: "#e24874", image: "https://static1.dmc.com/cache/1/1/117mc_e_602_swatch_150x150.jpg")

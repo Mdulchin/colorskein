@@ -1,6 +1,7 @@
 import { useState } from 'react';
 function FlossCard({floss, currentUser}) {
 const [myThreadArray, setMyThreadArray] = useState([])
+const [inStash, setInStash] = useState(false)
 
   function addToThreads(){
     fetch('/user_flosses', {
@@ -15,6 +16,7 @@ const [myThreadArray, setMyThreadArray] = useState([])
     })
     .then(res => res.json())
     .then(data => setMyThreadArray([...myThreadArray, data]))
+    setInStash(true)
         }
 
 
@@ -30,7 +32,7 @@ return (
          Blue: {floss.blue}, 
          <br/>
          Green: {floss.green}</p>
-        <button onClick={addToThreads}>Add to my threads</button>
+        <button onClick={addToThreads}>{inStash ? "Added!" : "Add to my threads"}</button>
     </div>
 )
 }
