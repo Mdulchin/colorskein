@@ -6,6 +6,18 @@ body {
     letter-spacing: 1px;
     /* background-color: #F5F5EB; */
   }
+  /* body::after {
+    content: '';
+		position: absolute;
+		background-color: #648767;
+		padding-bottom: 141.42136%;
+		width: 100%;
+		bottom: -1;
+		left: 8;
+		transform: rotate(61.5deg) ;
+		transform-origin: right bottom;
+    z-index: -1;
+  } */
   
   code {
     font-family: "Arial";
@@ -32,6 +44,18 @@ body {
     right: 0%;
     top: 5.5%;
   }
+  .username::after {
+    content: "";
+    position: absolute;
+    left: -42%;
+    bottom: -42px;
+    width: 300px;
+    height: 300px;
+    background: #F9C784;
+    z-index: -1;
+    border-radius: 100%;
+  }
+
   .navBar {
     position: absolute;
     top: 4px;
@@ -41,16 +65,14 @@ body {
     display: flex;
     flex-direction: column;
   }
-a {
+  a {
   width: fit-content;
-}
-
-  /* #logoutb {
-    position: sticky;
-  } */
+  } 
 
   .logo{
     z-index: 3;
+    font-size: 40px;
+    font-family: Clarendon, Helvetica, Arial, sans-serif;
   }
 
   /* homepage */
@@ -101,21 +123,42 @@ a {
     left: 40%;
     margin: auto;
     font-size: 60px;
-    font-family: GTSectra, Helvetica, Arial, sans-serif
+    font-family: Clarendon, Helvetica, Arial, sans-serif;
+  }
+  .allThreadsHeader::before{
+    content: "";
+    position: absolute;
+    left: 55%;
+    bottom: 7px;
+    width: 100%;
+    height: 17px;
+    transform: skew(-1deg) translateX(-50%);
+    background: #DB504A;
+    z-index: -1;
   }
   .allThreadsp {
     position: absolute;
     bottom: -39%;
-    left: 40%; 
-    width: 20%;
+    left: 35%; 
     font-size: 20px;
+    font-style: normal;
+    font-family: Clarendon, Helvetica, Arial, sans-serif;
   }
+  .needleEmoji {
+    font-size: 60px;
+    z-index: -1;
+    position: absolute;
+    top: 90%;
+    left: 66%;
+  }
+
   .searchBar {
     padding: 0.25rem;
+    margin-top: 1rem;
     border: none;
     font-family: inherit;
     font-size: 1.2em;
-    border-bottom: 2px solid #f5b0dd;
+    border-bottom: 4px solid #f5b0dd;
     transition: all 0.2s;
     width: 100%;
     text-align: left;
@@ -130,7 +173,19 @@ a {
     left: 35%;
     margin: auto;
     font-size: 50px;
-    font-family: GTSectra, Helvetica, Arial, sans-serif
+    font-family: Clarendon, Helvetica, Arial, sans-serif
+    }
+
+    .newProjectHeader::before{
+      content: "";
+      position: absolute;
+      left: 55%;
+      bottom: 7px;
+      width: 100%;
+      height: 17px;
+      transform: skew(-1deg) translateX(-50%);
+      background: #657ED4;
+      z-index: -1;
     }
     .newProjectp {
       position: absolute;
@@ -142,6 +197,7 @@ a {
     }
 /* flosscontainer and card */
 .flossContainer {
+  margin-top: 9px;
 display: flex;
 flex-flow: row wrap;
 justify-content: space-evenly;
@@ -161,7 +217,9 @@ justify-content: space-evenly;
   justify-self: center;
   padding: 3px;
   margin: 1px;
-
+}
+.flossCard h4 {
+  height: 34px;
 }
 .flossCard button {
   justify-self: center;
@@ -307,17 +365,34 @@ text-align: center;
 .myProf h1 {
   font-size: 50px;
   position: absolute;
-  top: 76%;
-  left: 41.5%;
-  font-family: GTSectra, Helvetica, Arial, sans-serif
+  top: 66%;
+  left: 41%;
+  font-weight: 600;
+  font-family: Clarendon, Helvetica, Arial, sans-serif;
+  letter-spacing: 3px;
+}
+.myProf h1::before{
+  content: "";
+  background-color: #69995D;
+  width: 90%;
+  z-index: -1;
+  position: absolute;
+  transform: skew(0deg) translateX(-40%);
+  height: 40%;
+  top: 32px;
+  left: 49%;
+  
 }
 .myProfh3 {
   position: absolute;
-  bottom: -49%;
+  bottom: -67%;
   left: 25.2%; 
+  font-weight: 500;
   width: 50%;
-  font-size: 20px;
+  font-size: 28px;
   text-align: center;
+  font-family: Clarendon, Helvetica, Arial, sans-serif;
+
 }
 
 .projectContainer {
