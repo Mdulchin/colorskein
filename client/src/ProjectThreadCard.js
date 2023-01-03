@@ -1,20 +1,21 @@
 import ReactSlider from 'react-slider';
 import { useState} from "react"
-function ProjectThreadCard({d, saveMyThreads, darker, dmc, title}){
+function ProjectThreadCard({d, saveMyThreads, darker, dmc, title, isSaved}){
 const [currentValue, setCurrentValue] = useState(0)
+const [clicked, setClicked] = useState(false)
 
 // function updateCurrentValue(){
 //   setHue(currentValue
 // }
  function updateHue(d) {
   darker(d, currentValue)
-  // setHue(currentValue)
-  
-  // debugger
-  
+
  }
  
-
+function handleSave(d){
+  saveMyThreads(d)
+  setClicked(!clicked)
+}
 
 return (
     <div className="threadSwatch">
@@ -42,7 +43,7 @@ return (
       <br />
       <button className="tswatchbutton" onClick ={() => updateHue(dmc.indexOf(d))}>Adjust Shade <br/> (darker-lighter)</button>
       <br />
-      <button className="tswatchbutton" onClick={() => saveMyThreads(d)}>Save to "{title}"</button>
+      <button className="tswatchbutton" onClick={() => handleSave(d)}>{clicked ? "Saved!" : `Save to "${title}"`}</button>
     </div>
   )
 }

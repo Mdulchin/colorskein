@@ -10,6 +10,7 @@ function ProjectThreads({colors, setProjectThread, projectThread, title, setRend
     const [dmc, setDmc] = useState([])
     const [savedThreads, setSavedThreads] = useState([])
     const [darkerShade, setDarkerShade] = useState([])
+    const [isSaved, setIsSaved] = useState(false)
 
 useEffect(() => {
     fetch('/flosses')
@@ -134,12 +135,12 @@ function showMe(){
 
 function saveMyThreads(d){
 setProjectThread([...projectThread, d])
-console.log(projectThread)
+setIsSaved(!isSaved)
 }
 
 
 const myThreadCard = dmc.map(d => {
-  return <ProjectThreadCard d={d} saveMyThreads={saveMyThreads} darker={darker} dmc={dmc} title={title}/>
+  return <ProjectThreadCard d={d} saveMyThreads={saveMyThreads} darker={darker} isSaved={isSaved} dmc={dmc} title={title}/>
 })
 
 const newShade = darkerShade.map(n => {
