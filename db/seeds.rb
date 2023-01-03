@@ -540,6 +540,23 @@ winterwhite = Floss.create(dmc_number: 3865, dmc_name: "Winter White", red: 249,
 
 ecru = Floss.create(dmc_number: 00, dmc_name: "Ecru", red: 240, green: 234, blue: 218, hex: "#f0eada", image: "https://static1.dmc.com/cache/1/1/117mc_e_ecru_swatch_150x150.jpg")
 
+beigegl = Floss.create(dmc_number: 822, dmc_name: "Beige Gray Light", red: 231, green: 226, blue: 211, hex: "#e7e2d3", image: "https://static1.dmc.com/cache/1/1/117mc_e_822_swatch_150x150.jpg")
+beigegm = Floss.create(dmc_number: 644, dmc_name: "Beige Gray Medium", red: 221, green: 216, blue: 203, hex: "#ddd8cb", image: "https://static1.dmc.com/cache/1/1/117mc_e_644_swatch_150x150.jpg")
+beigegd = Floss.create(dmc_number: 642, dmc_name: "Beige Gray Dark", red: 164, green: 152, blue: 120, hex: "#a49878", image: "https://static1.dmc.com/cache/1/1/117mc_e_642_swatch_150x150.jpg")
+beigegvd = Floss.create(dmc_number: 640, dmc_name: "Beige Gray Very Dark", red: 133, green: 123, blue: 97, hex: "#857b61", image: "https://static1.dmc.com/cache/1/1/117mc_e_640_swatch_150x150.jpg")
+
+browngd = Floss.create(dmc_number: 3787, dmc_name: "Brown Gray Dark", red: 98, green: 93, blue: 80, hex: "#625d50", image: "https://static1.dmc.com/cache/1/1/117mc_e_3787_swatch_150x150.jpg")
+browngvd = Floss.create(dmc_number: 3021, dmc_name: "Brown Gray Very Dark", red: 79, green: 75, blue: 65, hex: "#4f4b41", image: "https://static1.dmc.com/cache/1/1/117mc_e_3021_swatch_150x150.jpg")
+browngvl = Floss.create(dmc_number: 3024, dmc_name: "Brown Gray Very Light", red: 235, green: 234, blue: 231, hex: "#ebeae7", image: "https://static1.dmc.com/cache/1/1/117mc_e_3024_swatch_150x150.jpg")
+browngl = Floss.create(dmc_number: 3023, dmc_name: "Brown Gray Light", red: 177, green: 170, blue: 151, hex: "#b1aa97", image: "https://static1.dmc.com/cache/1/1/117mc_e_3023_swatch_150x150.jpg")
+browngm = Floss.create(dmc_number: 3022, dmc_name: "Brown Gray Medium", red: 142, green: 144, blue: 120, hex: "#8e9078", image: "https://static1.dmc.com/cache/1/1/117mc_e_3022_swatch_150x150.jpg")
+
+ashgvl = Floss.create(dmc_number: 535, dmc_name: "Ash Gray Very Light", red: 99, green: 100, blue: 88, hex: "#363458", image: "https://static1.dmc.com/cache/1/1/117mc_e_535_swatch_150x150.jpg")
+
+mochabvl = Floss.create(dmc_number: 3033, dmc_name: "Mocha Brown Very Light", red: 227, green: 216, blue: 204, hex: "#e3d8cc", image: "https://static1.dmc.com/cache/1/1/117mc_e_3033_swatch_150x150.jpg")
+mochabl = Floss.create(dmc_number: 3782, dmc_name: "Mocha Brown Light", red: 210, green: 188, blue: 166, hex: "#d2bca6", image: "https://static1.dmc.com/cache/1/1/117mc_e_3782_swatch_150x150.jpg")
+mochabm = Floss.create(dmc_number: 3032, dmc_name: "Mocha Brown Medium", red: 179, green: 159, blue: 139, hex: "#b39f8b", image: "https://static1.dmc.com/cache/1/1/117mc_e_3032_swatch_150x150.jpg")
+
 pgvd = Floss.create(dmc_number: 3799, dmc_name: "Pewter Gray Very Dark", red: 66, green: 66, blue: 66, hex: "#424242", image: "https://static1.dmc.com/cache/1/1/117mc_e_3799_swatch_150x150.jpg")
 
 
