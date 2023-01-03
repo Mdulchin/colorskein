@@ -62,16 +62,14 @@ function App() {
       {currentUser ? <p className='username'>Welcome, {currentUser.username}!</p> : null}
       <div className='navBar'> 
       <h1 className='logo'>ColorSkein</h1>
-      {currentUser ? 
-      <Link to='/'>
-        <button className='nav' id="logoutb" onClick={handleLogOut}>Logout</button>
-      </Link>
-      :
-      <Link to='/login'>
-      <button className='nav' id='loginb'>login or signup</button>
-      </Link>
-      }
-      <br />
+       <Link to='/' >
+         <button className= 'nav' id="homeb">Home</button>
+       </Link>
+       <br />
+       <Link to='/threads'>
+         <button className='nav' id="allthreadsb">All Threads</button>
+       </Link>
+       <br/>
       {currentUser ?
       <Link to='/projects'>
         <button className="nav" id="projectb">Create a New Project</button>
@@ -87,15 +85,16 @@ function App() {
   :
   null
 }
-     <br />
-      <Link to='/' >
-        <button className= 'nav' id="homeb">Home</button>
-      </Link>
-      <br />
-      <Link to='/threads'>
-        <button className='nav' id="allthreadsb">All Threads</button>
-      </Link>
-      <br/>
+  <br />
+  {currentUser ? 
+  <Link to='/'>
+    <button className='nav' id="logoutb" onClick={handleLogOut}>Logout</button>
+  </Link>
+  :
+  <Link to='/login'>
+  <button className='nav' id='loginb'>login or signup</button>
+  </Link>
+  }
    
     <Routes> 
       <Route path='/' element={<Home flossArray={flossArray}/>}/>
