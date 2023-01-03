@@ -17,6 +17,7 @@ function App() {
   let navigate = useNavigate()
   const [currentUser, setCurrentUser] = useState(null)
   const [flossArray, setFlossArray] = useState([])
+  const [project, setProject] = useState([])
 
   useEffect(() => {
     fetch('/flosses')
@@ -38,6 +39,9 @@ function App() {
       })
     }
     
+    function pleaseUpdate(){
+      navigate('/me')
+    }
     
     function handleLogOut() {
       fetch('/logout', {
@@ -100,8 +104,8 @@ function App() {
       <Route path='/' element={<Home flossArray={flossArray}/>}/>
       <Route path='/threads' element={<AllThreads currentUser={currentUser} flossArray={flossArray}/>}/>
       <Route path='/login' element={<Login onLogin={onLogin} currentUser={currentUser} handleLogOut={handleLogOut}/>}/>
-      <Route path='/me' element={<Profile currentUser={currentUser} logMeIn={logMeIn}/>}/>
-      <Route path='/projects' element={<NewProject currentUser={currentUser}/>}/>
+      <Route path='/me' element={<Profile currentUser={currentUser} logMeIn={logMeIn} project={project} setProject={setProject}/>}/>
+      <Route path='/projects' element={<NewProject currentUser={currentUser} setProject={setProject} project={project} pleaseUpdate={pleaseUpdate}/>}/>
     </Routes>
     </div>
     </div>

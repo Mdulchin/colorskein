@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
-function MyProjects({currentUser}){
-const [myProjects, setMyProjects] = useState([])
+function MyProjects({currentUser, project, setProject}){
+// const [myProjects, setMyProjects] = useState([])
 
     useEffect(() => {
         fetch(`/projects`)
             .then((r) => r.json())
             .then((data) => {
-                setMyProjects(data)
+                setProject(data)
             });
-            console.log(myProjects.length)
+            console.log(project.length)
         }, []);
         
-        if (myProjects.length === 1) {
+        if (project.length === 1) {
             return (
             <div>
                 <p>You have no projects!
@@ -26,20 +26,21 @@ const [myProjects, setMyProjects] = useState([])
         )}
 
 
-    const myProjectsList = myProjects.map((project) => {
-        const myProjectFlosses = project.flosses.map((floss) => {
+    const myProjectsList = project.map((proj) => {
+        const myProjectFlosses = proj.flosses.map((floss) => {
             return (
             <span className="pflossSpan">
             <img className="pflossImage" src={floss.image} alt={floss.dmc_name}></img>
-            {/* <p className="pflossName">{floss.dmc_name}</p> */}
+            {/* <p >{floss.dmc_number}</p> */}
+            <p className="pflossNum">#{floss.dmc_number}</p>
             </span>
             )
                 })
 
         return (
             <div className="projectCard">
-                <h2>{project.title}</h2>
-                <img className="projectImage" src={project.image} alt={project.title} />
+                <h2>{proj.title}</h2>
+                <img className="projectImage" src={proj.image} alt={proj.title} />
                 <div className="projectFlossImage">
                 {myProjectFlosses}
                 </div>
@@ -53,7 +54,7 @@ const [myProjects, setMyProjects] = useState([])
     return (
         <div>
         <h3 className="myprofmyproj">My Projects</h3>
-        <p className="threadEmoji">🧵</p>
+        {/* <p className="threadEmoji">🧵</p> */}
         <div className='projectContainer'>{myProjectsList}</div>
         </div>
     )

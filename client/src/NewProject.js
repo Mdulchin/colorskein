@@ -2,13 +2,14 @@ import { ColorExtractor } from 'react-color-extractor'
 import { useState } from 'react'
 import ProjectColors from './ProjectColors'
 import ProjectThreads from './ProjectThreads'
+import { useNavigate } from 'react-router-dom'
 
-function NewProject({currentUser}){
+function NewProject({currentUser, pleaseUpdate, setProject, project}){
 const [colors, setColors] = useState([])
 const [image, setImage] = useState('')
 const [src, setSrc] = useState('')
 const [title, setTitle] = useState('')
-const [project, setProject] = useState([])
+// const [project, setProject] = useState([])
 const [projectThread, setProjectThread] = useState([])
 const [renderThreads, setRenderThreads] = useState([])
 
@@ -39,10 +40,13 @@ fetch("/projects", {
     })
 })
 .then(res => res.json())
-.then(data => setProject(data))
+.then(data => setProject([...project, data]))
 }
 
-
+function saveHandler(){
+    saveProject()
+    pleaseUpdate()
+}
 
 const colorSwatches = colors.map((color, i) => {
   return (
@@ -84,7 +88,7 @@ return (
         {colorSwatches}
         </div>
     <ProjectThreads colors={colors} colorVals={colorVals} setProjectThread={setProjectThread} projectThread={projectThread} title={title} setRenderThreads={setRenderThreads}/>
-    <button className='btn' onClick={saveProject}>Save project</button>
+    <button className='btn' onClick={saveHandler}>Save project</button>
     </div>
 </div>
 
