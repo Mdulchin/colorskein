@@ -3,7 +3,7 @@ import {useEffect, useState } from 'react';
 import MyProjects from './MyProjects';
 import ProfileThreads from './ProfileThreads';
 import { Link } from "react-router-dom"
-function Profile({currentUser, logMeIn}){
+function Profile({currentUser, logMeIn, project, setProject}){
 
   useEffect(() => {
     logMeIn()
@@ -26,7 +26,7 @@ return (
    <Link to='/threads' >
     <button className='myProfb'>Add More Threads</button>
    </Link>
-    <MyProjects currentUser={currentUser}/>
+    <MyProjects currentUser={currentUser} project={project} setProject={setProject}/>
 </div>
 )
 }
