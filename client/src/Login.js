@@ -122,7 +122,7 @@ function Login({onLogin, handleLogOut}){
            errorResponse :
           null
               }
-                <button onClick={handleLogOut}>logout</button>
+                {/* <button onClick={handleLogOut}>logout</button> */}
             </div>
         </div>
     )
