@@ -85,7 +85,7 @@ function App() {
   :
   null
 }
-  <br />
+  
   {currentUser ? 
   <Link to='/'>
     <button className='nav' id="logoutb" onClick={handleLogOut}>Logout</button>
