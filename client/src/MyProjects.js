@@ -52,7 +52,8 @@ const [myProjects, setMyProjects] = useState([])
  
     return (
         <div>
-        <h3>My Projects</h3>
+        <h3 className="myprofmyproj">My Projects</h3>
+        <p className="threadEmoji">🧵</p>
         <div className='projectContainer'>{myProjectsList}</div>
         </div>
     )
