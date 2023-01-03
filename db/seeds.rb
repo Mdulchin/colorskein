@@ -613,34 +613,34 @@ applegreen = Floss.create(dmc_number: 15, dmc_name: "Apple Green", red: 209, gre
 chartreusel = Floss.create(dmc_number: 16, dmc_name: "Chartreuse Light", red: 201, green: 194, blue: 88, hex: "#c9c258", image: "https://static1.dmc.com/cache/1/1/117mc_e_16_swatch_150x150.jpg")
 
 yellowpluml = Floss.create(dmc_number: 17, dmc_name: "Yellow Plum Light", red: 229, green: 226, blue: 114, hex: "#e5e272", image: "https://static1.dmc.com/cache/1/1/117mc_e_17_swatch_150x150.jpg")
-yellowplum = Floss.create(dmc_number: 18, dmc_name: "Yellow Plum", red: 217, green: 213, blue: 109, hex: "#d9d56d", image: "https://static1.dmc.com/cache/1/1/117mc_e_18_swatch_150x150.jpg")
+yellowplum = Floss.create(dmc_number: 18, dmc_name: "Yellow Plum", red: 217, green: 213, blue: 109, hex: "#d9d56d", image: "https://static1.dmc.com/cache/1/1/117_18_swatch_150x150.jpg")
 
-autumngoldml = Floss.create(dmc_number: 19, dmc_name: "Autumn Gold Medium Light", red: 247, green: 201, blue: 95, hex: "#f7c95f", image: "https://static1.dmc.com/cache/1/1/117mc_e_19_swatch_150x150.jpg")
+autumngoldml = Floss.create(dmc_number: 19, dmc_name: "Autumn Gold Medium Light", red: 247, green: 201, blue: 95, hex: "#f7c95f", image: "https://static1.dmc.com/cache/1/1/117_19_swatch_150x150.jpg")
 
-shrimp = Floss.create(dmc_number: 20, dmc_name: "Shrimp", red: 247, green: 175, blue: 147, hex: "#f7af93", image: "https://static1.dmc.com/cache/1/1/117mc_e_20_swatch_150x150.jpg")
+shrimp = Floss.create(dmc_number: 20, dmc_name: "Shrimp", red: 247, green: 175, blue: 147, hex: "#f7af93", image: "https://static1.dmc.com/cache/1/1/117_20_swatch_150x150.jpg")
 
-alizarinl = Floss.create(dmc_number: 21, dmc_name: "Alizarin Light", red: 215, green: 153, blue: 130, hex: "#d79982", image: "https://static1.dmc.com/cache/1/1/117mc_e_21_swatch_150x150.jpg")
-alizarin = Floss.create(dmc_number: 22, dmc_name: "Alizarin", red: 188, green: 96, blue: 78, hex: "#bc604e", image: "https://static1.dmc.com/cache/1/1/117mc_e_22_swatch_150x150.jpg")
+alizarinl = Floss.create(dmc_number: 21, dmc_name: "Alizarin Light", red: 215, green: 153, blue: 130, hex: "#d79982", image: "https://static1.dmc.com/cache/1/1/117_21_swatch_150x150.jpg")
+alizarin = Floss.create(dmc_number: 22, dmc_name: "Alizarin", red: 188, green: 96, blue: 78, hex: "#bc604e", image: "https://static1.dmc.com/cache/1/1/117_22_swatch_150x150.jpg")
 
-appleblossom = Floss.create(dmc_number: 23, dmc_name: "Apple Blossom", red: 237, green: 226, blue: 237, hex: "#ede2ed", image: "https://static1.dmc.com/cache/1/1/117mc_e_23_swatch_150x150.jpg")
+appleblossom = Floss.create(dmc_number: 23, dmc_name: "Apple Blossom", red: 237, green: 226, blue: 237, hex: "#ede2ed", image: "https://static1.dmc.com/cache/1/1/117_23_swatch_150x150.jpg")
 
-whitelav = Floss.create(dmc_number: 24, dmc_name: "White Lavender", red: 224, green: 215, blue: 238, hex: "#e0d7ee", image: "https://static1.dmc.com/cache/1/1/117mc_e_24_swatch_150x150.jpg")
+whitelav = Floss.create(dmc_number: 24, dmc_name: "White Lavender", red: 224, green: 215, blue: 238, hex: "#e0d7ee", image: "https://static1.dmc.com/cache/1/1/117_24_swatch_150x150.jpg")
 
-lavul = Floss.create(dmc_number: 25, dmc_name: "Lavender Ultra Light", red: 218, green: 210, blue: 233, hex: "#dad2e9", image: "https://static1.dmc.com/cache/1/1/117mc_e_25_swatch_150x150.jpg")
-lavp = Floss.create(dmc_number: 26, dmc_name: "Lavender Pale", red: 215, green: 202, blue: 230, hex: "#d7cae6", image: "https://static1.dmc.com/cache/1/1/117mc_e_26_swatch_150x150.jpg")
+lavul = Floss.create(dmc_number: 25, dmc_name: "Lavender Ultra Light", red: 218, green: 210, blue: 233, hex: "#dad2e9", image: "https://static1.dmc.com/cache/1/1/117_25_swatch_150x150.jpg")
+lavp = Floss.create(dmc_number: 26, dmc_name: "Lavender Pale", red: 215, green: 202, blue: 230, hex: "#d7cae6", image: "https://static1.dmc.com/cache/1/1/117_26_swatch_150x150.jpg")
 
-whiteviolet = Floss.create(dmc_number: 27, dmc_name: "White Violet", red: 240, green: 238, blue: 249, hex: "#f0eef9", image: "https://static1.dmc.com/cache/1/1/117mc_e_27_swatch_150x150.jpg")
+whiteviolet = Floss.create(dmc_number: 27, dmc_name: "White Violet", red: 240, green: 238, blue: 249, hex: "#f0eef9", image: "https://static1.dmc.com/cache/1/1/117_27_swatch_150x150.jpg")
 
-eggplantml = Floss.create(dmc_number: 28, dmc_name: "Eggplant Medium Light", red: 144, green: 134, blue: 169, hex: "#9086a9", image: "https://static1.dmc.com/cache/1/1/117mc_e_28_swatch_150x150.jpg")
-eggplant = Floss.create(dmc_number: 29, dmc_name: "Eggplant", red: 103, green: 64, blue: 118, hex: "#674076", image: "https://static1.dmc.com/cache/1/1/117mc_e_29_swatch_150x150.jpg")
+eggplantml = Floss.create(dmc_number: 28, dmc_name: "Eggplant Medium Light", red: 144, green: 134, blue: 169, hex: "#9086a9", image: "https://static1.dmc.com/cache/1/1/117_28_swatch_150x150.jpg")
+eggplant = Floss.create(dmc_number: 29, dmc_name: "Eggplant", red: 103, green: 64, blue: 118, hex: "#674076", image: "https://static1.dmc.com/cache/1/1/117_29_swatch_150x150.jpg")
 
-blueberryml = Floss.create(dmc_number: 30, dmc_name: "Blueberry Medium Light", red: 125, green: 119, blue: 165, hex: "#7d77a5", image: "https://static1.dmc.com/cache/1/1/117mc_e_30_swatch_150x150.jpg")
-blueberry = Floss.create(dmc_number: 31, dmc_name: "Blueberry", red: 80, green: 81, blue: 141, hex: "#50518d", image: "https://static1.dmc.com/cache/1/1/117mc_e_31_swatch_150x150.jpg")
-blueberryd = Floss.create(dmc_number: 32, dmc_name: "Blueberry Dark", red: 77, green: 46, blue: 138, hex: "#4d2e8a", image: "https://static1.dmc.com/cache/1/1/117mc_e_32_swatch_150x150.jpg")
+blueberryml = Floss.create(dmc_number: 30, dmc_name: "Blueberry Medium Light", red: 125, green: 119, blue: 165, hex: "#7d77a5", image: "https://static1.dmc.com/cache/1/1/117_30_swatch_150x150.jpg")
+blueberry = Floss.create(dmc_number: 31, dmc_name: "Blueberry", red: 80, green: 81, blue: 141, hex: "#50518d", image: "https://static1.dmc.com/cache/1/1/117_31_swatch_150x150.jpg")
+blueberryd = Floss.create(dmc_number: 32, dmc_name: "Blueberry Dark", red: 77, green: 46, blue: 138, hex: "#4d2e8a", image: "https://static1.dmc.com/cache/1/1/117_32_swatch_150x150.jpg")
 
-fuschia = Floss.create(dmc_number: 33, dmc_name: "Fuschia", red: 156, green: 89, blue: 158, hex: "#9c599c", image: "https://static1.dmc.com/cache/1/1/117mc_e_33_swatch_150x150.jpg")
-fuschiad = Floss.create(dmc_number: 34, dmc_name: "Fuschia Dark", red: 125, green: 48, blue: 100, hex: "#7d3064", image: "https://static1.dmc.com/cache/1/1/117mc_e_34_swatch_150x150.jpg")
-fuschiavd = Floss.create(dmc_number: 35, dmc_name: "Fuschia Very Dark", red: 70, green: 5, blue: 45, hex: "#46052d", image: "https://static1.dmc.com/cache/1/1/117mc_e_35_swatch_150x150.jpg")
+fuschia = Floss.create(dmc_number: 33, dmc_name: "Fuschia", red: 156, green: 89, blue: 158, hex: "#9c599c", image: "https://static1.dmc.com/cache/1/1/117_33_swatch_150x150.jpg")
+fuschiad = Floss.create(dmc_number: 34, dmc_name: "Fuschia Dark", red: 125, green: 48, blue: 100, hex: "#7d3064", image: "https://static1.dmc.com/cache/1/1/117_34_swatch_150x150.jpg")
+fuschiavd = Floss.create(dmc_number: 35, dmc_name: "Fuschia Very Dark", red: 70, green: 5, blue: 45, hex: "#46052d", image: "https://static1.dmc.com/cache/1/1/117_35_swatch_150x150.jpg")
 
 
 #userfloss
