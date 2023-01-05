@@ -4,7 +4,7 @@ import ProjectColors from './ProjectColors'
 import ProjectThreads from './ProjectThreads'
 import { useNavigate } from 'react-router-dom'
 
-function NewProject({currentUser, pleaseUpdate, setProject, project}){
+function NewProject({currentUser, pleaseUpdate, setProject, project, setReRender, reRender}){
 const [colors, setColors] = useState([])
 const [image, setImage] = useState('')
 const [src, setSrc] = useState('')
@@ -40,7 +40,11 @@ fetch("/projects", {
     })
 })
 .then(res => res.json())
-.then(data => setProject([...project, data]))
+.then(data => {
+    setProject([...project, data])
+    setReRender(!reRender)
+}) 
+
 }
 
 function saveHandler(){

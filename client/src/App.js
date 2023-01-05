@@ -18,6 +18,7 @@ function App() {
   const [currentUser, setCurrentUser] = useState(null)
   const [flossArray, setFlossArray] = useState([])
   const [project, setProject] = useState([])
+  const [reRender, setReRender] = useState(false)
 
   useEffect(() => {
     fetch('/flosses')
@@ -104,8 +105,8 @@ function App() {
       <Route path='/' element={<Home flossArray={flossArray}/>}/>
       <Route path='/threads' element={<AllThreads currentUser={currentUser} flossArray={flossArray}/>}/>
       <Route path='/login' element={<Login onLogin={onLogin} currentUser={currentUser} handleLogOut={handleLogOut}/>}/>
-      <Route path='/me' element={<Profile currentUser={currentUser} logMeIn={logMeIn} project={project} setProject={setProject}/>}/>
-      <Route path='/projects' element={<NewProject currentUser={currentUser} setProject={setProject} project={project} pleaseUpdate={pleaseUpdate}/>}/>
+      <Route path='/me' element={<Profile currentUser={currentUser} logMeIn={logMeIn} project={project} setProject={setProject} setReRender={setReRender} reRender={reRender}/>}/>
+      <Route path='/projects' element={<NewProject currentUser={currentUser} setProject={setProject} project={project} pleaseUpdate={pleaseUpdate}  setReRender={setReRender} reRender={reRender}/>}/>
     </Routes>
     </div>
     </div>

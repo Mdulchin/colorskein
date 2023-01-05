@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
-function MyProjects({currentUser, project, setProject}){
+function MyProjects({currentUser, project, setProject, reRender, setReRender}){
 // const [myProjects, setMyProjects] = useState([])
 
     useEffect(() => {
@@ -11,7 +11,7 @@ function MyProjects({currentUser, project, setProject}){
                 setProject(data)
             });
             console.log(project.length)
-        }, []);
+        }, [reRender]);
         
         if (project.length === 0) {
             return (
