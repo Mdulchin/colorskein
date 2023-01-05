@@ -13,7 +13,7 @@ function MyProjects({currentUser, project, setProject}){
             console.log(project.length)
         }, []);
         
-        if (project.length === 1) {
+        if (project.length === 0) {
             return (
             <div>
                 <p>You have no projects!

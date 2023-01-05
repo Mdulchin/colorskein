@@ -85,7 +85,7 @@ body {
     font-size: 40px;
     letter-spacing: 3px;
     font-family: Clarendon, Helvetica, Arial, sans-serif;
-    text-shadow: #657ED4 3px 4px;;
+    text-shadow: #657fd4cc 3px 4px;;
   }
   /* homepage */
   .home {
@@ -237,7 +237,7 @@ padding: 3px;
   margin-top: 10px;
   display: grid;
   border: 1.5px solid #657ED4;
-  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
   grid-template-columns: repeat(6, 239px);
   justify-content: center;
   padding-left: 8px;
