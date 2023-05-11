@@ -129,6 +129,10 @@ function darker(c, currentValue){
   setDarkerShade([...darkerShade, newColor])
   }
 
+function hueShift(c, currentValue){
+console.log(c, currentValue)
+}
+
 function showMe(){
   getColorConvert()
   }
@@ -140,7 +144,7 @@ setIsSaved(!isSaved)
 
 
 const myThreadCard = dmc.map(d => {
-  return <ProjectThreadCard d={d} saveMyThreads={saveMyThreads} darker={darker} isSaved={isSaved} dmc={dmc} title={title}/>
+  return <ProjectThreadCard d={d} saveMyThreads={saveMyThreads} darker={darker} isSaved={isSaved} dmc={dmc} title={title} hueShift={hueShift}/>
 })
 
 const newShade = darkerShade.map(n => {
