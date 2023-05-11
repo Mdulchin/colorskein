@@ -13,8 +13,8 @@ const [adjust, setAdjust] = useState(false)
   darker(d, currentValue)
  }
 
- function updateHue(d){
-  hueShift(d, adjustedValue)
+ function updateHue(c){
+  hueShift(c, adjustedValue)
  }
  
 function handleSave(d){

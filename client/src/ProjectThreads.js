@@ -13,6 +13,7 @@ function ProjectThreads({colors, setProjectThread, projectThread, title, setRend
     const [savedThreads, setSavedThreads] = useState([])
     const [darkerShade, setDarkerShade] = useState([])
     const [isSaved, setIsSaved] = useState(false)
+    const [shiftedHue, setShiftedHue] = useState([])
 
 useEffect(() => {
     fetch('/flosses')
@@ -129,8 +130,42 @@ function darker(c, currentValue){
   setDarkerShade([...darkerShade, newColor])
   }
 
-function hueShift(c, currentValue){
-console.log(c, currentValue)
+function hueShift(c, adjustedValue){
+console.log(c, adjustedValue)
+const val = adjustedValue
+const color1 = dmc[c].hex
+const lab1 = chromatism.convert(color1).cielab
+const color2 = (chromatism.hue(val, color1).hex)
+let lab2 = chromatism.convert(color2).cielab
+console.log(lab2)
+
+if (isNaN(lab2.L)) {
+  lab2 = {L: 0.6404577846, a: 2.9900549871, b: 0.0618923146}
+}
+const col1 = {
+  L: lab1.L,
+  A: lab1.a, 
+  B: lab1.b
+}
+
+const col2 = {
+  L: lab2.L,
+  A: lab2.a, 
+  B: lab2.b
+}
+
+const testColor =[]
+const newColor = []
+
+for (let i = 0; i < labThreadColors.length; i++){
+let changeThread = (DeltaE.getDeltaE00(col2, labThreadColors[i]))
+testColor.push(changeThread)
+
+// nonZero.push(testColor.filter(n => n !== 0))
+}
+const nonZero = testColor.filter(n => n !== 0)
+newColor.push(projectFloss[nonZero.indexOf(Math.min(...nonZero))])
+setDarkerShade([...darkerShade, newColor])
 }
 
 function showMe(){
@@ -150,6 +185,10 @@ const myThreadCard = dmc.map(d => {
 const newShade = darkerShade.map(n => {
   return <AdjustFloss n={n} saveMyThreads={saveMyThreads} darker={darker} dmc={dmc} title={title}/>
 })
+
+// const newHue = shiftedHue.map(h => { 
+//   return <AdjustFloss h={h} hueShift={hueShift}/>
+// })
 
 return (
     <div className="threadsandButton">
