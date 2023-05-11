@@ -4,7 +4,9 @@ import ProjectThreadCard from "./ProjectThreadCard";
 var DeltaE = require('delta-e');
 var chromatism = require('chromatism');
 
-
+// the chromatism uses hsv (hue, saturation, value) color space to convert and alter colors, what this means is that there is not a perfect way to get a darker or lighter, 
+// bluer, greener, redder, etc color
+// the darker-lighter function is changing the "v" value of hsv (value)
 function ProjectThreads({colors, setProjectThread, projectThread, title, setRenderThreads}){
     const [projectFloss, setProjectFloss] = useState([])
     const [dmc, setDmc] = useState([])
@@ -82,7 +84,6 @@ closestThread.push(projectFloss[colorArray3.indexOf(Math.min(...colorArray3))])
 closestThread.push(projectFloss[colorArray4.indexOf(Math.min(...colorArray4))])
 closestThread.push(projectFloss[colorArray5.indexOf(Math.min(...colorArray5))])
 closestThread.push(projectFloss[colorArray6.indexOf(Math.min(...colorArray6))])
-console.log(closestThread)
 setDmc(closestThread)
 setSavedThreads(closestThread)
 setRenderThreads(closestThread)
@@ -91,13 +92,13 @@ setRenderThreads(closestThread)
 
 
 function darker(c, currentValue){
- const val = currentValue
- console.log(val)
+  console.log(c, currentValue)
+  const val = currentValue
   const color1 = dmc[c].hex
   const lab1 = chromatism.convert(color1).cielab
   const color2 = (chromatism.shade(val, color1).csshsl)
   let lab2 = chromatism.convert(color2).cielab
- console.log(lab2)
+ 
 
   if (isNaN(lab2.L)) {
     lab2 = {L: 0.6404577846, a: 2.9900549871, b: 0.0618923146}
@@ -125,7 +126,6 @@ function darker(c, currentValue){
   }
   const nonZero = testColor.filter(n => n !== 0)
   newColor.push(projectFloss[nonZero.indexOf(Math.min(...nonZero))])
-  console.log(newColor)
   setDarkerShade([...darkerShade, newColor])
   }
 
