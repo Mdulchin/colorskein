@@ -13,7 +13,8 @@ function ProjectThreads({colors, setProjectThread, projectThread, title, setRend
     const [savedThreads, setSavedThreads] = useState([])
     const [darkerShade, setDarkerShade] = useState([])
     const [isSaved, setIsSaved] = useState(false)
-    const [shiftedHue, setShiftedHue] = useState([])
+    const [explain, setExplain] = useState(false)
+  
 
 useEffect(() => {
     fetch('/flosses')
@@ -170,6 +171,7 @@ setDarkerShade([...darkerShade, newColor])
 
 function showMe(){
   getColorConvert()
+  setExplain(!explain)
   }
 
 function saveMyThreads(d){
@@ -192,11 +194,32 @@ const newShade = darkerShade.map(n => {
 
 return (
     <div className="threadsandButton">
-      <button className="showThreads" onClick={showMe}>Show my threads!</button>
-      <div className="projectThreads">
+      <button className="showThreads" onClick={showMe}>Find closest thread colors</button>
+      {/* <button className="showThreads" onClick={() => setExplain(!explain)}>Click here for more information on adjusting thread colors</button> */}
+      
+     <div className="projectThreads">
       {myThreadCard}
       {newShade}
       </div>
+      {explain ? 
+      <div>
+      <p>If any of these shades don't look quite accurate, click the "Adjust" button to adjust by shade (darker-lighter) or by hue(red, green, blue values). <br/>
+      Adjust the shade by sliding the top slider. Slide left for darker and right for lighter.
+      <br/>
+      Change the hue of the color by sliding the bottom slider. This one you'll need to play around with more to find the color you want. <br/>
+      There's a lot to be said about adjusting colors, but what you need to know to adjust by hue is that, in the HSV color model which is being used here, color is typically, and best, represented as a cylinder, with hue being the angle of the color around the cylinder.
+      <br/>
+      What that means for you is that adjusting is on a 0-360 degree scale, and what each degree represents is going to change based on the original color. <br/>
+      Red in the traditional HSV color model is at 0 degrees, green at 120 degrees, and blue at 240 degrees. <br/>
+      If your original thread color is red you can follow that pattern. <br/>
+      If you're starting with a green, adjusting by anything around 120 degrees will give you a blue color, and around 240 will give you a red. <br/>
+      Starting with a blue means that adjusting around 120 degrees returns a red, and around 240 degrees returns a green. <br/>
+      </p>
+      <button className="showThreads" onClick={() => setExplain(!explain)}>Less information on adjusting thread colors</button>
+      </div>
+      :
+      <button className="showThreads" onClick={() => setExplain(!explain)}>More information on adjusting thread colors</button>
+      }
     </div>
 )
 

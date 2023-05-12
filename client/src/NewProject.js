@@ -69,8 +69,7 @@ return (
     <div className='projectCreatorPage'>
     <h1 className='newProjectHeader'>Create a New Project</h1>
     <p className='newProjectp'>Enter an image URL and we'll help you find the perfect threads to match! 
-    <br />
-    If the threads aren't perfect, use the sliding scale to select either a darker or lighter version.</p>
+    <br /></p>
     <form className='newProjectForm' onSubmit={handleSubmit} >
         <input 
             name="image"
