@@ -1,6 +1,7 @@
 import AdjustFloss from "./AdjustFloss";
 import { useState, useEffect} from "react"
 import ProjectThreadCard from "./ProjectThreadCard";
+import ColorFacts from "./ColorFacts";
 var DeltaE = require('delta-e');
 var chromatism = require('chromatism');
 
@@ -203,7 +204,8 @@ return (
       </div>
       {explain ? 
       <div>
-      <p>If any of these shades don't look quite accurate, click the "Adjust" button to adjust by shade (darker-lighter) or by hue(red, green, blue values). <br/>
+        <ColorFacts />
+      {/* <p>If any of these shades don't look quite accurate, click the "Adjust" button to adjust by shade (darker-lighter) or by hue(red, green, blue values). <br/>
       Adjust the shade by sliding the top slider. Slide left for darker and right for lighter.
       <br/>
       Change the hue of the color by sliding the bottom slider. This one you'll need to play around with more to find the color you want. <br/>
@@ -214,7 +216,7 @@ return (
       If your original thread color is red you can follow that pattern. <br/>
       If you're starting with a green, adjusting by anything around 120 degrees will give you a blue color, and around 240 will give you a red. <br/>
       Starting with a blue means that adjusting around 120 degrees returns a red, and around 240 degrees returns a green. <br/>
-      </p>
+      </p> */}
       <button className="showThreads" onClick={() => setExplain(!explain)}>Less information on adjusting thread colors</button>
       </div>
       :
