@@ -65,8 +65,8 @@ function App() {
     // <Router>
     <div className='app'>
       {currentUser ? <p className='username'>Welcome, {currentUser.username}!</p> : null}
+      
       <div className='navBar'> 
-      <h1 className='logo'>ColorSkein</h1>
        <Link to='/' >
          <button className= 'nav' id="homeb">Home</button>
        </Link>
@@ -100,6 +100,7 @@ function App() {
   <button className='nav' id='loginb'>login or signup</button>
   </Link>
   }
+  {/* <h1 className='logo'>ColorSkein</h1> */}
    
     <Routes> 
       <Route path='/' element={<Home flossArray={flossArray}/>}/>

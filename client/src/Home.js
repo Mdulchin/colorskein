@@ -20,21 +20,22 @@ const flossPhotos = flossArray
 // const flossHex = flossArray[flossIndex + 2].hex
 
 return (
-  
-
-    <span className="home"
-    //  style={{backgroundColor: flossHex}}
-     >  
-    {flossIndex > 0 ? <button className="prevFloss" onClick={() => setFlossIndex(flossIndex - 12)}>⇦</button> : null}
+    <>
+      <h1 className='logo'>ColorSkein</h1>
+      <hr />
+    <span className="home">   
+    <span className="homeSwatchBox">
+    {flossIndex > 0 ? <button className="prevFloss" onMouseOver={() => setFlossIndex(flossIndex - 12)}> </button> : null}
     {flossPhotos} 
-    {flossIndex < flossArray.length ? <button className="nextFloss" onClick={() => setFlossIndex(flossIndex + 12)}>⇨</button> : null}
+    {flossIndex < flossArray.length ? <button className="nextFloss" onMouseOver={() => setFlossIndex(flossIndex + 12)}> </button> : null}
+    </span>
     <br />
     <h3 className="homeDescription">Use ColorSkein to help you choose the best <br /> DMC embroidery floss colors for your project!</h3>
     <br />
     <img className="homeImage"src={homepagegraphic}></img>
     </span>
  
-
+</>
 )
 
 }
