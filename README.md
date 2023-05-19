@@ -177,7 +177,8 @@ Verify which version of Ruby you're running by entering this in the terminal:
 $ ruby -v
 ```
 
-We recommend version 2.7.4. If you need to upgrade you can install it using rvm:
+We recommend version 2.7.4. If you need to upgrade you can install it using rvm
+(which can be installed with these direcitons: https://rvm.io/rvm/install):
 
 ```console
 $ rvm install 2.7.4 --default
