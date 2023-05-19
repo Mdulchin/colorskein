@@ -9,7 +9,7 @@ const [flossIndex, setFlossIndex] = useState(0)
 
 
 const flossPhotos = flossArray
-.slice(flossIndex, flossIndex + 12)
+.slice(flossIndex, flossIndex + 10)
 .map(floss => { 
   return (
     <div className="homeSwatches">
@@ -21,13 +21,13 @@ const flossPhotos = flossArray
 
 return (
     <>
-      <h1 className='logo'>ColorSkein</h1>
+      <h1 className='homeLogo'>ColorSkein</h1>
       <hr />
     <span className="home">   
     <span className="homeSwatchBox">
-    {flossIndex > 0 ? <button className="prevFloss" onMouseOver={() => setFlossIndex(flossIndex - 12)}> </button> : null}
+    {flossIndex > 0 ? <button className="previousFloss" onMouseOver={() => setFlossIndex(flossIndex - 10)}> </button> : null}
     {flossPhotos} 
-    {flossIndex < flossArray.length ? <button className="nextFloss" onMouseOver={() => setFlossIndex(flossIndex + 12)}> </button> : null}
+    {flossIndex < flossArray.length ? <button className="nextFloss" onMouseOver={() => setFlossIndex(flossIndex + 10)}> </button> : null}
     </span>
     <br />
     <h3 className="homeDescription">Use ColorSkein to help you choose the best <br /> DMC embroidery floss colors for your project!</h3>

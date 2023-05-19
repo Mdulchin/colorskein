@@ -100,7 +100,7 @@ function App() {
   <button className='nav' id='loginb'>login or signup</button>
   </Link>
   }
-  {/* <h1 className='logo'>ColorSkein</h1> */}
+  <h4 className='logo'>Colorskein</h4>
    
     <Routes> 
       <Route path='/' element={<Home flossArray={flossArray}/>}/>

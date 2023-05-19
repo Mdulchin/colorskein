@@ -57,8 +57,11 @@ body {
     right: 0;
     width: 140px;
     text-align: right;
-    margin-right: 6px;
-    background-color: #F3A712;
+    z-index: 2;
+    margin-top: .5%
+
+    /* margin-right: 6px; */
+    /* background-color: #F3A712; */
   }
 
   /* .username::after {
@@ -80,8 +83,20 @@ body {
     max-height: 40px;
     display: flex;
     flex-direction: row;
+    background: #f5b0dd
   }
-
+  .navBar button {
+    height: 100%;
+    margin-top: 0;
+  }
+  .logo {
+    letter-spacing: 2px;
+  font-family: Clarendon, Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  color:rgba(11, 64, 31, 0.876);
+  align-self: center;
+  margin-left: 9.5%;
+  }
   /* a {
   width: fit-content;
   }  */
@@ -94,7 +109,7 @@ body {
   margin-top: -9px;
   padding: -1px;
  }
- .logo {
+ .homeLogo {
   position: absolute;
   color:rgba(11, 64, 31, 0.876);
   z-index: 0;
@@ -139,7 +154,7 @@ body {
     flex-direction: row;
   }
   .homeSwatches {
-    padding: 3px;
+    padding: 2.5px;
   }
   .homeImage {
     width: 112%;
@@ -173,56 +188,44 @@ body {
     background-color: white;
   }
 
-  .prevFloss{
+  .previousFloss{
     position: absolute;
-    left: -5%;
-    top: 10.75%;
-    background: none;
-    border: none;
-    font-size: xx-large;
+    left: -33%;
+    background:rgba(249, 247, 247, 0.509);
+    backdrop-filter: blur(2px);
+    height: 14%;
+    width: 7%;
+  }
+  .previousFloss:hover {
+    background:rgba(249, 247, 247, 0.509);
+    backdrop-filter: blur(2px);
   }
 
-  button.prevFloss::after{
+  button.previousFloss::after{
     background-color: white;
   }
 
+/* all threads page */
+
   .allThreads {
+  position: absolute;
   text-align: center;
+    margin-top: 5em;
   }
   .allThreadsHeader {
-    position: absolute;
-    top: 76%;
-    left: 40%;
     margin: auto;
     font-size: 60px;
     font-family: Clarendon, Helvetica, Arial, sans-serif;
+    color: #657ED4;
   }
-  .allThreadsHeader::before{
-    content: "";
-    position: absolute;
-    left: 55%;
-    bottom: 7px;
-    width: 100%;
-    height: 17px;
-    transform: skew(-1deg) translateX(-50%);
-    background: #DB504A;
-    z-index: -1;
-  }
+
   .allThreadsp {
-    position: absolute;
-    bottom: -39%;
-    left: 35%; 
+
     font-size: 20px;
     font-style: normal;
     font-family: Clarendon, Helvetica, Arial, sans-serif;
   }
-  .needleEmoji {
-    font-size: 60px;
-    z-index: -1;
-    position: absolute;
-    top: 90%;
-    left: 66%;
-  }
+
 
   .searchBar {
     padding: 0.25rem;
@@ -230,7 +233,7 @@ body {
     border: none;
     font-family: inherit;
     font-size: 1.2em;
-    border-bottom: 4px solid #f5b0dd;
+    border-bottom: 4px solid #69995D;
     transition: all 0.2s;
     width: 100%;
     text-align: left;
@@ -272,7 +275,7 @@ body {
 margin-top: 9px;
 display: flex;
 flex-flow: row wrap;
-justify-content: space-evenly;
+/* justify-content: space-evenly; */
 padding: 3px;
 }
 .flossContainerProf {
